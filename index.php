@@ -38,7 +38,7 @@
 						</div>
 						
 						<div class="one_third">
-							<a href="community-forums/forum/market-square/" class="box">
+							<a href="apis/" class="box">
 								<div class="line aquaBlue_line"></div>
 								<section class="nav_box aquablue">
 									<h2><span class="lg_icon" aria-hidden="true" data-icon="&#x27;"></span><br />API Hub</h2>
