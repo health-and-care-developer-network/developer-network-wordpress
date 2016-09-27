@@ -1511,8 +1511,3 @@ input {
   /* line 335, ../sass/partials/_queries.scss */
   .content_wrap h2.underline {
     margin: 0 0 24px 30px; } }
-
-    api_list > li {
-    	list-style: initial;
-    	margin-left: 20px;
-    }
