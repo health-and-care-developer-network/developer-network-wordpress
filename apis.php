@@ -43,8 +43,8 @@ Template Name: API Hub
 			<div class="wrapper cf container">
 				
 				<h2 class="api_type_titles">SMSP APIs</h2>
-				<?php if( get_field('smsp_apis') ): ?>
-				<?php while( has_sub_field('smsp_apis') ): ?>
+				<?php if( get_field('spine_apis') ): ?>
+				<?php while( has_sub_field('spine_apis') ): ?>
 				<div class="one_third tree_wrap">
 					<div class="box">
 						<div class="line aquaBlue_line"></div>
