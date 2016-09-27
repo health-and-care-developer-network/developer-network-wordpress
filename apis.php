@@ -42,7 +42,7 @@ Template Name: API Hub
 			</div>
 			<div class="wrapper cf container">
 				
-				<h2 class="api_type_titles">SMSP APIs</h2>
+				<h2 class="api_type_titles">Spine Messaging APIs</h2>
 				<?php if( get_field('spine_apis') ): ?>
 				<?php while( has_sub_field('spine_apis') ): ?>
 				<div class="one_third tree_wrap">
