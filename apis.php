@@ -37,7 +37,7 @@ Template Name: API Hub
 							<?php if( get_sub_field('child_links') ): ?>
 								<ul>
 								<?php while( has_sub_field('child_links') ): ?>
-									<li class="sub_cat"><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a></li>
+									<li><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a></li>
 								<?php endwhile; ?>
 								</ul>
 							<?php endif; ?>
@@ -64,7 +64,7 @@ Template Name: API Hub
 							<?php if( get_sub_field('child_links') ): ?>
 								<ul>
 								<?php while( has_sub_field('child_links') ): ?>
-									<li class="sub_cat"><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a></li>
+									<li><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a></li>
 								<?php endwhile; ?>
 								</ul>
 							<?php endif; ?>
