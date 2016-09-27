@@ -2663,9 +2663,3 @@ a.copyright {
     #mysidebar {
 		position: initial !important;
     }
-    .search_box #s {
-    	height: 33px;
-	}
-	.main_nav .wrapper ul li a {
-    	height: 54px;
-	}
