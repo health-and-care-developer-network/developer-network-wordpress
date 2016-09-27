@@ -2660,3 +2660,7 @@ a.copyright {
     	list-style: initial;
     	margin-left: 20px;
     }
+    
+    #api_list #mysidebar {
+		position: initial !important;
+    }
