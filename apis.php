@@ -37,7 +37,7 @@ Template Name: API Hub
 							<?php if( get_sub_field('child_links') ): ?>
 								<ul>
 								<?php while( has_sub_field('child_links') ): ?>
-									<li><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a></li>
+									<li class="sub_cat"><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a></li>
 								<?php endwhile; ?>
 								</ul>
 							<?php endif; ?>
@@ -60,6 +60,15 @@ Template Name: API Hub
 						<section class="nav_box aquablue">
 							<h3><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('capability_pack'); ?></a></h3>
 							<p><?php the_sub_field('description'); ?></p>
+							
+							<?php if( get_sub_field('child_links') ): ?>
+								<ul>
+								<?php while( has_sub_field('child_links') ): ?>
+									<li class="sub_cat"><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a></li>
+								<?php endwhile; ?>
+								</ul>
+							<?php endif; ?>
+							
 						</section>
 					</div>
 				</div>
