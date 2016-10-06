@@ -28,6 +28,7 @@ Template Name: API Hub
 			<div class="wrapper cf container">
 				
 				<h2 class="api_type_titles"><?php the_sub_field('section_name');?></h2>
+				<div class="api_type_description"><?php the_sub_field('section_description');?></div>
 				
 				<?php if( get_sub_field('api_entries') ): ?>
 				<?php while( has_sub_field('api_entries') ): ?>
