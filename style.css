@@ -2669,3 +2669,11 @@ a.copyright {
 	    padding-bottom: 20px;
 	    min-height: 0px !important;
 	}
+
+    div.apicontent a.btn {
+        color: initial !important;
+        padding: 6px 12px 6px 12px;
+        display: initial;
+        float: initial;
+    }
+
