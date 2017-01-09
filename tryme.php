@@ -21,11 +21,10 @@ Template Name: TryMe
 		<?php include_once "breadcrumbs.php"; ?>
 
 		<div id="tryme">
+		  <div class="wrapper cf container"><div class="full_width">
 			
+			<div class="tryit-title"><h2><?php the_title(); ?></h2></div>
 
-			<h3>
-			    Try it
-			</h3>
 			<div class="input-group">
 			      <span class="input-group-addon">http://data.developer-test.nhs.uk/hscorgrefdata/</span>
 			      <input id="interactive" type="text" class="form-control" placeholder="organisations/A">
@@ -35,39 +34,51 @@ Template Name: TryMe
 			<p class="lead pad_top">Result:</p>
 			<div class="well">
 			  <pre id="interactive_output" class="pre-scrollable">
-				{
-				  "name": "NORTH EAST GOVERNMENT OFFICE REGION",
-				  "odsCode": "A",
-				  "operationalStartDate": "1994-04-01",
-				  "recordClass": "HSCOrg",
-				  "status": "Active",
-				  "last_changed": "2015-04-13",
-				  "relationships": [],
-				  "roles": [
-				    {
-				      "role": {
-					"code": "RO128",
-					"description": "GOVERNMENT OFFICE REGION",
-					"operationalStartDate": "1994-04-01",
-					"primaryRole": true,
-					"status": "Active",
-					"links": [
-					  {
-					    "href": "http://data.developer-test.nhs.uk/hscorgrefdata/role-types/RO128",
-					    "rel": "role-type"
-					  }
-					],
-					"uniqueId": "95705"
-				      }
-				    }
-				  ],
-				  "links": [
-				    {
-				      "href": "http://data.developer-test.nhs.uk/hscorgrefdata/organisations/A",
-				      "rel": "self"
-				    }
-				  ],
-				}
+{
+  "addresses": [
+    {
+      "addressLines": [
+        "CITYGATE", 
+        "GALLOWGATE"
+      ], 
+      "country": "ENGLAND", 
+      "county": "TYNE AND WEAR", 
+      "postalCode": "NE1 4HW", 
+      "town": "NEWCASTLE UPON TYNE"
+    }
+  ], 
+  "lastChanged": "2015-04-13", 
+  "links": [
+    {
+      "href": "http://data.developer-test.nhs.uk/hscorgrefdata/organisations/A", 
+      "rel": "self"
+    }
+  ], 
+  "name": "NORTH EAST GOVERNMENT OFFICE REGION", 
+  "odsCode": "A", 
+  "operationalStartDate": "1994-04-01", 
+  "recordClass": "HSCOrg", 
+  "refOnly": false, 
+  "relationships": [], 
+  "roles": [
+    {
+      "code": "RO128", 
+      "description": "GOVERNMENT OFFICE REGION", 
+      "links": [
+        {
+          "href": "http://data.developer-test.nhs.uk/hscorgrefdata/role-types/RO128", 
+          "rel": "role-type"
+        }
+      ], 
+      "operationalStartDate": "1994-04-01", 
+      "primaryRole": true, 
+      "status": "Active", 
+      "uniqueId": 95705
+    }
+  ], 
+  "status": "Active", 
+  "successors": []
+}
 			  </pre>
 			</div>
 
@@ -99,7 +110,7 @@ Template Name: TryMe
 		    }
 		    </script>
 
-
+		  </div></div><!-- end of wrappers -->
 		</div><!-- end of tryme content -->
 	</div><!--end main_content-->
 </div><!-- end main -->

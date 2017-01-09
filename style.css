@@ -2677,3 +2677,17 @@ a.copyright {
         float: initial;
     }
 
+    .tryit-title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #931638;
+    }
+
+    .well {
+        border: thin solid lightgrey;
+        padding: 5px;
+        font-size: 0.8em;
+        font-size: 13px;
+        line-height: 1.42857143;
+    }
+
