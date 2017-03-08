@@ -82,9 +82,10 @@
 				
 					<div class="hp_sidebar">
 						<section class="community_latest aquagreen cf">
-							<h3>Latest from the community</h3>
+							<h3>Recently added content</h3>
 
-							<?php query_posts( array( 'post_type' => 'community', 'community-type' => 'community-blog', 'posts_per_page' => 2 ) ); ?>
+							<?php query_posts( array( 'post_type' => 'downloads-data', 'library', 'posts_per_page' => 2 ) ); ?>
+							
 							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 							<article>
@@ -100,7 +101,6 @@
 							
 							<?php endwhile; endif; wp_reset_query(); ?>	
 							<div class="clear"></div>
-							<a href="community/blogs/" class="btn aquaGreen_btn">Visit Blogs <span class="btn_icon" aria-hidden="true" data-icon="&#x29;"></span></a>
 						</section>
 						
 					</div><!--end hp_sidebar-->
