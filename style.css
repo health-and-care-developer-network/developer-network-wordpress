@@ -2690,4 +2690,8 @@ a.copyright {
         font-size: 13px;
         line-height: 1.42857143;
     }
+    
+    div.entry-meta {
+    	font-size: 0.8em;
+    }
 

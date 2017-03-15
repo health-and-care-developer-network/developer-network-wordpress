@@ -25,9 +25,11 @@
 							<div class="content_wrap cf">
 								<article class="cf">
 									
+									<!-- 
 									<hgroup>
-										<h2>Search results for ‘<?php echo($s); ?>’</h2>
+										<h2>Search results for '<?php echo($s); ?>'</h2>
 									</hgroup>
+									 -->
 
 									<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
