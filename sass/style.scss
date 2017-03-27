@@ -62,16 +62,8 @@ body::before{
 	background-position: -100% 0;
 }
 
-.svg body::before{
-	background: url(img/css/lid_bg.svg) repeat-x;
-	}
-
-.no-svg body::before{
-	background: url(img/css/lid_bg.jpg) repeat-x;
-}
-
 body{
-	padding-top: 46px;
+	padding-top: 0px;
 }
 
 .wrapper{
@@ -300,11 +292,11 @@ a.mob_nav_btn{
 
 
 .no-svg .page_title, .no-svg .hp_page_title{
-	background: url(img/css/header_bg_09.jpg);
+	background-color: #0272c6;
 }
 
 .svg .page_title, .svg .hp_page_title{
-	background: url(img/css/header_bg.svg);
+	background-color: #0272c6;
 }
 
 .page_title{
@@ -596,13 +588,13 @@ a.btn{
 }
 
 a.red_btn{
-	border: 1px solid lighten($red, 10%);
-	background-color: $red;
+	border: 1px solid lighten(#0272c6, 20%);
+	background-color: lighten(#0272c6, 10%);
 }
 a.red_btn:hover{
 	text-decoration: none;
 	@include box-shadow(0 0 10px rgba(0,0,0,.5));
-	background-color: lighten($red, 3%);
+	background-color: lighten(#0272c6, 3%);
 }
 
 a.aquaGreen_btn{
@@ -832,7 +824,7 @@ a.orange_btn:hover{
 
 
 footer{
-	background: url(img/css/header_bg_09.jpg);
+	background-color: #014c84;
 	height: 96px;
 	ul{
 		float: left;
@@ -892,7 +884,14 @@ a.copyright{
 
 @import "partials/queries";
 
+.api_type_titles {
+	min-height: 0px !important;
+}
 
+.api_type_description {
+	padding-left: 30px;
+	padding-bottom: 20px;
+	min-height: 0px !important;
+}
 
-
-
+@import "landing/style";

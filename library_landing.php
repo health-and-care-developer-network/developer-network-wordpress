@@ -26,12 +26,12 @@ Template Name: Library landing
 									<a href="" class="expand closed">expand</a>
 									<a href="">Architecture and Design</a>
 									<ul>
-										<li><a href="" class="expand closed"></a><a href="http://flodesign.co.uk">this is a sub-link</a></li>
+										<li><a href="" class="expand closed"></a><a href="">this is a sub-link</a></li>
 										<li>
 											<a href="" class="expand closed"></a>
 											<a href="">this is a sub-link</a>
 											<ul>
-												<li><a href="http://flodesign.co.uk" class="doc">this is a sub-link</a></li>
+												<li><a href="" class="doc">this is a sub-link</a></li>
 												<li><a href="" class="doc">this is a document</a></li>
 												<li><a href="" class="doc">this is a second document</a></li>
 												<li><a href="" class="doc">this is yet anither document</a></li>
@@ -45,7 +45,7 @@ Template Name: Library landing
 									<a href="" class="expand closed">expand</a>
 									<a href="">Technologies, Tools and Methods</a>
 									<ul>
-										<li><a href="" class="expand"></a><a href="http://flodesign.co.uk">this is a sub-link</a></li>
+										<li><a href="" class="expand"></a><a href="">this is a sub-link</a></li>
 										<li><a href="" class="expand"></a><a href="">this is a sub-link</a></li>
 										<li><a href="" class="expand"></a><a href="">this is a sub-link</a></li>
 										<li><a href="" class="expand"></a><a href="">this is a sub-link</a></li>
@@ -54,7 +54,7 @@ Template Name: Library landing
 								<li><a href="" class="expand closed">expand</a>
 									<a href="">Safe, Legal and Fair</a>
 									<ul>
-										<li><a href="" class="expand"></a><a href="http://flodesign.co.uk">this is a sub-link</a></li>
+										<li><a href="" class="expand"></a><a href="">this is a sub-link</a></li>
 										<li><a href="" class="expand"></a><a href="">this is a sub-link</a></li>
 										<li><a href="" class="expand"></a><a href="">this is a sub-link</a></li>
 										<li><a href="" class="expand"></a><a href="">this is a sub-link</a></li>
