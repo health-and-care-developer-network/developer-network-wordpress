@@ -167,6 +167,3 @@ function edit_admin_menus() {
   remove_menu_page('edit-comments.php'); // Remove the comments Menu
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
-
-
-?>

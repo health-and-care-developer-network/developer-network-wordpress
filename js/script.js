@@ -18,37 +18,38 @@ $(window).resize(function(){
 	if(w > 741 && menu.is(':hidden')) {
 		menu.removeAttr('style');
 	}
-});	
+});
 
 
 $(document).ready(function() {
-          
+
   $('ul li.parent').children('.closed').addClass('expand');
 
-    $(".tree_nav li a.expand").toggle(           
-    
+    $(".tree_nav li a.expand").toggle(
+
           function() { // START FIRST CLICK FUNCTION
-              $(this).siblings('ul').slideDown()
-              if ($(this).hasClass('closed')) {   
+              $(this).siblings('ul').slideDown();
+              if ($(this).hasClass('closed')) {
                   $(this).removeClass('closed').addClass('open');
               }
           }, // END FIRST CLICK FUNCTION
-          
+
           function() { // START SECOND CLICK FUNCTION
-              $(this).siblings('ul').slideUp()
+              $(this).siblings('ul').slideUp();
 
               if ($(this).hasClass('open')) {
                   $(this).removeClass('open').addClass('closed');
               }
           } // END SECOND CLICK FUNCTIOn
-    ); // END TOGGLE FUNCTION 
+    ); // END TOGGLE FUNCTION
 
 }); // END DOCUMENT READY
 
 
 
 
-var $container = $('.fw_nav_boxes')
+var $container = $('.fw_nav_boxes');
+
 // initialize Isotope
 $container.isotope({
   // options...
@@ -68,11 +69,11 @@ $(window).smartresize(function(){
 $(document).ready(function(){
 
   var highestBox = 0;
-      $('.cat_box, .nav_boxes .nav_box').each(function(){  
-              if($(this).height() > highestBox){  
-              highestBox = $(this).height();  
+      $('.cat_box, .nav_boxes .nav_box').each(function(){
+              if($(this).height() > highestBox){
+              highestBox = $(this).height();
       }
-  });    
+  });
   $('.cat_box').height(highestBox);
 
 });

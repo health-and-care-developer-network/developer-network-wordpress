@@ -19,7 +19,7 @@
 		<![endif]-->
 		
 		<!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/print.css"> -->
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 		
 		<?php wp_head(); ?> 
