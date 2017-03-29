@@ -40,7 +40,7 @@
 										<h3 class="delta"><?php the_field('sub_title'); ?></h3>
 									</hgroup>
 									
-									<p><a href="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>feed">RSS Feed</a></p>
+									<p><a href="//<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>feed">RSS Feed</a></p>
 
 									<?php the_content(); ?>
 								</div><!--end forums-inner-->

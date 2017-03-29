@@ -1,0 +1,35 @@
+$nhs-menu-bg: #014c84;
+$nhs-menu-color: #ffffff;
+
+$nhs-splash-bg: #0272c6;
+$nhs-splash-color: #ffffff;
+
+$nhs-heading-color-1: #737373;
+$nhs-heading-color-2: #036ec4;
+
+$nhs-icon-bg: #eef5fb;
+
+$nhs-bg-1: #ffffff;
+$nhs-bg-2: #f0f0f0;
+
+$nhs-button-color-1: #9b9b9b;
+$nhs-button-color-2: #0272c6;
+
+$nhs-text-color-1: #7f7f7f;
+$nhs-list-color: #7f7f7f;
+$nhs-link-color: #4498d5;
+
+$nhs-footer-bg: #014c84;
+$nhs-footer-color: #ffffff;
+
+$nhs-heading-font: "Open Sans", "Helvetica", "Arial", sans;
+$nhs-body-font: "Open Sans", "Helvetica", "Arial", sans;
+
+$nhs-border-color: #b6b6b6;
+
+@import 'mobile';
+
+@media screen and (min-width: 992px) {
+  @import 'desktop';
+}
+
