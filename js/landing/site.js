@@ -102,7 +102,7 @@
             dynList.appendChild(parentDiv);
         };
 
-        if (document.querySelector("body").classList.contains("landing-page")) {
+        if (document.querySelector("body").classList.contains("page-template-landing-page")) {
             fetch("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D%22http%3A%2F%2Fdeveloper-test.nhs.uk%2Flearn%2Ffeed%2F%22&format=json").then(
                 function (response) {
                     return response.json();
