@@ -24,7 +24,7 @@
 							
 							<?php query_posts( array( 'post_type' => 'library', 'orderby' => 'title', 'order' => 'asc', 'post_parent' => 0, ) ); ?>
 							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-							
+
 							<div class="half">
 								<a href="<?php the_permalink(); ?>" class="box">
 									<div class="line green_line"></div>
@@ -34,9 +34,9 @@
 									</section>
 								</a>
 							</div>
-							
-							<?php endwhile; endif; wp_reset_query(); ?>	
-						</div><!--end content wrap-->	
+
+							<?php endwhile; endif; wp_reset_query(); ?>
+						</div><!--end content wrap-->
 					</div>
 				</div><!--end wrapper-->
 			</div><!--end main_content-->

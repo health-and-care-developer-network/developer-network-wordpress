@@ -13,7 +13,7 @@ Template Name: Landing Page
 <section class="section--large-gap">
     <h2 class="section__header--central">Use the NHS platform to create healthcare apps that matter</h2>
     <div class="section__row">
-        <div class="section__column-6 section__column--align-center">
+        <div class="section__column-4 section__column--align-center">
             <a href="https://digital.nhs.uk/spine/opentest" target="_blank">
             <h3 class="section__header--column">Test out your app</h3>
             <div class="section__icon">
@@ -25,7 +25,7 @@ Template Name: Landing Page
             </a>
             <p>Find testing tools, data and guidance - <a href="#">Sandpit</a> / <a href="https://digital.nhs.uk/spine/opentest" target="_blank">Open test</a></p>
         </div>
-        <div class="section__column-6 section__column--align-center">
+        <div class="section__column-4 section__column--align-center">
             <a href="/apis/">
             <h3 class="section__header--column">Access health data</h3>
             <div class="section__icon">
@@ -39,6 +39,18 @@ Template Name: Landing Page
                 <a href="https://digital.nhs.uk/GP-Systems-of-Choice">GPSoC</a>, <a
                         href="/library/systems/e-rs/">NHS eReferrals Service API</a>, <a
                         href="//www.nhs.uk/pages/home.aspx">NHS Choices</a></p>
+        </div>
+        <div class="section__column-4 section__column--align-center">
+            <a href="/health-digital-tools/">
+                <h3 class="section__header--column">Health Digital Tools</h3>
+                <div class="section__icon">
+                    <img alt="Folder List Symbol"
+                         src="<?php echo get_stylesheet_directory_uri(); ?>/img/landing/digital-tools.png" width="110"
+                         height="110"
+                         class="section__icon-contents"/>
+                </div>
+            </a>
+            <p>Access tools to develop for the digital tools library.</p>
         </div>
     </div>
 </section>
