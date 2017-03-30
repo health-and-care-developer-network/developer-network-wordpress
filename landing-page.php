@@ -24,6 +24,7 @@ Template Name: Landing Page
             <p>Find testing tools, data and guidance - <a href="#">Sandpit</a> / <a href="#">Open test</a></p>
         </div>
         <div class="section__column-6 section__column--align-center">
+            <a href="/apis/">
             <h3 class="section__header--column">Access health data</h3>
             <div class="section__icon">
                 <img alt="Folder List Symbol"
@@ -31,6 +32,7 @@ Template Name: Landing Page
                      height="96"
                      class="section__icon-contents"/>
             </div>
+            </a>
             <p>Download tools and source code; access data sources and services -
                 <a href="https://digital.nhs.uk/GP-Systems-of-Choice">GPSoC</a>, <a
                         href="/library/systems/e-rs/">NHS eReferrals Service API</a>, <a
