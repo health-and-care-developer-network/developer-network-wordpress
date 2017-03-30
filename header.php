@@ -11,7 +11,7 @@
             </div>
         </div>
         <ul>
-            <li class="header__menu-item"><a href="/library/">Library</a></li><li class="header__menu-item"><a href="/downloads-data">Download &amp; Data</a></li><li class="header__menu-item"><a href="/testcentre">Test centre</a></li><li class="header__menu-item"><a href="/learn">Learn</a></li><li class="header__menu-item"><a href="/community">Community</a></li><li class="header__menu-item"><a href="/health-apps">Health Apps</a></li>
+            <li class="header__menu-item"><a href="/library/">Library</a></li><li class="header__menu-item"><a href="/downloads-data">Download &amp; Data</a></li><li class="header__menu-item"><a href="/testcentre">Test centre</a></li><li class="header__menu-item"><a href="/learn">Learn</a></li><li class="header__menu-item"><a href="/community">Community</a></li><li class="header__menu-item"><a href="/health-digital-tools">Health Digital Tools</a></li>
         </ul>
     </nav>
     <div class="header__search-area">
