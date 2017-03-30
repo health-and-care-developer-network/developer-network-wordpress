@@ -14,6 +14,7 @@ Template Name: Landing Page
     <h2 class="section__header--central">Use the NHS platform to create healthcare apps that matter</h2>
     <div class="section__row">
         <div class="section__column-6 section__column--align-center">
+            <a href="https://digital.nhs.uk/spine/opentest" target="_blank">
             <h3 class="section__header--column">Test out your app</h3>
             <div class="section__icon">
                 <img alt="Check List Symbol"
@@ -21,7 +22,8 @@ Template Name: Landing Page
                      height="66"
                      class="section__icon-contents"/>
             </div>
-            <p>Find testing tools, data and guidance - <a href="#">Sandpit</a> / <a href="#">Open test</a></p>
+            </a>
+            <p>Find testing tools, data and guidance - <a href="#">Sandpit</a> / <a href="https://digital.nhs.uk/spine/opentest" target="_blank">Open test</a></p>
         </div>
         <div class="section__column-6 section__column--align-center">
             <a href="/apis/">
@@ -54,14 +56,17 @@ Template Name: Landing Page
                          class="section__icon-contents"/>
                 </div>
                 <div class="section__list">
-                    <h5 class="section__header--list">Access 6 different areas</h5>
+                    <h5 class="section__header--list">Access 9 different areas</h5>
                     <ol>
-                        <li>Privacy and Security</li>
-                        <li>Connectivity (with other health systems)</li>
-                        <li>Accessibility</li>
-                        <li>Usability</li>
-                        <li>Technical stability</li>
-                        <li>Clinical safety standards</li>
+                        <li>General</li>
+                        <li>Regulatory Approval</li>
+                        <li>Clinical Safety</li>
+                        <li>Privacy &amp; Confidentiality</li>
+                        <li>Security</li>
+                        <li>Usability &amp; Accessibility</li>
+                        <li>Interoperability</li>
+                        <li>Technical Stability</li>
+                        <li>Change Management</li>
                     </ol>
                 </div>
                 <a href="#" class="section__button--action">START</a>
