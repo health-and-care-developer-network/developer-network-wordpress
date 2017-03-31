@@ -2035,7 +2035,7 @@ a.copyright {
       margin-top: 50px;
       margin-bottom: 24px;
       font-weight: 300; } }
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 550px) {
   .site-logo {
     display: block;
     width: 230px;
@@ -2182,24 +2182,15 @@ a.copyright {
   .bbp-header .bbp-reply-author,
   .bbp-footer .bbp-reply-author {
     display: none !important; } }
-/**
 @media screen and (max-width: 315px) {
-
-	.site-logo{
-		display: block;
-		width: 180px;
-		float: left;
-		padding: 70px 0px 26px 15px !important;
-	
-		.logo{
-			width: 180px;
-			background-size: 100%;
-		}
-	}
-
-} 
-
-**/
+  .site-logo {
+    display: block;
+    width: 180px;
+    float: left;
+    padding: 70px 0px 26px 15px !important; }
+    .site-logo .logo {
+      width: 180px;
+      background-size: 100%; } }
 .api_type_titles {
   min-height: 0px !important; }
 
