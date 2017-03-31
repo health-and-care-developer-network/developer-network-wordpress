@@ -18,7 +18,6 @@
             <li class="header__menu-item"><a href="/learn">Learn</a></li>
             <li class="header__menu-item"><a href="/community">Community</a></li>
             <li class="header__menu-item"><a href="/health-digital-tools">Health Digital Tools</a></li>
-            <li class="header__menu-item"><a href="/health-apps">Health Apps</a></li>
         </ul>
     </nav>
     <div class="header__search-area">
