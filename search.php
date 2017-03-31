@@ -31,7 +31,7 @@
 								
 											<div class="result">
 											    <?php
-												if (get_post_type() == 'fhir' || get_post_type() == 'apis') : ?>
+												if (get_post_type() == 'fhir' || get_post_type() == 'APISpec') : ?>
 													<h3><a href="<?php echo $post->permalink ?>"><?php the_title(); ?></a></h3>
 													<?php
 												else : ?>
@@ -52,7 +52,7 @@
 															<span class="cat-links"><a href="https://fhir.nhs.uk">FHIR Resources</a></span>
 														</div>
 														<?php
-													elseif (get_post_type() == 'apis') : ?>
+													elseif (get_post_type() == 'APISpec') : ?>
 														<div class="entry-meta">Categories: 
 															<span class="cat-links"><a href="/apis">API Hub</a></span>
 														</div>
