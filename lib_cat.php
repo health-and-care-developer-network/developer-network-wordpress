@@ -2,9 +2,9 @@
 /*
 Template Name: Library Category
 */
-?>
 
-<?php get_header(); ?>
+get_header();
+?>
 		
 		<div role="main" class="main">
 			<div class="page_title">
@@ -18,7 +18,7 @@ Template Name: Library Category
 			
 			<div class="main_content cf">
 				<?php include_once "breadcrumbs.php"; ?>
-				
+
 				<div class="wrapper cf container">
 					
 					<div class="one_quarter tree_wrap">
@@ -84,4 +84,5 @@ Template Name: Library Category
 			</div><!--end main_content-->
 		</div><!-- end main -->
 		
-<?php get_footer(); ?>	
+<?php
+get_footer();

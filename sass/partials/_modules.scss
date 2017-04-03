@@ -382,7 +382,7 @@ a.active{
 	border-top: 1px solid $midGrey;
 }
 
-.username, .password,{
+.username, .password {
 	width: 100%;
 	margin-bottom: 15px;
 	label{
@@ -497,3 +497,24 @@ ul.tabs_login li{
 }
 
 
+.wpcf7 {
+	label {
+		font-family: "Ubuntu";
+		font-size: 14px;
+		color: $metaGrey;
+	}
+
+	input[type="text"],input[type="tel"], input[type="email"], textarea, select {
+		border: 1px solid rgba(180, 180, 180, 0.65);
+		font-size: 16px;
+		padding: 4px 8px;
+	}
+
+	input[type="submit"] {
+		background-color: $blue;
+		border: 1px solid #008aef;
+		padding: 6px 32px;
+		color: white;
+		font-size: 14px;
+	}
+}

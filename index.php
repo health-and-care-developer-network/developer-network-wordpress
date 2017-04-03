@@ -84,22 +84,24 @@
 						<section class="community_latest aquagreen cf">
 							<h3>Recently added content</h3>
 
-							<?php query_posts( array( 'post_type' => 'downloads-data', 'library', 'posts_per_page' => 2 ) ); ?>
-							
-							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                            <?php echo hdnPosts::generateTemplateTransient('index_recent_posts', function () { ?>
+                                <?php query_posts( array( 'post_type' => 'downloads-data', 'library', 'posts_per_page' => 2 ) ); ?>
 
-							<article>
-								<header>
-									<h4><?php the_title(); ?></h4>
-									<p class="meta">
-										<time><?php the_time('j M Y'); ?></time> - by <?php the_author(); ?>
-									</p>
-								</header>
-								<?php the_excerpt(); ?>
-								<a href="<?php the_permalink(); ?>" class="read_more">Read More</a>
-							</article>
-							
-							<?php endwhile; endif; wp_reset_query(); ?>	
+                                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                                    <article>
+                                        <header>
+                                            <h4><?php the_title(); ?></h4>
+                                            <p class="meta">
+                                                <time><?php the_time('j M Y'); ?></time> - by <?php the_author(); ?>
+                                            </p>
+                                        </header>
+                                        <?php the_excerpt(); ?>
+                                        <a href="<?php the_permalink(); ?>" class="read_more">Read More</a>
+                                    </article>
+
+                                <?php endwhile; endif; wp_reset_query(); ?>
+                            <?php }); // end generateTemplateTransient ?>
 							<div class="clear"></div>
 						</section>
 						

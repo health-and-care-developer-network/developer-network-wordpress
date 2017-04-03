@@ -11,7 +11,7 @@
 		<meta name="Content-Type" content="<?php bloginfo('html_type'); ?>"/>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>"/>
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>?v=2"/>
 
 
 		<!--[if lt IE 9]>
@@ -19,29 +19,12 @@
 		<![endif]-->
 		
 		<!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/print.css"> -->
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 		
 		<?php wp_head(); ?> 
 		<script src="<?php bloginfo('template_directory'); ?>/js/libs/modernizr-2.5.3.min.js"></script>
 		<?php wp_print_scripts(); ?>
 
-		<!-- Google Analytics code-->
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			  _gaq.push(
-				  ['_setAccount', 'UA-13017909-3'],
-				  ['_trackPageview'],
-				  ['b._setAccount', 'UA-38028819-4'],
-				  ['b._trackPageview'],
-			          ['c._setAccount', 'UA-67811038-1'],
-				  ['c._trackPageview']
-				);
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			  })();
-		</script>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/fancybox/fancybox.css">
 	</head>

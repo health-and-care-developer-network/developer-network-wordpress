@@ -36,7 +36,7 @@ Template Name: Contributors
 						<img src="<?php echo $image[0]; ?>" alt="picture of a contributor">
 						<h3><?php the_sub_field('contrib_name'); ?></h3>
 						<ul class="blog_meta cf">
-							<li><a  target="_blank" href="http://<?php the_sub_field('contib_web'); ?>"><?php the_sub_field('contib_web'); ?></a></li>
+							<li><a  target="_blank" href="//<?php the_sub_field('contib_web'); ?>"><?php the_sub_field('contib_web'); ?></a></li>
 							<li><a href="mailto:<?php the_sub_field('contrib_email'); ?>"><?php the_sub_field('contrib_email'); ?></a></li>
 						</ul>
 						<p><?php the_sub_field('contrib_des'); ?></p>
@@ -59,7 +59,7 @@ Template Name: Contributors
 						<img src="<?php echo $image[0]; ?>" alt="picture of a contributor">
 						<h3><?php the_sub_field('contrib_name'); ?></h3>
 						<ul class="blog_meta cf">
-							<li><a  target="_blank" href="http://<?php the_sub_field('contib_web'); ?>"><?php the_sub_field('contib_web'); ?></a></li>
+							<li><a  target="_blank" href="//<?php the_sub_field('contib_web'); ?>"><?php the_sub_field('contib_web'); ?></a></li>
 							<li><a href="mailto:<?php the_sub_field('contrib_email'); ?>"><?php the_sub_field('contrib_email'); ?></a></li>
 						</ul>
 						<p><?php the_sub_field('contrib_des'); ?></p>
