@@ -5,7 +5,7 @@ get_header();
     <div class="page_title">
         <div class="wrapper">
             <hgroup>
-                <h1>Downloads &amp;amp; Data</h1>
+                <h1>Downloads &amp; Data</h1>
                 <h2>Download tools and source code; access data sources and services</h2>
             </hgroup>
         </div>
@@ -16,7 +16,7 @@ get_header();
         <div class="wrapper cf">
             <div class="fw_nav_boxes">
                 <?php
-                hdnPosts::generateTemplateTransient('download_data', function () {
+                echo hdnPosts::generateTemplateTransient('download_data', function () {
                     foreach (get_categories('hide_empty=0&exclude=1') as $cat) :
                         if (!$cat->parent) {
                             echo '<div class="one_third"><div class="box"><div class="line red_line"></div><section class="nav_box red"><h3>' . $cat->name . '</h3>';
