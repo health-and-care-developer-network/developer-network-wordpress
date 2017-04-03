@@ -15,7 +15,7 @@ Template Name: Login
 
 		<div class="login-register-password">
 
-			<?php global $user_ID, $user_identity; get_currentuserinfo(); if (!$user_ID) { ?>
+			<?php global $user_ID, $user_identity; wp_get_current_user(); if (!$user_ID) { ?>
 
 			<ul class="tabs_login cf">
 				<li class="active_login"><a href="#tab1_login">Login</a></li>
