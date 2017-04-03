@@ -7,6 +7,17 @@
 class hdnPosts
 {
     /**
+     * Deletes the transient from the database when a download-data post changes
+     * @param $post_id
+     * @param $post
+     * @param $update
+     */
+    public function saveDownloadsData($post_id, $post, $update)
+    {
+        delete_transient('hdn:download_data');
+    }
+
+    /**
      * Deletes the transient from the database when a library post changes
      * @param $post_id
      * @param $post
@@ -15,6 +26,8 @@ class hdnPosts
     public function saveLibrary($post_id, $post, $update)
     {
         delete_transient('hdn:tree_nav_pages');
+        delete_transient('hdn:archive_library');
+        delete_transient('hdn:download_data');
     }
 
     /**

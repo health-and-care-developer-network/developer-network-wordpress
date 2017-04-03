@@ -1,6 +1,3 @@
-<?php
-$start = microtime(true);
-?>
 <?php get_header(); ?>
 <div role="main" class="main">
 			<div class="page_title">
@@ -22,21 +19,40 @@ $start = microtime(true);
 					
 					<div class="three_quarters">
 						<div class="content_wrap">
-							
-							<?php query_posts( array( 'post_type' => 'library', 'orderby' => 'title', 'order' => 'asc', 'post_parent' => 0, ) ); ?>
-							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php
+$librarySummary = get_transient('hdn:archive_library');
 
-							<div class="half">
-								<a href="<?php the_permalink(); ?>" class="box">
-									<div class="line green_line"></div>
-									<section class="nav_box cat_box green">
-										<h2><?php the_title(); ?></h2>
-										<p><?php the_excerpt(); ?></p>
-									</section>
-								</a>
-							</div>
+if (!$librarySummary) {
+    ob_start();
 
-							<?php endwhile; endif; wp_reset_query(); ?>
+    query_posts( array( 'post_type' => 'library', 'orderby' => 'title', 'order' => 'asc', 'post_parent' => 0, ) );
+
+    if ( have_posts() ) {
+        while (have_posts()) {
+            the_post();
+            ?>
+            <div class="half">
+                <a href="<?php the_permalink(); ?>" class="box">
+                    <div class="line green_line"></div>
+                    <section class="nav_box cat_box green">
+                        <h2><?php the_title(); ?></h2>
+                        <p><?php the_excerpt(); ?></p>
+                    </section>
+                </a>
+            </div>
+
+            <?php
+        } // end while
+    }// endif have_posts
+    wp_reset_query();
+
+    $librarySummary = ob_get_clean();
+
+    set_transient('hdn:archive_library', $librarySummary, 86400);
+} // endif librarySummary
+
+echo $librarySummary;
+?>
 						</div><!--end content wrap-->
 					</div>
 				</div><!--end wrapper-->
@@ -44,8 +60,3 @@ $start = microtime(true);
 		</div><!-- end main -->
 		
 <?php get_footer(); ?>
-<?php
-$end = microtime(true);
-
-// echo "DIFF: " . ($end - $start);
-?>
