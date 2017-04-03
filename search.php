@@ -40,9 +40,6 @@
 												endif; ?>
 												<?php
 													if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) : ?>
-													    <?php
-													    file_put_contents("/tmp/temp.txt", print_r(get_object_taxonomies( get_post_type() ), true));
-													    ?>
 														<div class="entry-meta">Categories: 
 															<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'solr-for-wordpress-on-pantheon' ) ); ?></span>
 														</div>
