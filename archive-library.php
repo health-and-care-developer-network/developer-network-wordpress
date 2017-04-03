@@ -1,7 +1,8 @@
-
+<?php
+$start = microtime(true);
+?>
 <?php get_header(); ?>
-		
-		<div role="main" class="main">
+<div role="main" class="main">
 			<div class="page_title">
 				<div class="wrapper">
 					<hgroup>
@@ -42,4 +43,9 @@
 			</div><!--end main_content-->
 		</div><!-- end main -->
 		
-<?php get_footer(); ?>		
+<?php get_footer(); ?>
+<?php
+$end = microtime(true);
+
+// echo "DIFF: " . ($end - $start);
+?>
