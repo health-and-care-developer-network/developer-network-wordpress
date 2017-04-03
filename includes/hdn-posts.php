@@ -114,7 +114,6 @@ class hdnPosts
 
     public static function generateTemplateTransient($key, Closure $closure) {
         $value = get_transient('hdn:' . $key);
-        $value = false;
         if (!$value) {
             ob_start();
             $closure();
