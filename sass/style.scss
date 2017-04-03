@@ -879,9 +879,6 @@ a.copyright{
 }
 
 
-
-@import "partials/queries";
-
 .api_type_titles {
 	min-height: 0px !important;
 }
@@ -891,5 +888,8 @@ a.copyright{
 	padding-bottom: 20px;
 	min-height: 0px !important;
 }
+
+
+@import "partials/queries";
 
 @import "landing/style";
