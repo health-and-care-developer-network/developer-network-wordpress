@@ -135,15 +135,23 @@ Template Name: Landing Page
             <h3 class="section__header--column-small">Standards</h3>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
-                <a class="section__download-content" href="#">Access to data</a>
+                <a class="section__download-content" href="#">Architecture, Design and Patterns</a>
             </div>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
-                <a class="section__download-content" href="#">Personal health records</a>
+                <a class="section__download-content" href="#">Intelligence and Analytics</a>
             </div>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
-                <a class="section__download-content" href="#">Identity standards</a>
+                <a class="section__download-content" href="#">Systems and Services</a>
+            </div>
+            <div class="section__download">
+                <div class="section__symbol section__symbol--document"></div>
+                <a class="section__download-content" href="#">Technologies, Tools and Methods</a>
+            </div>
+            <div class="section__download">
+                <div class="section__symbol section__symbol--document"></div>
+                <a class="section__download-content" href="#">Transports and Networks</a>
             </div>
         </div>
 

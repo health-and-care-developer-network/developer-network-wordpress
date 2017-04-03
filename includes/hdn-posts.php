@@ -12,7 +12,7 @@ class hdnPosts
      * @param $post
      * @param $update
      */
-    public function saveLearn($post_id, $post, $update)
+    public static function saveLearn($post_id, $post, $update)
     {
         delete_transient('hdn:learn_list');
         delete_transient('hdn:learn_sidebar');
@@ -24,7 +24,7 @@ class hdnPosts
      * @param $post
      * @param $update
      */
-    public function saveTestCentre($post_id, $post, $update)
+    public static function saveTestCentre($post_id, $post, $update)
     {
         delete_transient('hdn:testcentre');
     }
@@ -35,7 +35,7 @@ class hdnPosts
      * @param $post
      * @param $update
      */
-    public function saveDownloadsData($post_id, $post, $update)
+    public static function saveDownloadsData($post_id, $post, $update)
     {
         delete_transient('hdn:download_data');
     }
@@ -46,7 +46,7 @@ class hdnPosts
      * @param $post
      * @param $update
      */
-    public function saveLibrary($post_id, $post, $update)
+    public static function saveLibrary($post_id, $post, $update)
     {
         delete_transient('hdn:tree_nav_pages');
         delete_transient('hdn:archive_library');
@@ -59,7 +59,7 @@ class hdnPosts
      * @param null $content
      * @return null|string
      */
-    public function captionShortcode($attr, $content = null)
+    public static function captionShortcode($attr, $content = null)
     {
         if (!isset($attr['caption'])) {
             if (preg_match('#((?:<a [^>]+>\s*)?<img [^>]+>(?:\s*</a>)?)(.*)#is', $content, $matches)) {
