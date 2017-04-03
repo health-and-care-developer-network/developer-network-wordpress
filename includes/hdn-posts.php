@@ -7,6 +7,29 @@
 class hdnPosts
 {
     /**
+     * Deletes the transient from the database when a learn post changes
+     * @param $post_id
+     * @param $post
+     * @param $update
+     */
+    public function saveLearn($post_id, $post, $update)
+    {
+        delete_transient('hdn:learn_list');
+        delete_transient('hdn:learn_sidebar');
+    }
+
+    /**
+     * Deletes the transient from the database when a testcentre post changes
+     * @param $post_id
+     * @param $post
+     * @param $update
+     */
+    public function saveTestCentre($post_id, $post, $update)
+    {
+        delete_transient('hdn:testcentre');
+    }
+
+    /**
      * Deletes the transient from the database when a download-data post changes
      * @param $post_id
      * @param $post
@@ -63,5 +86,41 @@ class hdnPosts
 
         return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" style="width: ' . $width . 'px">'
             . do_shortcode($content) . '<p>' . $caption . '</p></div>';
+    }
+
+    public static function processCatTree($cat, $postType) {
+        $args = array('category__in' => array($cat), 'numberposts' => -1, 'post_type' => $postType);
+        $cat_posts = get_posts($args);
+
+        if ($cat_posts) :
+            echo '<ul>';
+            foreach ($cat_posts as $post) :
+                echo '<li><a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a></li>';
+            endforeach;
+            echo '</ul>';
+        endif;
+
+        $next = get_categories('hide_empty=0&parent=' . $cat);
+
+        if ($next) :
+            echo '<ul class="sub_cat_list">';
+            foreach ($next as $cat) :
+                echo '<li class="sub_cat">' . $cat->name . '</li>';
+                self::processCatTree($cat->term_id, $postType);
+            endforeach;
+            echo '</ul>';
+        endif;
+    }
+
+    public static function generateTemplateTransient($key, Closure $closure) {
+        $value = get_transient('hdn:' . $key);
+        if (!$value) {
+            ob_start();
+            $closure();
+            $value = ob_get_clean();
+            set_transient('hdn:' . $key, $value, 86400);
+        }
+
+        return $value;
     }
 }

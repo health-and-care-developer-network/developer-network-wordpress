@@ -128,3 +128,5 @@ add_action('admin_menu', function() {
 
 add_action('save_post_library', ['hdnPosts', 'saveLibrary'], 10, 3);
 add_action('save_post_downloads-data', ['hdnPosts', 'saveDownloadsData'], 10, 3);
+add_action('save_post_testcentre', ['hdnPosts', 'saveTestCentre'], 10, 3);
+add_action('save_post_testcentre', ['hdnPosts', 'saveLearn'], 10, 3);

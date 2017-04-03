@@ -20,11 +20,7 @@
 					<div class="three_quarters">
 						<div class="content_wrap">
 <?php
-$librarySummary = get_transient('hdn:archive_library');
-
-if (!$librarySummary) {
-    ob_start();
-
+echo hdnPosts::generateTemplateTransient('archive_library', function() {
     query_posts( array( 'post_type' => 'library', 'orderby' => 'title', 'order' => 'asc', 'post_parent' => 0, ) );
 
     if ( have_posts() ) {
@@ -45,13 +41,7 @@ if (!$librarySummary) {
         } // end while
     }// endif have_posts
     wp_reset_query();
-
-    $librarySummary = ob_get_clean();
-
-    set_transient('hdn:archive_library', $librarySummary, 86400);
-} // endif librarySummary
-
-echo $librarySummary;
+});
 ?>
 						</div><!--end content wrap-->
 					</div>
