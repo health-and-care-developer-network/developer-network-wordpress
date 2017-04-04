@@ -879,17 +879,17 @@ a.copyright{
 }
 
 
-.api_type_titles {
-	min-height: 0px !important;
-}
-
-.api_type_description {
-	padding-left: 30px;
-	padding-bottom: 20px;
-	min-height: 0px !important;
-}
-
 #api_list {
+	margin-top: 20px;
+	
+	.api_type_titles {
+		min-height: 0px !important;
+	}
+	
+	.api_type_description {
+		min-height: 0px !important;
+	}
+	
 	ul {
 		list-style: initial;
 		margin-left: 25px;
