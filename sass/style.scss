@@ -889,6 +889,47 @@ a.copyright{
 	min-height: 0px !important;
 }
 
+#api_list {
+	ul {
+		list-style: initial;
+		margin-left: 25px;
+	}
+
+	.tree_wrap {
+		border-right: none;
+	}
+
+	.api_status_indicator {
+		display: inline;
+	    background-color: #cccccc;
+	    color: #ffffff;
+	    font-weight: bold;
+	    font-size: 10px;
+	    padding: .2em .6em .3em;
+	    text-align: center;
+	    vertical-align: baseline;
+	    white-space: nowrap;
+	    line-height: 2em;
+	    border-radius: .25em;
+	
+	}
+
+	.Live {
+		background-color: #009933;
+	}
+	.Release-Candidate {
+		background-color: #88cc00;
+	}
+	.Beta {
+			background-color: #cc7a00;
+		}
+	.Alpha {
+			background-color: #cc0099;
+		}
+	.Experimental {
+			background-color: #cc0000;
+		}
+}
 
 @import "partials/queries";
 
