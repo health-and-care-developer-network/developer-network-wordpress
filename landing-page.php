@@ -23,7 +23,7 @@ Template Name: Landing Page
                      class="section__icon-contents"/>
             </div>
             </a>
-            <p>Find testing tools, data and guidance - <a href="#">Sandpit</a> / <a href="https://digital.nhs.uk/spine/opentest" target="_blank">Open test</a></p>
+            <p>Find testing tools, data and guidance - <a href="/testcentre/itk-testbench/">Sandpit</a> / <a href="https://digital.nhs.uk/spine/opentest" target="_blank">Open test</a></p>
         </div>
         <div class="section__column-4 section__column--align-center">
             <a href="/apis/">
@@ -81,7 +81,7 @@ Template Name: Landing Page
                         <li>Change Management</li>
                     </ol>
                 </div>
-                <a href="#" class="section__button--action">START</a>
+                <a href="#" class="section__button--action">VIEW</a>
             </div>
         </div>
 
@@ -135,23 +135,23 @@ Template Name: Landing Page
             <h3 class="section__header--column-small">Standards</h3>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
-                <a class="section__download-content" href="#">Architecture, Design and Patterns</a>
+                <a class="section__download-content" href="/library/architecture/">Architecture, Design and Patterns</a>
             </div>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
-                <a class="section__download-content" href="#">Intelligence and Analytics</a>
+                <a class="section__download-content" href="/library/intelligence/">Intelligence and Analytics</a>
             </div>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
-                <a class="section__download-content" href="#">Systems and Services</a>
+                <a class="section__download-content" href="/library/systems/">Systems and Services</a>
             </div>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
-                <a class="section__download-content" href="#">Technologies, Tools and Methods</a>
+                <a class="section__download-content" href="/library/technologies/">Technologies, Tools and Methods</a>
             </div>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
-                <a class="section__download-content" href="#">Transports and Networks</a>
+                <a class="section__download-content" href="/library/transports/">Transports and Networks</a>
             </div>
         </div>
 
@@ -171,7 +171,7 @@ Template Name: Landing Page
                 <div class="section__download section__download--placeholder">
                     <div class="section__symbol section__symbol--document"></div>
                     <a class="section__download-content"
-                       href="/learn/playing-with-fhir-tut004-deleting-a-patient/#">Playing with
+                       href="/learn/playing-with-fhir-tut004-deleting-a-patient/">Playing with
                         FHIR - TUT004 : Deleting a Patient
                         Resource</a>
                 </div>
@@ -232,15 +232,14 @@ Template Name: Landing Page
             <h3 class="footer__heading">Quick link to</h3>
             <nav class="footer__menu">
                 <ul>
-                    <li class="footer__menu-item"><a href="#">- National Plans</a></li>
+                    <li class="footer__menu-item"><a href="https://www.england.nhs.uk/digitaltechnology/info-revolution/" target="_blank">- National Plans</a></li>
                     <li class="footer__menu-item"><a href="#">- Roadmaps</a></li>
-                    <li class="footer__menu-item"><a href="#">- Terms &amp; Conditions</a></li>
-                    <li class="footer__menu-item"><a href="#">- Policies</a></li>
+                    <li class="footer__menu-item"><a href="#">- Terms &amp;amp; Conditions</a></li>
                 </ul>
                 <ul>
-                    <li class="footer__menu-item"><a href="#">- How to</a></li>
-                    <li class="footer__menu-item"><a href="#">- Standards</a></li>
-                    <li class="footer__menu-item"><a href="#">- Design principles</a></li>
+                    <li class="footer__menu-item"><a href="/library/save-legal-secure/">- Policies &amp; Standards</a></li>
+                    <li class="footer__menu-item"><a href="/library">- How to</a></li>
+                    <li class="footer__menu-item"><a href="/library/architecture/integration-patterns/">- Information Sharing Patterns</a></li>
                 </ul>
             </nav>
         </div>
@@ -249,8 +248,8 @@ Template Name: Landing Page
             <h3 class="footer__heading">Get in touch</h3>
             <nav class="footer__menu">
                 <ul>
-                    <li class="footer__menu-item"><a href="#">- Contact us</a></li>
-                    <li class="footer__menu-item"><a href="#">- Working with us</a></li>
+                    <li class="footer__menu-item"><a href="/contact-us">- Contact us</a></li>
+                    <li class="footer__menu-item"><a href="/register-your-interest">- Working with us</a></li>
                 </ul>
             </nav>
         </div>
