@@ -30,36 +30,40 @@ Template Name: API Hub
 				<h2 class="api_type_titles"><?php the_sub_field('section_name');?></h2>
 				<div class="api_type_description"><?php the_sub_field('section_description');?></div>
 				
-				<?php if( get_sub_field('api_entries') ): ?>
-				<?php while( has_sub_field('api_entries') ): ?>
-				<div class="one_third tree_wrap">
-					<div class="box">
-						<div class="line aquaBlue_line"></div>
-						<section class="nav_box aquablue">
-							<h3><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('capability_pack'); ?></a></h3>
-							<p><?php the_sub_field('description'); ?></p>
-							
-							<?php if( get_sub_field('child_links') ): ?>
-								<ul>
-								<?php while( has_sub_field('child_links') ): ?>
-									<li><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a>
-									<?php if( get_sub_field('status') ): ?>
-										<span class="api_status_indicator <?php echo str_replace(" ", "-", get_sub_field('status')); ?>"><?php the_sub_field('status'); ?></span>
-									<?php endif; ?>
-									</li>
-								<?php endwhile; ?>
-								</ul>
-							<?php endif; ?>
-							
-							<?php if( get_sub_field('status') ): ?>
-								<p><span class="api_status_indicator <?php echo str_replace(" ", "-", get_sub_field('status')); ?>"><?php the_sub_field('status'); ?></span></p>
-							<?php endif; ?>
-							
-						</section>
+				<div class='fw_nav_boxes isotope' style='position: relative; overflow: hidden;'>
+
+					<?php if( get_sub_field('api_entries') ): ?>
+					<?php while( has_sub_field('api_entries') ): ?>
+					<div class="one_third tree_wrap">
+						<div class="box">
+							<div class="line aquaBlue_line"></div>
+							<section class="nav_box aquablue">
+								<h3><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('capability_pack'); ?></a></h3>
+								<p><?php the_sub_field('description'); ?></p>
+								
+								<?php if( get_sub_field('child_links') ): ?>
+									<ul>
+									<?php while( has_sub_field('child_links') ): ?>
+										<li><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a>
+										<?php if( get_sub_field('status') ): ?>
+											<span class="api_status_indicator <?php echo str_replace(" ", "-", get_sub_field('status')); ?>"><?php the_sub_field('status'); ?></span>
+										<?php endif; ?>
+										</li>
+									<?php endwhile; ?>
+									</ul>
+								<?php endif; ?>
+								
+								<?php if( get_sub_field('status') ): ?>
+									<p><span class="api_status_indicator <?php echo str_replace(" ", "-", get_sub_field('status')); ?>"><?php the_sub_field('status'); ?></span></p>
+								<?php endif; ?>
+								
+							</section>
+						</div>
 					</div>
+					<?php endwhile; ?>
+					<?php endif; ?>
+
 				</div>
-				<?php endwhile; ?>
-				<?php endif; ?>
 			
 			</div><!--end wrapper-->
 			
