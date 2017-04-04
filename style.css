@@ -2160,10 +2160,13 @@ a.copyright {
 #api_list ul {
   list-style: initial;
   margin-left: 25px; }
-/* line 898, sass/style.scss */
+  /* line 896, sass/style.scss */
+  #api_list ul a {
+    font-size: 14px; }
+/* line 901, sass/style.scss */
 #api_list .tree_wrap {
   border-right: none; }
-/* line 902, sass/style.scss */
+/* line 905, sass/style.scss */
 #api_list .api_status_indicator {
   display: inline;
   background-color: #cccccc;
@@ -2176,36 +2179,36 @@ a.copyright {
   white-space: nowrap;
   line-height: 2em;
   border-radius: .25em; }
-/* line 917, sass/style.scss */
+/* line 920, sass/style.scss */
 #api_list .Live {
   background-color: #009933; }
-/* line 920, sass/style.scss */
+/* line 923, sass/style.scss */
 #api_list .Release-Candidate {
   background-color: #88cc00; }
-/* line 923, sass/style.scss */
+/* line 926, sass/style.scss */
 #api_list .Beta {
   background-color: #cc7a00; }
-/* line 926, sass/style.scss */
+/* line 929, sass/style.scss */
 #api_list .Alpha {
   background-color: #cc0099; }
-/* line 929, sass/style.scss */
+/* line 932, sass/style.scss */
 #api_list .Experimental {
   background-color: #cc0000; }
 
-/* line 935, sass/style.scss */
+/* line 938, sass/style.scss */
 div.apicontent a.btn {
   color: initial !important;
   padding: 6px 12px 6px 12px;
   display: initial;
   float: initial; }
 
-/* line 943, sass/style.scss */
+/* line 946, sass/style.scss */
 .tryit-title {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #931638; }
 
-/* line 949, sass/style.scss */
+/* line 952, sass/style.scss */
 .well {
   border: thin solid lightgrey;
   padding: 5px;
