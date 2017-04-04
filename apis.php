@@ -42,9 +42,17 @@ Template Name: API Hub
 							<?php if( get_sub_field('child_links') ): ?>
 								<ul>
 								<?php while( has_sub_field('child_links') ): ?>
-									<li><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a></li>
+									<li><a href="<?php the_sub_field('url'); ?>"><?php the_sub_field('title'); ?></a>
+									<?php if( get_sub_field('status') ): ?>
+										<span class="api_status_indicator <?php echo str_replace(" ", "-", get_sub_field('status')); ?>"><?php the_sub_field('status'); ?></span>
+									<?php endif; ?>
+									</li>
 								<?php endwhile; ?>
 								</ul>
+							<?php endif; ?>
+							
+							<?php if( get_sub_field('status') ): ?>
+								<p><span class="api_status_indicator <?php echo str_replace(" ", "-", get_sub_field('status')); ?>"><?php the_sub_field('status'); ?></span></p>
 							<?php endif; ?>
 							
 						</section>
