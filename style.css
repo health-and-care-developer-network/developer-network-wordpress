@@ -2192,6 +2192,27 @@ a.copyright {
 #api_list .Experimental {
   background-color: #cc0000; }
 
+/* line 935, sass/style.scss */
+div.apicontent a.btn {
+  color: initial !important;
+  padding: 6px 12px 6px 12px;
+  display: initial;
+  float: initial; }
+
+/* line 943, sass/style.scss */
+.tryit-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #931638; }
+
+/* line 949, sass/style.scss */
+.well {
+  border: thin solid lightgrey;
+  padding: 5px;
+  font-size: 0.8em;
+  font-size: 13px;
+  line-height: 1.42857143; }
+
 @media screen and (max-width: 890px) {
   /* line 4, sass/partials/_queries.scss */
   .wrapper {
