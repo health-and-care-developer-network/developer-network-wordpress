@@ -234,7 +234,7 @@ Template Name: Landing Page
                 <ul>
                     <li class="footer__menu-item"><a href="https://www.england.nhs.uk/digitaltechnology/info-revolution/" target="_blank">- National Plans</a></li>
                     <li class="footer__menu-item"><a href="#">- Roadmaps</a></li>
-                    <li class="footer__menu-item"><a href="#">- Terms &amp;amp; Conditions</a></li>
+                    <li class="footer__menu-item"><a href="#">- Terms &amp; Conditions</a></li>
                 </ul>
                 <ul>
                     <li class="footer__menu-item"><a href="/library/save-legal-secure/">- Policies &amp; Standards</a></li>
