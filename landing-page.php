@@ -41,8 +41,8 @@ Template Name: Landing Page
                         href="//www.nhs.uk/pages/home.aspx">NHS Choices</a></p>
         </div>
         <div class="section__column-4 section__column--align-center">
-            <a href="/health-digital-tools/">
-                <h3 class="section__header--column">Health Digital Tools</h3>
+            <a href="/health-apps">
+                <h3 class="section__header--column">Health Apps</h3>
                 <div class="section__icon">
                     <img alt="Folder List Symbol"
                          src="<?php echo get_stylesheet_directory_uri(); ?>/img/landing/digital-tools.png" width="110"
@@ -50,7 +50,7 @@ Template Name: Landing Page
                          class="section__icon-contents"/>
                 </div>
             </a>
-            <p>Access tools to develop for the digital tools library. <a href="/register-your-interest">Register your interest</a></p>
+            <p>Access tools to develop for the digital tools library. <a href="/register-your-interest">Register your interest</a>, or view the <a href="/daq">Digital Assessment Questionnaire</a></p>
         </div>
     </div>
 </section>
@@ -81,7 +81,7 @@ Template Name: Landing Page
                         <li>Change Management</li>
                     </ol>
                 </div>
-                <a href="#" class="section__button--action">VIEW</a>
+                <a href="/daq" class="section__button--action">VIEW</a>
             </div>
         </div>
 
