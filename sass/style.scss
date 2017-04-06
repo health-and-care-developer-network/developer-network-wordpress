@@ -944,38 +944,13 @@ div.apicontent {
 }
 
 .health-apps-link {
-  position: relative;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 50%;
-    margin-top: -11px;
-    border: 11px solid transparent;
-    border-left-color: white;
-    transition: 0.3s linear transform;
+  .nav_box {
+    margin-left: 0px;
+    height: 202px;
   }
-  background-color: #0272c6;
-  color: white;
-  padding: 14px;
-  padding-right: 36px;
-  margin-bottom: 2em;
-  cursor: pointer;
-  text-decoration: none;
-  display: block;
-  transition: 0.3s linear background-color;
 
-  &:hover {
-    background-color: lighten(#0272c6, 10%);
-    text-decoration: none;
-
-    &:before {
-      transform: translateX(-8px) rotate(180deg);
-    }
-  }
-  div, p {
-    color: white;
+  .line {
+    margin-left: 0px;
   }
 }
 

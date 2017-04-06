@@ -82,10 +82,12 @@
 				
 					<div class="hp_sidebar">
 						<section class="community_latest aquagreen cf">
-                            <a href="/apps" class="health-apps-link">
-                                <div class="health-apps-link__container">
-                                    <p>Developing a health app and want to learn more about the NHS Digital Tools Library? Click here.</p>
-                                </div>
+                            <a href="/apps" class="box health-apps-link">
+                                <div class="line aquaGreen_line"></div>
+                                <section class="nav_box aquagreen">
+                                    <h2><span class="lg_icon" aria-hidden="true" data-icon="&#x21;"></span><br />Mobile Health</h2>
+                                    <p>Access developer information about the Health Apps library here</p>
+                                </section>
                             </a>
 
 							<h3>Recently added content</h3>
