@@ -17,7 +17,7 @@
             <li class="header__menu-item"><a href="/testcentre">Test centre</a></li>
             <li class="header__menu-item"><a href="/learn">Learn</a></li>
             <li class="header__menu-item"><a href="/community">Community</a></li>
-            <li class="header__menu-item"><a href="/apps">Health Apps</a></li>
+            <li class="header__menu-item"><a href="/apps">Mobile Health</a></li>
         </ul>
     </nav>
     <div class="header__search-area">

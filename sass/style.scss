@@ -590,6 +590,11 @@ a.red_btn:hover {
   background-color: lighten(#0272c6, 3%);
 }
 
+a.nhsPink_btn {
+  border: 1px solid lighten($nhsPink, 10%);
+  background-color: $nhsPink;
+}
+
 a.aquaGreen_btn {
   border: 1px solid lighten($aquaGreen, 10%);
   background-color: $aquaGreen;
@@ -599,6 +604,12 @@ a.aquaGreen_btn:hover {
   text-decoration: none;
   @include box-shadow(0 0 10px rgba(0, 0, 0, .5));
   background-color: lighten($aquaGreen, 3%);
+}
+
+a.nhsPink_btn:hover {
+  text-decoration: none;
+  @include box-shadow(0 0 10px rgba(0, 0, 0, .5));
+  background-color: lighten($nhsPink, 3%);
 }
 
 a.purple_btn {
@@ -946,11 +957,13 @@ div.apicontent {
 .health-apps-link {
   .nav_box {
     margin-left: 0px;
+    margin-right: 0px;
     height: 202px;
   }
 
   .line {
     margin-left: 0px;
+    margin-right: 0px;
   }
 }
 

@@ -618,6 +618,9 @@ h6, .zetz {
 .aquagreen h2, .aquagreen h3, .aquagreen h4, .aquagreen a {
   color: #00aa9e; }
 
+.nhspink h2, .nhspink h3, .nhspink h4, .nhspink a {
+  color: #ae2573; }
+
 .art_txt h1 {
   font-size: 24px;
   font-size: 1.50rem;
@@ -823,7 +826,10 @@ a:hover .nav_box {
 .aquaGreen_line {
   background-color: #00aa9e; }
 
-.box .aquagreen h3 {
+.nhsPink_line {
+  background-color: #ae2573; }
+
+.box .aquagreen h3, .box .nhspink h3 {
   padding: 5px 0 24px 0; }
 
 .comm_box_cont {
@@ -1574,6 +1580,10 @@ a.red_btn:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: #027bd5; }
 
+a.nhsPink_btn {
+  border: 1px solid #d4328e;
+  background-color: #ae2573; }
+
 a.aquaGreen_btn {
   border: 1px solid #00ddcd;
   background-color: #00aa9e; }
@@ -1584,6 +1594,13 @@ a.aquaGreen_btn:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: #00b9ac; }
+
+a.nhsPink_btn:hover {
+  text-decoration: none;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #bb287b; }
 
 a.purple_btn {
   border: 1px solid #7500bf;
@@ -1844,9 +1861,11 @@ div.apicontent a.btn {
 
 .health-apps-link .nav_box {
   margin-left: 0px;
+  margin-right: 0px;
   height: 202px; }
 .health-apps-link .line {
-  margin-left: 0px; }
+  margin-left: 0px;
+  margin-right: 0px; }
 
 @media screen and (max-width: 890px) {
   .wrapper {
@@ -2096,6 +2115,11 @@ div.apicontent a.btn {
       margin-bottom: 24px;
       font-weight: 300; } }
 @media screen and (max-width: 550px) {
+  .health-apps-link .nav_box {
+    height: auto; }
+    .health-apps-link .nav_box .lg_icon {
+      display: none; }
+
   body .page_title hgroup {
     padding: 0; }
     body .page_title hgroup h1, body .page_title hgroup h2 {

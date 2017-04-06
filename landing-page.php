@@ -61,7 +61,7 @@ Template Name: Landing Page
     <div class="section__row">
         <div class="section__column-4 section__column--border-dotted section__column--fixed-height-1">
             <div class="section__column--container-top">
-                <h3 class="section__header--column-large section__header--center">Digital Standard - Beta</h3>
+                <h3 class="section__header--column-large section__header--center">Digital Assessment Questions - Beta</h3>
                 <div class="section__icon section__icon--simple">
                     <img alt="Self Assessment Icon"
                          src="<?php echo get_stylesheet_directory_uri(); ?>/img/landing/self-assessment-icon.png"
