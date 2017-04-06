@@ -1288,13 +1288,13 @@ body {
     position: relative;
     bottom: 10px;
     /*li.contributors{
-    	width: 14.52%;
-    	a:hover{
-    		background: lighten($blue, 5%);
-    	};
-    	a{
-    		border-right: 0;
-    	}
+        width: 14.52%;
+        a:hover{
+            background: lighten($blue, 5%);
+        };
+        a{
+            border-right: 0;
+        }
     }*/ }
     .main_nav ul li {
       display: block;
@@ -1841,6 +1841,35 @@ div.apicontent a.btn {
   font-size: 0.8em;
   font-size: 13px;
   line-height: 1.42857143; }
+
+.health-apps-link {
+  position: relative;
+  background-color: #0272c6;
+  color: white;
+  padding: 14px;
+  padding-right: 36px;
+  margin-bottom: 2em;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s linear background-color; }
+  .health-apps-link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -11px;
+    border: 11px solid transparent;
+    border-left-color: white;
+    transition: 0.3s linear transform; }
+  .health-apps-link:hover {
+    background-color: #038ff8;
+    text-decoration: none; }
+    .health-apps-link:hover:before {
+      transform: translateX(-8px) rotate(180deg); }
+  .health-apps-link div, .health-apps-link p {
+    color: white; }
 
 @media screen and (max-width: 890px) {
   .wrapper {

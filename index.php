@@ -82,6 +82,12 @@
 				
 					<div class="hp_sidebar">
 						<section class="community_latest aquagreen cf">
+                            <a href="/apps" class="health-apps-link">
+                                <div class="health-apps-link__container">
+                                    <p>Developing a health app and want to learn more about the NHS Digital Tools Library? Click here.</p>
+                                </div>
+                            </a>
+
 							<h3>Recently added content</h3>
 
                             <?php echo hdnPosts::generateTemplateTransient('index_recent_posts', function () { ?>
