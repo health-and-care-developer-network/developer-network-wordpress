@@ -64,7 +64,7 @@
             }
 
             // reverse their order
-            items.reverse();
+            // items.reverse();
 
             list = document.querySelectorAll(".section__download-list--dynamic .section__download");
 
@@ -74,7 +74,7 @@
                 }
             }
 
-            items.slice(0,4).map(addDynamicItem);
+            items.slice(0,8).map(addDynamicItem);
             document.querySelector(".section__download-loading").classList.add("section--hidden");
             document.querySelector(".section__download-list--dynamic").classList.remove("section--hidden");
         };
@@ -103,7 +103,7 @@
         };
 
         if (document.querySelector("body").classList.contains("page-template-landing-page")) {
-            fetch("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D%22http%3A%2F%2Fdeveloper-test.nhs.uk%2Flearn%2Ffeed%2F%22&format=json").then(
+            fetch("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%3D%22" + developerHost + "%2Flearn%2Ffeed%2F%22&format=json").then(
                 function (response) {
                     return response.json();
                 }
