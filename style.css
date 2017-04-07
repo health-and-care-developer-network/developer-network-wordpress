@@ -1867,6 +1867,23 @@ div.apicontent a.btn {
   margin-left: 0px;
   margin-right: 0px; }
 
+#digital-assessment-questions .frm_submit {
+  display: none !important; }
+
+@media print {
+  #digital-assessment-questions .frm_toggle_container {
+    display: block !important; }
+  #digital-assessment-questions .frm_icon_font.frm_arrow_icon {
+    display: none; }
+  #digital-assessment-questions .frm_required_field {
+    border-bottom: 1px solid black; }
+    #digital-assessment-questions .frm_required_field label.frm_primary_label {
+      position: relative;
+      text-indent: 1em; }
+      #digital-assessment-questions .frm_required_field label.frm_primary_label .frm_required {
+        position: absolute;
+        left: -1em;
+        top: 0px; } }
 @media screen and (max-width: 890px) {
   .wrapper {
     padding: 0; }
