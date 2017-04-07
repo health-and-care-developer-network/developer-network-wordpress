@@ -2547,6 +2547,9 @@ section {
     list-style-type: decimal; }
     .section__list ol li {
       list-style-type: decimal; }
+  .section__list.section__list--no-style ol, .section__list.section__list--no-style li {
+    padding-left: 0;
+    list-style: none; }
 
 .section__row .section__button--action {
   background-color: #0272c6;
@@ -2838,8 +2841,8 @@ section {
     padding-top: 15px; }
 
   .section__column--fixed-height-1 {
-    height: 525px;
-    line-height: 525px; }
+    height: 555px;
+    line-height: 555px; }
     .section__column--fixed-height-1 .section__column--container-middle {
       display: inline-block;
       width: 100%;

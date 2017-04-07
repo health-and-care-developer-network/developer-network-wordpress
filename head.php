@@ -27,4 +27,7 @@
 		<?php wp_print_scripts(); ?>
 
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/fancybox/fancybox.css">
+        <script>
+            var developerHost = "<?php echo urlencode('https://' . SITE); ?>";
+        </script>
 	</head>

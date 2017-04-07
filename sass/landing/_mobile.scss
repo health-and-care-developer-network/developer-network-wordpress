@@ -313,6 +313,13 @@ section {
       list-style-type: decimal;
     }
   }
+
+  &.section__list--no-style {
+    ol, li {
+      padding-left: 0;
+      list-style: none;
+    }
+  }
 }
 
 .section__row {

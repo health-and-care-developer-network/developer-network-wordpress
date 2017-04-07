@@ -27,7 +27,7 @@ Template Name: TryMe
                     <div class="tryit-title"><h2><?php the_title(); ?></h2></div>
 
                     <div class="input-group">
-                        <span class="input-group-addon">https://data.developer.nhs.uk/hscorgrefdata/</span>
+                        <span class="input-group-addon"><?php echo DATASITE; ?>/hscorgrefdata/</span>
                         <input id="interactive" type="text" class="form-control" placeholder="organisations/A">
                         <span class="input-group-btn"><button onClick="interactive_call();return false;"
                                                               class="btn btn-primary">request</button></span>
@@ -55,7 +55,7 @@ Template Name: TryMe
   "lastChanged": "2015-04-13", 
   "links": [
     {
-      "href": "https://data.developer.nhs.uk/hscorgrefdata/organisations/A",
+      "href": "<?php echo DATASITE; ?>/hscorgrefdata/organisations/A",
       "rel": "self"
     }
   ], 
@@ -71,7 +71,7 @@ Template Name: TryMe
       "description": "GOVERNMENT OFFICE REGION", 
       "links": [
         {
-          "href": "https://data.developer.nhs.uk/hscorgrefdata/role-types/RO128",
+          "href": "<?php echo DATASITE; ?>/hscorgrefdata/role-types/RO128",
           "rel": "role-type"
         }
       ], 
@@ -104,7 +104,7 @@ Template Name: TryMe
                                     content = 'organisations/A';
                                 }
 
-                                var call_url = 'https://data.developer.nhs.uk/hscorgrefdata/' + content;
+                                var call_url = '<?php echo DATASITE; ?>/hscorgrefdata/' + content;
 
                                 document.querySelector("#interactive_output").innerHTML = "";
                                 document.querySelector("#interactive_output").appendChild(loadingNode);
