@@ -81,7 +81,7 @@ Template Name: Landing Page
                         <li>Change Management</li>
                     </ol>
                 </div>
-                <a href="/daq" class="section__button--action">VIEW</a>
+                <a href="/daq" class="section__button--action">VIEW QUESTIONS</a>
             </div>
         </div>
 
@@ -93,6 +93,7 @@ Template Name: Landing Page
                          class="section__icon-contents"/>
                 </div>
                 <h3 class="section__header--column-large section__header--center">Validation</h3>
+                <h3 class="section__header--column-small section__header--center">Coming Soon</h3>
             </div>
         </div>
         <div class="section__column-4 section__column--border-dotted section__column--fixed-height-1">
@@ -234,7 +235,7 @@ Template Name: Landing Page
                 <ul>
                     <li class="footer__menu-item"><a href="https://www.england.nhs.uk/digitaltechnology/info-revolution/" target="_blank">- National Plans</a></li>
                     <li class="footer__menu-item"><a href="#">- Roadmaps</a></li>
-                    <li class="footer__menu-item"><a href="#">- Terms &amp; Conditions</a></li>
+                    <li class="footer__menu-item"><a href="#">- Licence Agreement</a></li>
                 </ul>
                 <ul>
                     <li class="footer__menu-item"><a href="/library/save-legal-secure/">- Policies &amp; Standards</a></li>
