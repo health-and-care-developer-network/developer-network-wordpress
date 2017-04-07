@@ -242,7 +242,7 @@ Template Name: Landing Page
                 <ul>
                     <li class="footer__menu-item"><a href="https://www.england.nhs.uk/digitaltechnology/info-revolution/" target="_blank">- National Plans</a></li>
                     <li class="footer__menu-item"><a href="#">- National Capabilities</a></li>
-                    <li class="footer__menu-item"><a href="/licence-agreement">- Licence Agreement</a></li>
+                    <li class="footer__menu-item"><a href="/license-agreement">- License Agreement</a></li>
                 </ul>
             </nav>
         </div>
