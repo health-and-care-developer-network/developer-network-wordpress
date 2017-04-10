@@ -267,6 +267,21 @@ LIMIT %d
     public function getExtraFields($object, $field_name, $request) {
         return get_fields($object['id']);
     }
+
+    public function getForm(WP_REST_Request $request) {
+        global $frm_vars;
+        $formId = $request->get_param('form_id');
+
+        $formId = filter_var($formId, FILTER_SANITIZE_NUMBER_INT);
+
+        $output = do_shortcode('[formidable id=' . $formId . ']');
+
+        return [
+            'form_id' => $formId,
+            'content' => $output,
+            'vars' => $frm_vars
+        ];
+    }
 }
 
 add_action( 'rest_api_init', function () {
@@ -293,6 +308,10 @@ add_action( 'rest_api_init', function () {
 
     register_rest_route( 'hdn/v1', '/search', array('methods' => 'GET', 'callback' => [$class, 'search'], 'args' => [
         'search_term'
+    ]));
+
+    register_rest_route( 'hdn/v1', '/get-form', array('methods' => 'GET', 'callback' => [$class, 'getForm'], 'args' => [
+        'form_id'
     ]));
 
     register_rest_field( ['page', 'library', 'testcentre', 'learn', 'downloads-data'],
