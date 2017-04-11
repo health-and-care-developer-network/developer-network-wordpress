@@ -323,6 +323,28 @@ add_action( 'rest_api_init', function () {
         return $vars;
     });
 
+
+    add_filter( 'rest_learn_query', function ($args, WP_REST_Request $request) {
+        $allowedTaxs = ['learning-categories', 'learning-key-words'];
+
+        $filter = $request->get_param('filter');
+
+        if(count($request['filter']) > 0 && array_intersect($request['filter'], $allowedTaxs) > 0){
+            $args['tax_query'] = [];
+            foreach ($allowedTaxs as $taxonomy) {
+                if(isset($filter[$taxonomy])){
+                    $args['tax_query'][] = [
+                        'taxonomy' => $taxonomy,
+                        'field'    => 'slug',
+                        'terms'    => $request['filter'][$taxonomy]
+                    ];
+                }
+            }
+        }
+
+        return $args;
+    }, 10, 2);
+
     register_rest_route( 'hdn/v1', '/get-site-config', ['methods' => 'GET', 'callback' => [$class,'getSiteConfig'], 'args' => [
         'post_type'
     ]]);
