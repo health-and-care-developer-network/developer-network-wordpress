@@ -138,6 +138,30 @@
 }
 
 @media screen and (max-width: 741px) {
+  .art_txt {
+    table.definitions {
+      display: block;
+      margin-left: 0 !important;
+      border-top: 4px solid #4f4f4f;
+      margin-top: 12px;
+      tr, tbody, th, td {
+        display: block;
+        padding-right: 0 !important;
+        width: 100%;
+      }
+      th {
+        font-weight: bold;
+        border-bottom: 1px solid #6f6f6f;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        margin-top: 20px;
+      }
+      td {
+        background-color: #f6f6f6;
+        padding: 14px;
+      }
+    }
+  }
 
   .wrapper {
     overflow-x: hidden;
