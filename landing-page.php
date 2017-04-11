@@ -50,7 +50,7 @@ Template Name: Landing Page
                          class="section__icon-contents"/>
                 </div>
             </a>
-            <p>Access tools to develop for the digital tools library. <a href="/register-your-interest">Register your interest</a>, view the <a href="/daq">Digital Assessment Questions</a>, or view the <a href="/license-agreement">License Agreement</a></p>
+            <p>Access tools to develop for the digital apps library. <a href="/register-your-interest">Register your interest</a>, view the <a href="/daq">Digital Assessment Questions</a>, or view the <a href="/license-agreement">License Agreement</a></p>
         </div>
     </div>
 </section>
