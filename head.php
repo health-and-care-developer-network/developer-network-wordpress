@@ -11,7 +11,7 @@
 		<meta name="Content-Type" content="<?php bloginfo('html_type'); ?>"/>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>?v=2"/>
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>?v=3"/>
 
 
 		<!--[if lt IE 9]>
