@@ -265,7 +265,22 @@ LIMIT %d
     }
 
     public function getExtraFields($object, $field_name, $request) {
-        return get_fields($object['id']);
+        $extra = get_fields($object['id']);
+
+        $extra['terms'] = wp_get_object_terms($object['id'], get_object_taxonomies($object));
+
+        return $extra;
+    }
+
+    public function getAuthor($object, $field_name, $request) {
+        $authorId = get_post_field( 'post_author', $object['id'] );
+
+        $author = get_userdata($authorId);
+
+        return [
+            'id' => $author->ID,
+            'display_name' => $author->data->display_name
+        ];
     }
 
     public function getForm(WP_REST_Request $request) {
@@ -281,6 +296,22 @@ LIMIT %d
             'content' => $output,
             'vars' => $frm_vars
         ];
+    }
+
+    public function getTermsByTaxonomy(WP_REST_Request $request) {
+        global $wpdb;
+
+        $tax = $request->get_param('taxonomy');
+
+        $results = $wpdb->get_results($wpdb->prepare('
+            SELECT wt.term_id, wt.name, wt.slug, wtt.taxonomy, wtt.parent, wtt.count
+            FROM wp_terms as wt
+            JOIN wp_term_taxonomy as wtt ON (wtt.term_id = wt.term_id)
+            WHERE wtt.taxonomy = %s
+            ORDER BY wt.name
+        ', $tax), ARRAY_A);
+
+        return $results;
     }
 }
 
@@ -314,10 +345,22 @@ add_action( 'rest_api_init', function () {
         'form_id'
     ]));
 
+    register_rest_route( 'hdn/v1', '/get-terms-by-taxonomy', array('methods' => 'GET', 'callback' => [$class, 'getTermsByTaxonomy'], 'args' => [
+        'taxonomy'
+    ]));
+
     register_rest_field( ['page', 'library', 'testcentre', 'learn', 'downloads-data'],
         'extra',
         array(
             'get_callback'    => [$class, 'getExtraFields'],
+            'schema'          => null,
+        )
+    );
+
+    register_rest_field( ['page', 'library', 'testcentre', 'learn', 'downloads-data'],
+        'author',
+        array(
+            'get_callback'    => [$class, 'getAuthor'],
             'schema'          => null,
         )
     );
