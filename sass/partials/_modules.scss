@@ -163,7 +163,11 @@ a:hover .nav_box{
 	background-color: $aquaGreen;
 }
 
-.box .aquagreen{
+.nhsPink_line {
+	background-color: $nhsPink;
+}
+
+.box .aquagreen, .box .nhspink{
 	h3{
 		padding: 5px 0 24px 0;
 	}

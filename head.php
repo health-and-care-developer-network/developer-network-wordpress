@@ -11,7 +11,7 @@
 		<meta name="Content-Type" content="<?php bloginfo('html_type'); ?>"/>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>?v=2"/>
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>?v=3"/>
 
 
 		<!--[if lt IE 9]>
@@ -27,4 +27,23 @@
 		<?php wp_print_scripts(); ?>
 
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/fancybox/fancybox.css">
+        <script>
+            var developerHost = "<?php echo urlencode('https://' . SITE); ?>";
+        </script>
+        <?php
+            if (get_page_template_slug() == 'landing-page.php' && SITE=='developer.nhs.uk') {
+                echo <<<EOF
+<script>                      
+(function(h,o,t,j,a,r){               
+h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};                  
+h._hjSettings={hjid:265857,hjsv:5};                
+a=o.getElementsByTagName('head')[0];                  
+r=o.createElement('script');r.async=1;                      
+r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;                     
+a.appendChild(r);                   
+})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');            
+</script>
+EOF;
+            }
+        ?>
 	</head>

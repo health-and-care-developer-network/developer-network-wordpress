@@ -7,6 +7,87 @@ class hdnRest {
         ];
     }
 
+    public function getPostTree (WP_REST_Request $request) {
+        global $wpdb;
+
+        $postType = $request->get_param('post_type');
+
+        $results = $wpdb->get_results($wpdb->prepare('
+SELECT wp1.ID as \'id1\', wp1.post_title as \'title1\', wp1.post_name as \'slug1\',
+	wp2.ID as \'id2\', wp2.post_title as \'title2\', wp2.post_name as \'slug2\',
+   wp3.ID as \'id3\', wp3.post_title as \'title3\', wp3.post_name as \'slug3\',
+   wp4.ID as \'id4\', wp4.post_title as \'title4\', wp4.post_name as \'slug4\',
+   wpm1.meta_value as \'template1\', wpm2.meta_value as \'template2\',
+   wpm3.meta_value as \'template3\', wpm4.meta_value as \'template4\'
+FROM wp_posts as wp1
+LEFT JOIN wp_posts as wp2 ON (wp2.post_parent = wp1.ID AND wp2.post_type = \'library\' AND wp2.post_status = \'publish\')
+LEFT JOIN wp_posts as wp3 ON (wp3.post_parent = wp2.ID AND wp3.post_type = \'library\' AND wp3.post_status = \'publish\')
+LEFT JOIN wp_posts as wp4 ON (wp4.post_parent = wp3.ID AND wp4.post_type = \'library\' AND wp4.post_status = \'publish\')
+LEFT JOIN wp_postmeta as wpm1 ON (wpm1.post_id = wp1.ID AND wpm1.meta_key=\'_wp_page_template\')
+LEFT JOIN wp_postmeta as wpm2 ON (wpm2.post_id = wp2.ID AND wpm2.meta_key=\'_wp_page_template\')
+LEFT JOIN wp_postmeta as wpm3 ON (wpm3.post_id = wp3.ID AND wpm3.meta_key=\'_wp_page_template\')
+LEFT JOIN wp_postmeta as wpm4 ON (wpm4.post_id = wp4.ID AND wpm4.meta_key=\'_wp_page_template\')
+WHERE wp1.post_parent = 0 AND wp1.post_type = %s AND wp1.post_status = \'publish\'
+ORDER BY wp1.post_title, wp2.post_title, wp3.post_title, wp4.post_title
+        ', $postType), ARRAY_A);
+
+        $posts = [];
+        $parents = [];
+        foreach($results as $row) {
+            $link = '/' . $postType . '/' . $row['slug1'];
+            $posts[$row['id1']] = [
+                'title' => $row['title1'],
+                'template' => $row['template1'],
+                'link' => $link
+            ];
+
+
+
+            $parents[$row['id1']] = null;
+
+            if ($row['id2']) {
+                $link .= '/' . $row['slug2'];
+
+                $posts[$row['id2']] = [
+                    'title' => $row['title2'],
+                    'template' => $row['template2'],
+                    'link' => $link
+                ];
+
+                $parents[$row['id2']] = $row['id1'];
+            }
+
+            if ($row['id3']) {
+                $link .= '/' . $row['slug3'];
+
+                $posts[$row['id3']] = [
+                    'title' => $row['title3'],
+                    'template' => $row['template3'],
+                    'link' => $link
+                ];
+
+                $parents[$row['id3']] = $row['id2'];
+            }
+
+            if ($row['id4']) {
+                $link .= '/' . $row['slug4'];
+
+                $posts[$row['id4']] = [
+                    'title' => $row['title4'],
+                    'template' => $row['template4'],
+                    'link' => $link
+                ];
+
+                $parents[$row['id4']] = $row['id3'];
+            }
+        }
+
+        return [
+            'posts' => $posts,
+            'parents' => $parents
+        ];
+    }
+
     public function postTypeCategories (WP_REST_Request $request) {
         global $wpdb;
 
@@ -88,6 +169,10 @@ AND wp.post_type = %s
         $types = $request->get_param('post_types');
         $limit = $request->get_param('limit');
 
+        if (empty($limit)) {
+            $limit = 5;
+        }
+
         $safeTypes = [];
 
         foreach($types as $type) {
@@ -101,7 +186,7 @@ SELECT wp.*, CONCAT(\'/\',wp.post_type,\'/\',
 	 	COALESCE(CONCAT(wp4.post_name,\'/\'),\'\'),
 		COALESCE(CONCAT(wp3.post_name,\'/\'),\'\'),
 		COALESCE(CONCAT(wp2.post_name,\'/\'),\'\'),
-		COALESCE(wp.post_name,\'/\')) as permalink, wt.*
+		COALESCE(wp.post_name,\'/\')) as permalink, wt.*, wu.display_name
 FROM wp_posts as wp
 LEFT JOIN wp_posts as wp2 ON (wp2.ID = wp.post_parent)
 LEFT JOIN wp_posts as wp3 ON (wp3.ID = wp2.post_parent)
@@ -109,6 +194,7 @@ LEFT JOIN wp_posts as wp4 ON (wp4.ID = wp3.post_parent)
 LEFT JOIN wp_term_relationships as wtr ON (wtr.object_id = wp.ID)
 LEFT JOIN wp_term_taxonomy as wtt ON (wtt.term_taxonomy_id = wtr.term_taxonomy_id AND wtt.taxonomy = \'category\')
 LEFT JOIN wp_terms as wt ON (wt.term_id = wtt.term_id)
+LEFT JOIN wp_users as wu ON (wu.ID = wp.post_author)
 WHERE wp.post_type IN (' . $typeList . ') AND wp.post_status=\'publish\'
 ORDER BY wp.post_date DESC
 LIMIT %d
@@ -179,12 +265,85 @@ LIMIT %d
     }
 
     public function getExtraFields($object, $field_name, $request) {
-        return get_fields($object['id']);
+        $extra = get_fields($object['id']);
+
+        $extra['terms'] = wp_get_object_terms($object['id'], get_object_taxonomies($object));
+
+        return $extra;
+    }
+
+    public function getAuthor($object, $field_name, $request) {
+        $authorId = get_post_field( 'post_author', $object['id'] );
+
+        $author = get_userdata($authorId);
+
+        return [
+            'id' => $author->ID,
+            'display_name' => $author->data->display_name
+        ];
+    }
+
+    public function getForm(WP_REST_Request $request) {
+        global $frm_vars;
+        $formId = $request->get_param('form_id');
+
+        $formId = filter_var($formId, FILTER_SANITIZE_NUMBER_INT);
+
+        $output = do_shortcode('[formidable id=' . $formId . ']');
+
+        return [
+            'form_id' => $formId,
+            'content' => $output,
+            'vars' => $frm_vars
+        ];
+    }
+
+    public function getTermsByTaxonomy(WP_REST_Request $request) {
+        global $wpdb;
+
+        $tax = $request->get_param('taxonomy');
+
+        $results = $wpdb->get_results($wpdb->prepare('
+            SELECT wt.term_id, wt.name, wt.slug, wtt.taxonomy, wtt.parent, wtt.count
+            FROM wp_terms as wt
+            JOIN wp_term_taxonomy as wtt ON (wtt.term_id = wt.term_id)
+            WHERE wtt.taxonomy = %s
+            ORDER BY wt.name
+        ', $tax), ARRAY_A);
+
+        return $results;
     }
 }
 
 add_action( 'rest_api_init', function () {
     $class = new hdnRest();
+
+    add_filter( 'query_vars', function($vars) {
+        $vars[] = 'post_parent';
+        return $vars;
+    });
+
+
+    add_filter( 'rest_learn_query', function ($args, WP_REST_Request $request) {
+        $allowedTaxs = ['learning-categories', 'learning-key-words'];
+
+        $filter = $request->get_param('filter');
+
+        if(count($request['filter']) > 0 && array_intersect($request['filter'], $allowedTaxs) > 0){
+            $args['tax_query'] = [];
+            foreach ($allowedTaxs as $taxonomy) {
+                if(isset($filter[$taxonomy])){
+                    $args['tax_query'][] = [
+                        'taxonomy' => $taxonomy,
+                        'field'    => 'slug',
+                        'terms'    => $request['filter'][$taxonomy]
+                    ];
+                }
+            }
+        }
+
+        return $args;
+    }, 10, 2);
 
     register_rest_route( 'hdn/v1', '/get-site-config', ['methods' => 'GET', 'callback' => [$class,'getSiteConfig'], 'args' => [
         'post_type'
@@ -194,16 +353,36 @@ add_action( 'rest_api_init', function () {
         'post_types', 'limit'
     ]]);
 
+    register_rest_route( 'hdn/v1', '/get-post-tree', ['methods' => 'GET', 'callback' => [$class,'getPostTree'], 'args' => [
+        'post_type'
+    ]]);
+
     register_rest_route( 'hdn/v1', '/post-type-categories', array('methods' => 'GET', 'callback' => [$class, 'postTypeCategories']));
 
     register_rest_route( 'hdn/v1', '/search', array('methods' => 'GET', 'callback' => [$class, 'search'], 'args' => [
         'search_term'
     ]));
 
+    register_rest_route( 'hdn/v1', '/get-form', array('methods' => 'GET', 'callback' => [$class, 'getForm'], 'args' => [
+        'form_id'
+    ]));
+
+    register_rest_route( 'hdn/v1', '/get-terms-by-taxonomy', array('methods' => 'GET', 'callback' => [$class, 'getTermsByTaxonomy'], 'args' => [
+        'taxonomy'
+    ]));
+
     register_rest_field( ['page', 'library', 'testcentre', 'learn', 'downloads-data'],
         'extra',
         array(
             'get_callback'    => [$class, 'getExtraFields'],
+            'schema'          => null,
+        )
+    );
+
+    register_rest_field( ['page', 'library', 'testcentre', 'learn', 'downloads-data'],
+        'author',
+        array(
+            'get_callback'    => [$class, 'getAuthor'],
             'schema'          => null,
         )
     );
