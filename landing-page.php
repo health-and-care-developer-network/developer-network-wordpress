@@ -123,7 +123,7 @@ Template Name: Landing Page
 </section>
 
 <section class="section--large-gap">
-    <h2 class="section__header--central">Standard and guidance library</h2>
+    <h2 class="section__header--central">Standard and Guidance library</h2>
     <p class="section__paragraph--central">
         Browser and search developer information - <a href="/library/interoperability/">Interoperability
             and Integration</a>,
@@ -235,7 +235,7 @@ Template Name: Landing Page
                 <ul>
                     <li class="footer__menu-item"><a href="https://www.england.nhs.uk/digitaltechnology/info-revolution/" target="_blank">- National Plans</a></li>
                     <li class="footer__menu-item"><a href="#">- Roadmaps</a></li>
-                    <li class="footer__menu-item"><a href="#">- Licence Agreement</a></li>
+                    <li class="footer__menu-item"><a href="/license-agreement">- Licence Agreement</a></li>
                 </ul>
                 <ul>
                     <li class="footer__menu-item"><a href="/library/save-legal-secure/">- Policies &amp; Standards</a></li>
