@@ -27,7 +27,6 @@
 								if (hdnPosts::$displayTree[$category]) {
 									echo $sOut;
 								}
-								echo "Cat: [". hdnPosts::$category. "]<br/>";
                             }
                         endforeach;
 						
