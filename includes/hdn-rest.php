@@ -265,7 +265,53 @@ LIMIT %d
     }
 
     public function getExtraFields($object, $field_name, $request) {
-        return get_fields($object['id']);
+        $extra = get_fields($object['id']);
+
+        $extra['terms'] = wp_get_object_terms($object['id'], get_object_taxonomies($object));
+
+        return $extra;
+    }
+
+    public function getAuthor($object, $field_name, $request) {
+        $authorId = get_post_field( 'post_author', $object['id'] );
+
+        $author = get_userdata($authorId);
+
+        return [
+            'id' => $author->ID,
+            'display_name' => $author->data->display_name
+        ];
+    }
+
+    public function getForm(WP_REST_Request $request) {
+        global $frm_vars;
+        $formId = $request->get_param('form_id');
+
+        $formId = filter_var($formId, FILTER_SANITIZE_NUMBER_INT);
+
+        $output = do_shortcode('[formidable id=' . $formId . ']');
+
+        return [
+            'form_id' => $formId,
+            'content' => $output,
+            'vars' => $frm_vars
+        ];
+    }
+
+    public function getTermsByTaxonomy(WP_REST_Request $request) {
+        global $wpdb;
+
+        $tax = $request->get_param('taxonomy');
+
+        $results = $wpdb->get_results($wpdb->prepare('
+            SELECT wt.term_id, wt.name, wt.slug, wtt.taxonomy, wtt.parent, wtt.count
+            FROM wp_terms as wt
+            JOIN wp_term_taxonomy as wtt ON (wtt.term_id = wt.term_id)
+            WHERE wtt.taxonomy = %s
+            ORDER BY wt.name
+        ', $tax), ARRAY_A);
+
+        return $results;
     }
 }
 
@@ -276,6 +322,28 @@ add_action( 'rest_api_init', function () {
         $vars[] = 'post_parent';
         return $vars;
     });
+
+
+    add_filter( 'rest_learn_query', function ($args, WP_REST_Request $request) {
+        $allowedTaxs = ['learning-categories', 'learning-key-words'];
+
+        $filter = $request->get_param('filter');
+
+        if(count($request['filter']) > 0 && array_intersect($request['filter'], $allowedTaxs) > 0){
+            $args['tax_query'] = [];
+            foreach ($allowedTaxs as $taxonomy) {
+                if(isset($filter[$taxonomy])){
+                    $args['tax_query'][] = [
+                        'taxonomy' => $taxonomy,
+                        'field'    => 'slug',
+                        'terms'    => $request['filter'][$taxonomy]
+                    ];
+                }
+            }
+        }
+
+        return $args;
+    }, 10, 2);
 
     register_rest_route( 'hdn/v1', '/get-site-config', ['methods' => 'GET', 'callback' => [$class,'getSiteConfig'], 'args' => [
         'post_type'
@@ -295,10 +363,26 @@ add_action( 'rest_api_init', function () {
         'search_term'
     ]));
 
+    register_rest_route( 'hdn/v1', '/get-form', array('methods' => 'GET', 'callback' => [$class, 'getForm'], 'args' => [
+        'form_id'
+    ]));
+
+    register_rest_route( 'hdn/v1', '/get-terms-by-taxonomy', array('methods' => 'GET', 'callback' => [$class, 'getTermsByTaxonomy'], 'args' => [
+        'taxonomy'
+    ]));
+
     register_rest_field( ['page', 'library', 'testcentre', 'learn', 'downloads-data'],
         'extra',
         array(
             'get_callback'    => [$class, 'getExtraFields'],
+            'schema'          => null,
+        )
+    );
+
+    register_rest_field( ['page', 'library', 'testcentre', 'learn', 'downloads-data'],
+        'author',
+        array(
+            'get_callback'    => [$class, 'getAuthor'],
             'schema'          => null,
         )
     );

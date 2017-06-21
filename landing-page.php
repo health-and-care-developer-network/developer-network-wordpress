@@ -38,7 +38,7 @@ Template Name: Landing Page
             <p>Download tools and source code; access data sources and services -
                 <a href="https://digital.nhs.uk/GP-Systems-of-Choice">GPSoC</a>, <a
                         href="/library/systems/e-rs/">NHS eReferrals Service API</a>, <a
-                        href="//www.nhs.uk/pages/home.aspx">NHS Choices</a></p>
+                        href="//www.nhs.uk/aboutNHSChoices/professionals/syndication/Pages/Webservices.aspx">NHS Choices</a></p>
         </div>
         <div class="section__column-4 section__column--align-center">
             <a href="/health-apps">
@@ -50,35 +50,36 @@ Template Name: Landing Page
                          class="section__icon-contents"/>
                 </div>
             </a>
-            <p>Access tools to develop for the digital tools library. <a href="/register-your-interest">Register your interest</a>, or view the <a href="/daq">Digital Assessment Questionnaire</a></p>
+            <p>Access tools to develop for the digital apps library. <a href="/register-your-interest">Register your interest</a>, view the <a href="/daq">Digital Assessment Questions</a>, or view the <a href="/license-agreement">License Agreement</a></p>
         </div>
     </div>
 </section>
 
 <section class="section--alt-bg section--large-gap">
-    <h2 class="section__header--central-large">Working with our National Systems</h2>
-    <h4 class="section__subheader--central">How to gain access to National Systems and Data</h4>
+    <h2 class="section__header--central-large">Mobile Health Apps and National Systems</h2>
+    <h4 class="section__subheader--central">The path to publication on the Apps Library and/or connection to national infrastructure</h4>
     <div class="section__row">
         <div class="section__column-4 section__column--border-dotted section__column--fixed-height-1">
             <div class="section__column--container-top">
-                <h3 class="section__header--column-large section__header--center">Digital Assessment Questions - Beta</h3>
+                <h3 class="section__header--column-large section__header--center">Digital Assessment Questions</h3>
                 <div class="section__icon section__icon--simple">
                     <img alt="Self Assessment Icon"
                          src="<?php echo get_stylesheet_directory_uri(); ?>/img/landing/self-assessment-icon.png"
                          class="section__icon-contents"/>
                 </div>
-                <div class="section__list">
+                <div class="section__list section__list--no-style">
                     <h5 class="section__header--list">Access 9 different areas</h5>
                     <ol>
-                        <li>General</li>
-                        <li>Regulatory Approval</li>
-                        <li>Clinical Safety</li>
-                        <li>Privacy &amp; Confidentiality</li>
-                        <li>Security</li>
-                        <li>Usability &amp; Accessibility</li>
-                        <li>Interoperability</li>
-                        <li>Technical Stability</li>
-                        <li>Change Management</li>
+                        <li>0. General</li>
+                        <li>1. Clinical Effectiveness</li>
+                        <li>2. Regulatory Approval</li>
+                        <li>3. Clinical Safety</li>
+                        <li>4. Privacy &amp; Confidentiality</li>
+                        <li>5. Security</li>
+                        <li>6. Usability &amp; Accessibility</li>
+                        <li>7. Interoperability</li>
+                        <li>8. Technical Stability</li>
+                        <li>9. Change Management</li>
                     </ol>
                 </div>
                 <a href="/daq" class="section__button--action">VIEW QUESTIONS</a>
@@ -93,7 +94,7 @@ Template Name: Landing Page
                          class="section__icon-contents"/>
                 </div>
                 <h3 class="section__header--column-large section__header--center">Validation</h3>
-                <h3 class="section__header--column-small section__header--center">Coming Soon</h3>
+                <h5 class="section__subheader--central">Coming Soon...</h5>
             </div>
         </div>
         <div class="section__column-4 section__column--border-dotted section__column--fixed-height-1">
@@ -123,6 +124,7 @@ Template Name: Landing Page
 </section>
 
 <section class="section--large-gap">
+<<<<<<< HEAD
     <h2 class="section__header--central">Standard and Guidance library</h2>
     <p class="section__paragraph--central">
         Browser and search developer information - <a href="/library/interoperability/">Interoperability
@@ -130,17 +132,32 @@ Template Name: Landing Page
         <a href="/library/save-legal-secure/">Safe, Legal and Secure</a>, <a
                 href="/library/identifiers/">Identifier and Names</a>
     </p>
+=======
+    <h2 class="section__header--central">Browse and search developer information</h2>
+>>>>>>> fe00bb0e382083bdf86eef753fd625c0b0b0ed78
 
     <div class="section__row">
         <div class="section__column-6">
-            <h3 class="section__header--column-small">Standards</h3>
+            <h3 class="section__header--column-small">Standards and Guidance</h3>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
                 <a class="section__download-content" href="/library/architecture/">Architecture, Design and Patterns</a>
             </div>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
+                <a class="section__download-content" href="/library/identifiers/">Identifiers and Names</a>
+            </div>
+            <div class="section__download">
+                <div class="section__symbol section__symbol--document"></div>
                 <a class="section__download-content" href="/library/intelligence/">Intelligence and Analytics</a>
+            </div>
+            <div class="section__download">
+                <div class="section__symbol section__symbol--document"></div>
+                <a class="section__download-content" href="/library/interoperability/">Interoperability and Integration</a>
+            </div>
+            <div class="section__download">
+                <div class="section__symbol section__symbol--document"></div>
+                <a class="section__download-content" href="/library/save-legal-secure/">Safe, Legal and Secure</a>
             </div>
             <div class="section__download">
                 <div class="section__symbol section__symbol--document"></div>
@@ -192,7 +209,7 @@ Template Name: Landing Page
     <div class="section__row section__row--smaller">
         <div class="section__column-6">
             <div class="section--white-bg section__space--right section__rounded section__column--fixed-height-2">
-                <a href="/community/blogs/" class="section__block-link">
+                <a href="http://transformation.blog.nhs.uk" class="section__block-link">
                     <div class="section__vertical-align">
                         <div class="section__vertical-align-column">
                             <img alt="Blog Icon"
@@ -209,7 +226,7 @@ Template Name: Landing Page
         </div>
         <div class="section__column-6">
             <div class="section--white-bg section__space--right section__rounded section__column--fixed-height-2">
-                <a href="/community/news-events/" class="section__block-link">
+                <a href="#" class="section__block-link">
                     <div class="section__vertical-align">
                         <div class="section__vertical-align-column">
                             <img alt="News Events Icon"
@@ -234,6 +251,7 @@ Template Name: Landing Page
             <nav class="footer__menu">
                 <ul>
                     <li class="footer__menu-item"><a href="https://www.england.nhs.uk/digitaltechnology/info-revolution/" target="_blank">- National Plans</a></li>
+<<<<<<< HEAD
                     <li class="footer__menu-item"><a href="#">- Roadmaps</a></li>
                     <li class="footer__menu-item"><a href="/license-agreement">- Licence Agreement</a></li>
                 </ul>
@@ -241,6 +259,10 @@ Template Name: Landing Page
                     <li class="footer__menu-item"><a href="/library/save-legal-secure/">- Policies &amp; Standards</a></li>
                     <li class="footer__menu-item"><a href="/library">- How to</a></li>
                     <li class="footer__menu-item"><a href="/library/architecture/integration-patterns/">- Information Sharing Patterns</a></li>
+=======
+                    <li class="footer__menu-item"><a href="#">- National Capabilities</a></li>
+                    <li class="footer__menu-item"><a href="/license-agreement">- License Agreement</a></li>
+>>>>>>> fe00bb0e382083bdf86eef753fd625c0b0b0ed78
                 </ul>
             </nav>
         </div>

@@ -1,6 +1,12 @@
 <?php
 include_once dirname(__FILE__) . '/includes/hdn-posts.php';
 
+if (SITE == 'developer-test.nhs.uk') {
+    define('DATASITE','https://data.developer-test.nhs.uk');
+} else {
+    define('DATASITE','https://data.developer.nhs.uk');
+}
+
 add_filter('solr_scheme', function () {
     return 'http';
 });

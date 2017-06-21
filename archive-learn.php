@@ -41,7 +41,7 @@
                     <h2 class="underline">Latest Learning Resorces</h2>
                     <?php
                     echo hdnPosts::generateTemplateTransient('learn_list', function () use ($post) {
-                        query_posts(array('post_type' => 'learn', 'orderby' => 'title',));
+                        query_posts(array('post_type' => 'learn', 'orderby' => 'date'));
                         if (have_posts()) {
                             while (have_posts()) {
                                 the_post();
