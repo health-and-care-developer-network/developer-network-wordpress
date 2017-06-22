@@ -120,6 +120,7 @@ class hdnPosts
                 // get count of subs
                 $subcats = get_categories('hide_empty=1&parent=' . $cat->id);
                 if (count($subcats) > 0) {
+                    // only queue for display if there are posts in the category
                     if (count(get_posts(['category__in' => array($cat->term_id), 'numberposts' => -1, 'post_type' => $postType])) > 0) {
                         self::$sTree .= '<ul class="sub_cat_list">';
                         self::$sTree .= '<li class="sub_cat '. $cat->term_id .'  '.  $passedCat .' ">' . $cat->name . '</li>';
