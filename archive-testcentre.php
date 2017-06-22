@@ -20,18 +20,19 @@
 								$sOut = '<div class="one_third"><div class="box"><div class="line purple_line"></div>';
 								$sOut .= '<section class="nav_box purple"><h3>' . $cat->name . '</h3>';
                                 hdnPosts::$category = $cat->term_id;
+								hdnPosts::$displayTree[hdnPosts::$category] = false;
 								hdnPosts::processCatTree($cat->term_id, 'testcentre');
 								$sOut .= hdnPosts::$sTree;
                                 $sOut .= '</section></div></div>';
 								
-								if (hdnPosts::$displayTree[$category]) {
-									echo $sOut;
+								if (isset(hdnPosts::$category) && hdnPosts::$category > 0 ) {
+									if (hdnPosts::$displayTree[hdnPosts::$category]) {
+										echo $sOut;
+									}
 								}
                             }
                         endforeach;
 						
-						//echo "<pre>"; print_r(hdnPosts::$displayTree); echo "</pre>";
-				
                         wp_reset_query(); //to reset all trouble done to the original query
                     });
 					?>

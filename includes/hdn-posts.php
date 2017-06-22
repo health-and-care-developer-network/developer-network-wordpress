@@ -8,7 +8,10 @@ class hdnPosts
 {
     
     //private static $topLevelCategories, $midLevelCategories, $displayCategories, $displayPassedCategory;
-    public static $displayTree, $sTree, $category;
+    public static
+        $displayTree,
+        $sTree,
+        $category;
     
     /**
      * Deletes the transient from the database when a learn post changes
@@ -94,7 +97,6 @@ class hdnPosts
 
     public static function processCatTree($cat, $postType) {
         
-        //self::preenCategoryTree($cat, $postType); //exit;
         $passedCat = $cat;
         
         $args = array('category__in' => array($cat), 'numberposts' => -1, 'post_type' => $postType);
@@ -102,7 +104,7 @@ class hdnPosts
         
         // 
         if (count($cat_posts) > 0) :
-            self::$displayTree[$category] = true;
+            self::$displayTree[self::$category] = true;
             self::$sTree .= '<ul>';
             foreach ($cat_posts as $post) :
                 self::$sTree .= '<li class="'. $post->term_id .'"><a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a></li>';
@@ -117,7 +119,7 @@ class hdnPosts
             foreach ($next as $cat) {
                 // get count of subs
                 $subcats = get_categories('hide_empty=1&parent=' . $cat->id);
-                if (count($subcats)>0) {
+                if (count($subcats) > 0) {
                     if (count(get_posts(['category__in' => array($cat->term_id), 'numberposts' => -1, 'post_type' => $postType])) > 0) {
                         self::$sTree .= '<ul class="sub_cat_list">';
                         self::$sTree .= '<li class="sub_cat '. $cat->term_id .'  '.  $passedCat .' ">' . $cat->name . '</li>';
@@ -137,7 +139,7 @@ class hdnPosts
             ob_start();
             $closure();
             $value = ob_get_clean();
-            set_transient('hdn:' . $key, $value, 86400);
+            //set_transient('hdn:' . $key, $value, 86400);
         //}
 
         return $value;
