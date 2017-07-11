@@ -124,7 +124,6 @@ Template Name: Landing Page
 </section>
 
 <section class="section--large-gap">
-<<<<<<< HEAD
     <h2 class="section__header--central">Standard and Guidance library</h2>
     <p class="section__paragraph--central">
         Browser and search developer information - <a href="/library/interoperability/">Interoperability
@@ -132,9 +131,6 @@ Template Name: Landing Page
         <a href="/library/save-legal-secure/">Safe, Legal and Secure</a>, <a
                 href="/library/identifiers/">Identifier and Names</a>
     </p>
-=======
-    <h2 class="section__header--central">Browse and search developer information</h2>
->>>>>>> fe00bb0e382083bdf86eef753fd625c0b0b0ed78
 
     <div class="section__row">
         <div class="section__column-6">
@@ -251,7 +247,6 @@ Template Name: Landing Page
             <nav class="footer__menu">
                 <ul>
                     <li class="footer__menu-item"><a href="https://www.england.nhs.uk/digitaltechnology/info-revolution/" target="_blank">- National Plans</a></li>
-<<<<<<< HEAD
                     <li class="footer__menu-item"><a href="#">- Roadmaps</a></li>
                     <li class="footer__menu-item"><a href="/license-agreement">- Licence Agreement</a></li>
                 </ul>
@@ -259,10 +254,7 @@ Template Name: Landing Page
                     <li class="footer__menu-item"><a href="/library/save-legal-secure/">- Policies &amp; Standards</a></li>
                     <li class="footer__menu-item"><a href="/library">- How to</a></li>
                     <li class="footer__menu-item"><a href="/library/architecture/integration-patterns/">- Information Sharing Patterns</a></li>
-=======
                     <li class="footer__menu-item"><a href="#">- National Capabilities</a></li>
-                    <li class="footer__menu-item"><a href="/license-agreement">- License Agreement</a></li>
->>>>>>> fe00bb0e382083bdf86eef753fd625c0b0b0ed78
                 </ul>
             </nav>
         </div>
