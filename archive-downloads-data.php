@@ -1,5 +1,5 @@
 <?php
-get_header();
+	get_header();
 ?>
     <div role="main" class="main">
     <div class="page_title">
@@ -19,10 +19,21 @@ get_header();
                 echo hdnPosts::generateTemplateTransient('download_data', function () {
                     foreach (get_categories('hide_empty=0&exclude=1') as $cat) :
                         if (!$cat->parent) {
-                            echo '<div class="one_third"><div class="box"><div class="line red_line"></div><section class="nav_box red"><h3>' . $cat->name . '</h3>';
-                            hdnPosts::processCatTree($cat->term_id, 'downloads-data');
-                            echo '</section></div></div>';
-                        }
+													$sOut =  '<div class="one_third"><div class="box"><div class="line red_line"></div>';
+													$sOut .= '<section class="nav_box red"><h3>' . $cat->name . '</h3>';
+													hdnPosts::$category = $cat->term_id;
+													hdnPosts::$displayTree[hdnPosts::$category] = false;
+                          hdnPosts::processCatTree($cat->term_id, 'downloads-data');
+													$sOut .= hdnPosts::$sTree;
+                          $sOut .= '</section></div></div>';
+
+													if (isset(hdnPosts::$category) && hdnPosts::$category > 0 ) {
+														if (hdnPosts::$displayTree[hdnPosts::$category]) {
+															echo $sOut;
+														}
+													} // if set
+
+												} // no parent
                     endforeach;
 
                     wp_reset_query(); //to reset all trouble done to the original query
