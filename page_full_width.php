@@ -42,5 +42,6 @@ Template Name: Page Article Full Width
         </div><!--end main_content-->
     <?php endwhile; endif; ?>
 </div><!-- end main -->
+<?php the_field('js_script'); ?>
 
 <?php get_footer(); ?>
