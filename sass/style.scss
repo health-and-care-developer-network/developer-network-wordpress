@@ -1002,3 +1002,119 @@ div.apicontent {
 @import "partials/queries";
 
 @import "landing/style";
+
+.wrapper {
+  h1 {
+    margin: 0;
+  }
+}
+
+.digital-tools-style {
+  .page_title {
+    hgroup {
+      background: url(img/css/mobile_health_icon.png) no-repeat;
+      background-position: left center;
+    }
+  }
+
+  .tree_wrap {
+    padding: 0;
+    h2 {
+      color: #ae2573;
+      font-size: 24px;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid #d6d6d6;
+      margin-bottom: 12px;
+    }
+  }
+
+  .content_wrap {
+    padding: 1em;
+    margin-top: 0;
+    h1 {
+      color: #ae2573;
+      border-bottom: 1px solid #d6d6d6;
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: #ae2573;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+
+    h4, h5, p {
+      margin: 0;
+      margin-bottom: 12px;
+    }
+  }
+
+  .assessment_path {
+    margin-top: 50px;
+
+
+    .link_section {
+      float: left;
+      width: 300px;
+      text-align: center;
+      .link_container {
+        text-align: left;
+        height: 120px;
+        padding-right: 8px;
+        border: 4px solid #dcdcdc;
+        background: linear-gradient(to bottom, rgb(253,253,253), rgb(242,242,242));
+        font-size: 24px;
+        line-height: 1.2em;
+
+        span {
+          padding-top: 14px;
+          width: 120px;
+          display: inline-block;
+          float: left;
+        }
+
+        .review_icon, .register_icon {
+          width: 90px;
+          margin-left: 20px;
+          margin-right: 10px;
+          height: 110px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: 50% 50%;
+          float: left;
+        }
+
+        .review_icon {
+          background-image: url(img/css/daw_review_icon.png);
+        }
+
+        .register_icon {
+          background-image: url(img/css/register_interest_icon.png);
+        }
+      }
+    }
+
+    .arrow_section {
+      float: left;
+      width: 160px;
+      height: 120px;
+      margin-left: 20px;
+      margin-right: 20px;
+      background-image: url(img/css/daq_register_arrow.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+}
