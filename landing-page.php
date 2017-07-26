@@ -15,7 +15,16 @@
         </div>
     </div><!--end page title-->
     <div class="main_content cf">
-        <?php include_once "breadcrumbs.php"; ?>
+        <div class="breadcrumbs">
+            <div class="wrapper">
+                <ul>
+                    <li>You are here:</li>
+                    <li><a href="/">Home</a></li>
+                    <li class="separator">&gt;</li>
+                    <li class="active">Digital Tools</li>
+                </ul>
+            </div>
+        </div>
         <div class="wrapper cf container">
             <div class="one_quarter tree_wrap">
                 <h2>Additional Information</h2>
@@ -24,23 +33,19 @@
             </div>
             <div class="three_quarters">
                 <div class="content_wrap">
-                    <h1>The path to publication on the NHS Digital Tools Library</h1>
-                    <h4>The NHS <a href="#">Digital Tools Library</a> (Beta) is now available.
-                    There are currently a small number of Apps, including categories for Mental Health and Diabetes.
-                    These categories will grow and citizens will be able to access an expanding set of assessed tools
-                        that will help them to organise and manage their own health and care.</h4>
-                    <p>The NHS is in the early stages of developing its promotion of Health Apps &amp; Tools
-                    within the Health and Care environment. On this site we have presented our first views on criteria
-                    that we would look to assess digital tools against. This can be used as a guide to the type of areas
-                    that the NHS would be looking to assess against in the future.</p>
-                    <h5>Some apps in the library are labelled as 'Being tested in the NHS' meaning there is a programme gathering evidence on whether the use of
-                        these apps improves clinical outcomes. Others are labelled, 'NHS Approved' which is reserved for those Apps &amp; Tools that have evidenced
-                    improved clinical outcomes through the NHS.</h5>
-                    <h2>Assessment Process</h2>
-                    <p>Patients trust our content and the library is based around a robust assessment process (<a href="#">Digital Assessment Questions</a>)
-                        designed to set a high standard for developers ot adhere to. You can assess youselves against these questions and if you feel that oyu would be
-                        able to comply with these, or would be near to complying, then please <a href="#">register your interest</a>. Once the next
-                        steps have been defined, we will contact you with further information.</p>
+                    <h1>The path through assessment on the Digital Tools Library</h1>
+
+                    <p>The current NHS Digital Tools Library (<a href="https://apps.beta.nhs.uk">apps.beta.nhs.uk</a>) is a beta site, which means that it is in development. It has also been referred to as the Digital Apps Library.</p>
+                    <p>The library holds a list of digital tools (health apps and web sites) that will be graded / badged in some way. The tools will be monitored for functional changes and grouped in categories that reflect their overall function; for example, mental health, diabetes.</p>
+                    <p>Citizens can access an expanding set of assessed tools that will help them to organise and manage their own health and care. The library features digital tools that have passed a set of digital assessment questions to assess digital services to a high standard.</p>
+                    <p>We have developed a collection of standards and guidance information to help you develop digital tools which meet the principles of quality applied to all digital products. This means your digital tool will meet what we consider to be good quality digital standards for safety, experience and effectiveness. The information is currently being expanded and rationalised to make it useful to all apps developers, including digital tools that will connect to NHS national systems for data access (connected apps/ services).</p>
+                    <p>All digital tools applying to go on the NHS Digital Tools Library must be assessed equally and thoroughly through the current process framework or, later, the evolved national assessment process that replaces this towards the end of 2017. If your digital tool has already been given some form of NHS approval (or some level of endorsement or review) this may be considered by the relevant NHS body that previously reviewed your app. The key point is that the national assessment process includes <strong>all</strong> NHS bodies to cover every aspect of regulation, from data protection to clinical safety and efficacy.</p>
+
+                    <h4>Assessment Process and Questions to Produce Trusted Content</h4>
+
+                    <p>To get an idea of the standards, rules and regulations against which digital health tools are assessed you can view the <a href="/daq">Digital Assessment Questionnaire – Beta &lt;here&gt;</a>. For now, this is only a guide to the assessment question criteria we are using. It is not an active online process of assessment and we are currently re-working it to make it more focused and relevant to digital tools development.</p>
+                    <p>If you feel that you would be able to comply with the assessment, or would be near to complying, please register your interest as a developer <here>. Once the next steps have been defined we will contact you with further information.</p>
+
                     <div class="assessment_path">
                         <div class="link_section">
                             <a href="#">
