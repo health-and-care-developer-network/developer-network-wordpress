@@ -6,6 +6,13 @@
  */
 class hdnPosts
 {
+    
+    //private static $topLevelCategories, $midLevelCategories, $displayCategories, $displayPassedCategory;
+    public static
+        $displayTree,
+        $sTree,
+        $category;
+    
     /**
      * Deletes the transient from the database when a learn post changes
      * @param $post_id
@@ -89,38 +96,54 @@ class hdnPosts
     }
 
     public static function processCatTree($cat, $postType) {
+        
+        $passedCat = $cat;
+        
         $args = array('category__in' => array($cat), 'numberposts' => -1, 'post_type' => $postType);
         $cat_posts = get_posts($args);
-
-        if ($cat_posts) :
-            echo '<ul>';
+        
+        // 
+        if (count($cat_posts) > 0) :
+            self::$displayTree[self::$category] = true;
+            self::$sTree .= '<ul>';
             foreach ($cat_posts as $post) :
-                echo '<li><a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a></li>';
+                self::$sTree .= '<li class="'. $post->term_id .'"><a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a></li>';
             endforeach;
-            echo '</ul>';
+            self::$sTree .= '</ul>';
         endif;
 
-        $next = get_categories('hide_empty=0&parent=' . $cat);
+        $next = get_categories('hide_empty=1&parent=' . $cat);
 
-        if ($next) :
-            echo '<ul class="sub_cat_list">';
-            foreach ($next as $cat) :
-                echo '<li class="sub_cat">' . $cat->name . '</li>';
-                self::processCatTree($cat->term_id, $postType);
-            endforeach;
-            echo '</ul>';
+        if (count($next)>0) :
+            
+            foreach ($next as $cat) {
+                // get count of subs
+                $subcats = get_categories('hide_empty=1&parent=' . $cat->id);
+                if (count($subcats) > 0) {
+                    // only queue for display if there are posts in the category
+                    if (count(get_posts(['category__in' => array($cat->term_id), 'numberposts' => -1, 'post_type' => $postType])) > 0) {
+                        self::$sTree .= '<ul class="sub_cat_list">';
+                        self::$sTree .= '<li class="sub_cat '. $cat->term_id .'  '.  $passedCat .' ">' . $cat->name . '</li>';
+                        self::processCatTree($cat->term_id, $postType);
+                        self::$sTree .= '</ul>';
+                    } // if - use if we want to make the sub categories quiet
+                } // count
+            } // foreach
+            
         endif;
-    }
-
+    } // processCatTree
+    
     public static function generateTemplateTransient($key, Closure $closure) {
-        $value = get_transient('hdn:' . $key);
-        if (!$value) {
+        //$value = get_transient('hdn:' . $key);
+        
+        //if (!$value) {
             ob_start();
             $closure();
             $value = ob_get_clean();
-            set_transient('hdn:' . $key, $value, 86400);
-        }
+            //set_transient('hdn:' . $key, $value, 86400);
+        //}
 
         return $value;
-    }
-}
+    } // generateTemplateTransient
+
+} // hdnPosts

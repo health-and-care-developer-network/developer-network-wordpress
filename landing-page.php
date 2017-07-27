@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Landing Page
+    Template Name: Landing Page
 */
 ?>
 <?php get_header(); ?>
@@ -54,6 +54,7 @@ Template Name: Landing Page
         </div>
     </div>
 </section>
+
 
 <section class="section--alt-bg section--large-gap">
     <h2 class="section__header--central-large">Mobile Health Apps and National Systems</h2>
@@ -123,8 +124,15 @@ Template Name: Landing Page
     </div>
 </section>
 
+
 <section class="section--large-gap">
-    <h2 class="section__header--central">Browse and search developer information</h2>
+    <h2 class="section__header--central">Standard and Guidance library</h2>
+    <p class="section__paragraph--central">
+        Browser and search developer information - <a href="/library/interoperability/">Interoperability
+            and Integration</a>,
+        <a href="/library/save-legal-secure/">Safe, Legal and Secure</a>, <a
+                href="/library/identifiers/">Identifier and Names</a>
+    </p>
 
     <div class="section__row">
         <div class="section__column-6">
@@ -241,8 +249,14 @@ Template Name: Landing Page
             <nav class="footer__menu">
                 <ul>
                     <li class="footer__menu-item"><a href="https://www.england.nhs.uk/digitaltechnology/info-revolution/" target="_blank">- National Plans</a></li>
+                    <li class="footer__menu-item"><a href="#">- Roadmaps</a></li>
+                    <li class="footer__menu-item"><a href="/license-agreement">- Licence Agreement</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__menu-item"><a href="/library/save-legal-secure/">- Policies &amp; Standards</a></li>
+                    <li class="footer__menu-item"><a href="/library">- How to</a></li>
+                    <li class="footer__menu-item"><a href="/library/architecture/integration-patterns/">- Information Sharing Patterns</a></li>
                     <li class="footer__menu-item"><a href="#">- National Capabilities</a></li>
-                    <li class="footer__menu-item"><a href="/license-agreement">- License Agreement</a></li>
                 </ul>
             </nav>
         </div>
