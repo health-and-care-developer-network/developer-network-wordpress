@@ -1,4 +1,4 @@
-<div class="breadcrumbs">
+<div clas   s="breadcrumbs">
 	<div class="wrapper">
 		<?php if ( function_exists('yoast_breadcrumb') ) {
             $breadcrumbs = yoast_breadcrumb( '<ul><li>', '</li></ul>', false );

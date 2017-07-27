@@ -82,11 +82,11 @@
 				
 					<div class="hp_sidebar">
 						<section class="community_latest aquagreen cf">
-                            <a href="/apps" class="box health-apps-link">
+                            <a href="/digital-tools" class="box health-apps-link">
                                 <div class="line nhsPink_line"></div>
                                 <section class="nav_box nhspink">
-                                    <h2><span class="lg_icon" aria-hidden="true" data-icon="h"></span><br />Mobile Health</h2>
-                                    <p>Access developer information on the Digital Apps library here</p>
+                                    <h2><span class="lg_icon" aria-hidden="true" data-icon="h"></span><br />Digital Tools</h2>
+                                    <p>Access developer information on Digital Tools here</p>
                                 </section>
                             </a>
 

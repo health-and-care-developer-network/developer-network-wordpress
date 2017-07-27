@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-		
 		<div role="main" class="main">
 			<div class="page_title">
 				<div class="wrapper">
@@ -15,20 +14,30 @@
 				<div class="wrapper cf">
 					<div class="fw_nav_boxes">
 					<?php
-                    echo hdnPosts::generateTemplateTransient('testcentre', function () {
-                        foreach( get_categories('hide_empty=0&exclude=1') as $cat ) :
-                            if( !$cat->parent ) {
-                                echo '<div class="one_third"><div class="box"><div class="line purple_line"></div><section class="nav_box purple"><h3>' . $cat->name . '</h3>';
-                                hdnPosts::processCatTree($cat->term_id, 'testcentre');
-                                echo '</section></div></div>';
-                            }
-                        endforeach;
+              echo hdnPosts::generateTemplateTransient('testcentre', function () {
+	              foreach( get_categories('hide_empty=1&exclude=0') as $cat ) :
+									if ( !$cat->parent ) {
+										$sOut = '<div class="one_third"><div class="box"><div class="line purple_line"></div>';
+										$sOut .= '<section class="nav_box purple"><h3>' . $cat->name . '</h3>';
+		                                hdnPosts::$category = $cat->term_id;
+										hdnPosts::$displayTree[hdnPosts::$category] = false;
+										hdnPosts::processCatTree($cat->term_id, 'testcentre');
+										$sOut .= hdnPosts::$sTree;
+		                                $sOut .= '</section></div></div>';
 
-                        wp_reset_query(); //to reset all trouble done to the original query
-                    });
+										if (isset(hdnPosts::$category) && hdnPosts::$category > 0 ) {
+											if (hdnPosts::$displayTree[hdnPosts::$category]) {
+												echo $sOut;
+											}
+										} // if set
+	                } // no parent
+	              endforeach;
+
+	              wp_reset_query(); //to reset all trouble done to the original query
+              });
 					?>
-					
-					</div><!--end content wrap-->	
+
+					</div><!--end content wrap-->
 				</div><!--end wrapper-->
 			</div><!--end main_content-->
 <?php get_footer(); ?>
