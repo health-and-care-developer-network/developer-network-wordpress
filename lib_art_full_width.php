@@ -6,7 +6,7 @@ Template Name: Library Article Full Width
 
 <?php get_header(); ?>
 		
-<div role="main" class="main">
+<div role="main" class="main digital-tools-style">
 	<div class="page_title">
 		<div class="wrapper">
 			<hgroup>
@@ -32,9 +32,7 @@ Template Name: Library Article Full Width
 								<?php the_content(); ?>
 								</div>
 								<?php include_once "likes.php"; ?>
-								
 							</div><!--end three quarters-->
-							
 						</article>
 					</div><!--end content wrap-->
 				<?php endwhile; endif; ?>
