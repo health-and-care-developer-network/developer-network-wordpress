@@ -17,7 +17,7 @@
             <li class="header__menu-item"><a href="/testcentre">Test centre</a></li>
             <li class="header__menu-item"><a href="/learn">Learn</a></li>
             <li class="header__menu-item"><a href="/community">Community</a></li>
-            <li class="header__menu-item"><a href="/digital-tools"></a></li>
+            <li class="header__menu-item"><a href="/digital-tools"></a>Digital Tools</li>
         </ul>
     </nav>
     <div class="header__search-area">
