@@ -40,7 +40,7 @@
                         <div class="content_wrap_content">
                             <?php the_content(); ?>
                             <div class="faq_content">
-                                <?php the_faqs(); ?>
+                                <?php hdnPosts::the_faqs(); ?>
                             </div>
                         </div>
                         <?php include_once "likes.php"; ?>
@@ -50,46 +50,5 @@
         <?php endwhile; endif; ?>
     </div>
 </div>
-<script>
-    (function() {
-        function expander(e) {
-            var faqItem = e.target.parentElement;
-            faqItem.dataset.status = faqItem.dataset.status == 'closed' && 'open' || 'closed';
-        }
-
-        document.addEventListener("DOMContentLoaded", function(event) {
-            var faqs = document.querySelectorAll(".faq_content .faq-item");
-
-            Array.prototype.forEach.call(faqs, function(item) {
-                item.addEventListener('click', expander, false);
-            });
-        });
-    })();
-</script>
-<?php get_footer(); ?>
-
-</body>
-</html>
-<?php
-function the_faqs() {
-    $faqQuery = new WP_Query(
-        [
-            'post_type' => 'faq'
-        ]
-    );
-
-    while($faqQuery->have_posts()) {
-        $faqQuery->the_post();
-        ?>
-        <div class="faq-item" data-status="closed">
-            <div class="faq-header">
-                <?php the_title(); ?>
-            </div>
-            <div class="faq-answer">
-                <?php the_content(); ?>
-            </div>
-        </div>
-        <?php
-    };
-}
-?>
+<script async src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>" type="text/javascript"></script>
+<?php get_footer();
