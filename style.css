@@ -2972,8 +2972,11 @@ section {
 .digital-tools-style .page_title hgroup {
   background: url(img/css/mobile_health_icon.png) no-repeat;
   background-position: left center; }
+  .digital-tools-style .page_title hgroup h1 {
+    font-weight: bold; }
 .digital-tools-style .tree_wrap {
-  padding: 0; }
+  padding: 0;
+  padding-top: 12px; }
   .digital-tools-style .tree_wrap h2 {
     color: #ae2573;
     font-size: 24px;
@@ -3009,16 +3012,23 @@ section {
   padding-bottom: 24px; }
   .digital-tools-style .assessment_path .link_section {
     display: inline-block;
-    width: 250px;
+    width: 235px;
     text-align: center; }
+    .digital-tools-style .assessment_path .link_section a {
+      font-size: 15px;
+      text-decoration: underline; }
+      .digital-tools-style .assessment_path .link_section a .link_container {
+        text-decoration: none; }
+        .digital-tools-style .assessment_path .link_section a .link_container span {
+          color: #444444; }
     .digital-tools-style .assessment_path .link_section .link_container {
       text-align: left;
-      height: 120px;
+      height: 105px;
       padding-right: 8px;
-      border: 4px solid #dcdcdc;
+      border: 5px solid #dadada;
       background: linear-gradient(to bottom, #fdfdfd, #f2f2f2);
-      font-size: 24px;
-      line-height: 1.2em; }
+      font-size: 22px;
+      line-height: 1em; }
       .digital-tools-style .assessment_path .link_section .link_container span {
         padding-top: 14px;
         width: 100px;
@@ -3028,7 +3038,7 @@ section {
         width: 70px;
         margin-left: 10px;
         margin-right: 10px;
-        height: 110px;
+        height: 95px;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 50% 50%;

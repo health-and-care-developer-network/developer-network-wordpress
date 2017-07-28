@@ -999,6 +999,7 @@ div.apicontent {
     }
   }
 }
+
 @import "partials/queries";
 
 @import "landing/style";
@@ -1031,11 +1032,16 @@ div.apicontent {
     hgroup {
       background: url(img/css/mobile_health_icon.png) no-repeat;
       background-position: left center;
+
+      h1 {
+        font-weight: bold;
+      }
     }
   }
 
   .tree_wrap {
     padding: 0;
+    padding-top: 12px;
     h2 {
       color: #ae2573;
       font-size: 24px;
@@ -1089,16 +1095,29 @@ div.apicontent {
 
     .link_section {
       display: inline-block;
-      width: 250px;
+      width: 235px;
       text-align: center;
+
+      a {
+        .link_container {
+          text-decoration: none;
+          span {
+            color: #444444;
+          }
+        }
+
+        font-size: 15px;
+        text-decoration: underline;
+      }
+
       .link_container {
         text-align: left;
-        height: 120px;
+        height: 105px;
         padding-right: 8px;
-        border: 4px solid #dcdcdc;
-        background: linear-gradient(to bottom, rgb(253,253,253), rgb(242,242,242));
-        font-size: 24px;
-        line-height: 1.2em;
+        border: 5px solid #dadada;
+        background: linear-gradient(to bottom, rgb(253, 253, 253), rgb(242, 242, 242));
+        font-size: 22px;
+        line-height: 1em;
 
         span {
           padding-top: 14px;
@@ -1111,7 +1130,7 @@ div.apicontent {
           width: 70px;
           margin-left: 10px;
           margin-right: 10px;
-          height: 110px;
+          height: 95px;
           background-repeat: no-repeat;
           background-size: contain;
           background-position: 50% 50%;
@@ -1171,7 +1190,7 @@ div.apicontent {
           position: absolute;
           top: 50%;
           font-size: 28px;
-          color:  black;
+          color: black;
           right: 8px;
           margin-top: -12px;
         }
