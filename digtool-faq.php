@@ -31,8 +31,12 @@
             <div class="wrapper cf container">
                 <div class="one_quarter tree_wrap">
                     <h2>Quick Links</h2>
-                    <p>How can I get my app on the library?</p>
-                    <p>Other FAQs</p>
+                    <p>Digital Tools</p>
+                    <p>Review the Assessment Questions</p>
+                    <p>Register Your Interest</p>
+                    <h2>Additional Information</h2>
+                    <p>Short term goals for the library</p>
+                    <p>Our long term vision</p>
                 </div>
                 <div class="three_quarters">
                     <div class="content_wrap">

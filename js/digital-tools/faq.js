@@ -11,5 +11,8 @@
         Array.prototype.forEach.call(faqs, function(item) {
             item.addEventListener('click', expander, false);
         });
+
+        document.querySelector(".faq_content .faq-item").setAttribute("data-status", "open");
+
     });
 })();
