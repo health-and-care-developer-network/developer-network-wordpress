@@ -146,4 +146,28 @@ class hdnPosts
         return $value;
     } // generateTemplateTransient
 
+    public static function the_faqs($tag = null) {
+        $query = ['post_type' => 'faq'];
+
+        if ($tag) {
+            $query['tag'] = $tag;
+        }
+
+        $faqQuery = new WP_Query($query);
+
+        while($faqQuery->have_posts()) {
+            $faqQuery->the_post();
+            ?>
+            <div class="faq-item" data-status="closed">
+                <div class="faq-header">
+                    <?php the_title(); ?>
+                </div>
+                <div class="faq-answer">
+                    <?php the_content(); ?>
+                </div>
+            </div>
+            <?php
+        };
+    }
+
 } // hdnPosts
