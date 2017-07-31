@@ -3972,3 +3972,9 @@ section {
       margin-top: 24px; } }
 
 /** digital-tools-style **/
+/* line 1476, sass/style.scss */
+.grey_text {
+  color: #7f7f7f;
+  font-size: 14px;
+  font-family: "Open Sans", "Ubuntu", "Helvetica", "Arial";
+  line-height: 1.4em; }
