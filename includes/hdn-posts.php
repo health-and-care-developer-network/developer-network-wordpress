@@ -147,7 +147,8 @@ class hdnPosts
     } // generateTemplateTransient
 
     public static function the_faqs($tag = null) {
-        $query = ['post_type' => 'faq'];
+        $query = ['post_type' => 'faq',
+            'posts_per_page' => '-1'];
 
         if ($tag) {
             $query['tag'] = $tag;

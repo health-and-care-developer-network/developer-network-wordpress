@@ -10,7 +10,7 @@
         <div class="wrapper">
             <hgroup>
                 <h1>Digital Tools</h1>
-                <h2>Information for Developers about the Digital Tools Library (beta)</h2>
+                <h2>Information for Developers about the Digital Tools Library (Beta)</h2>
             </hgroup>
         </div>
     </div><!--end page title-->
@@ -54,5 +54,5 @@
         <?php endwhile; endif; ?>
     </div>
 </div>
-<script async src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>" type="text/javascript"></script>
 <?php get_footer();
