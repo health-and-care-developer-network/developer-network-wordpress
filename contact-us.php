@@ -40,7 +40,7 @@
                 </div>
                 <div class="three_quarters">
                     <div class="content_wrap">
-                        <h1>Contact Us</h1>
+                        <h1>Frequently Asked Questions</h1>
                         <div class="content_wrap_content">
                             <?php the_content(); ?>
                             <div class="faq_content">
@@ -49,17 +49,17 @@
                         </div>
                     </div>
                     <div class="content_wrap">
-                      <h2 class="large_space">Contact Us Form </h2>
+                      <h2 class="large_space">Contact Us Form</h2>
 
                         <div class="large_space">
                           <?php echo FrmFormsController::show_form(51, $key = '', $title=false, $description=false); ?>
                         </div>
 
                     </div>
-                </div>
+                    <?php include_once "likes.php"; ?>
+                </div> <!-- three_quarters -->
             </div>
       <?php endwhile; endif; ?>
-      <?php include_once "likes.php"; ?>
     </div>
 
 </div>
