@@ -44,7 +44,7 @@
                         <div class="content_wrap_content">
                             <?php the_content(); ?>
                             <div class="faq_content">
-                                <?php hdnPosts::the_faqs(); ?>
+                                <?php hdnPosts::the_faqs('contact-us'); ?>
                             </div>
                         </div>
                     </div>
