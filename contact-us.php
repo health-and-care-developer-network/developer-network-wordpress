@@ -41,6 +41,10 @@
                 <div class="three_quarters">
                     <div class="content_wrap">
                         <h1>Frequently Asked Questions</h1>
+                        <div class="large_space grey_text">
+                          Before you contact us for further information, please read the frequently asked questions (FAQs).
+                          Use the link to “All FAQs” if you do not find what you need in the three FAQs on this page.
+                        </div>
                         <div class="content_wrap_content">
                             <?php the_content(); ?>
                             <div class="faq_content">
