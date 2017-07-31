@@ -47,5 +47,5 @@
         <?php endwhile; endif; ?>
     </div>
 </div>
-
+<?php the_field('js_script'); ?>
 <?php get_footer();
