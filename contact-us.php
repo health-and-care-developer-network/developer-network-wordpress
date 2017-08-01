@@ -22,21 +22,18 @@
                         <li>You are here:</li>
                         <li><a href="/">Home</a></li>
                         <li class="separator">&gt;</li>
-                        <li><a href="/digital-tools">Digital Tools</a></li>
-                        <li class="separator">&gt;</li>
                         <li class="active"><?php the_title(); ?></li>
                     </ul>
                 </div>
             </div>
             <div class="wrapper cf container">
                 <div class="one_quarter tree_wrap">
-                    <h2>Quick Links</h2>
-                    <p>Digital Tools</p>
-                    <p>Review the Assessment Questions</p>
-                    <p>Register Your Interest</p>
-                    <h2>Additional Information</h2>
-                    <p>Short term goals for the library</p>
-                    <p>Our long term vision</p>
+                    <?php include_once "quick-links.php" ?>
+                    <!--
+                      <h2>Additional Information</h2>
+                      <p>Short term goals for the library</p>
+                      <p>Our long term vision</p> 
+                    -->
                 </div>
                 <div class="three_quarters">
                     <div class="content_wrap">
