@@ -51,4 +51,5 @@
     </div>
 </div>
 <?php the_field('js_script'); ?>
+<script src="<?php echo get_template_directory_uri() . '/js/digital-tools/information-request.js' ?>" type="text/javascript"></script>
 <?php get_footer();
