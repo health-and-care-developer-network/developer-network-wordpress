@@ -54,6 +54,11 @@
                     </div>
                     <div class="content_wrap">
                       <h2 class="large_space">Contact Us Form</h2>
+                        <div class="grey_text">
+                          Please note that we can only handle queries relating to digital tools developed for inclusion on the Digital Tools Library.
+                          If your query relates to anything else please refer to our main NHS Digital website at
+                          <a href="https://digital.nhs.uk/Contact-us">https://digital.nhs.uk/Contact-us</a>.
+                        </div>
 
                         <div class="large_space">
                           <?php echo FrmFormsController::show_form(51, $key = '', $title=false, $description=false); ?>
