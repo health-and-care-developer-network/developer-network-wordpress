@@ -3605,18 +3605,18 @@ section {
     color: black; }
   /* line 1024, sass/style.scss */
   .contact-us-style .breadcrumbs ul li.active {
-    color: #3944c5;
+    color: #0272c6;
     font-weight: bold; }
 /* line 1033, sass/style.scss */
 .contact-us-style .page_title hgroup {
-  background: url(img/css/mobile_health_icon.png) no-repeat;
+  background: url(img/css/contact_us_icon.png) no-repeat;
   background-position: left center; }
 /* line 1039, sass/style.scss */
 .contact-us-style .tree_wrap {
   padding: 0; }
   /* line 1041, sass/style.scss */
   .contact-us-style .tree_wrap h2 {
-    color: #3944c5;
+    color: #0272c6;
     font-size: 24px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -3628,12 +3628,12 @@ section {
   margin-top: 0; }
   /* line 1054, sass/style.scss */
   .contact-us-style .content_wrap h1 {
-    color: #3944c5;
+    color: #222222;
     border-bottom: 1px solid #d6d6d6;
     margin-bottom: 12px; }
   /* line 1060, sass/style.scss */
   .contact-us-style .content_wrap a {
-    color: #3944c5; }
+    color: #0272c6; }
   /* line 1064, sass/style.scss */
   .contact-us-style .content_wrap h2 {
     margin-bottom: 12px;
@@ -3719,7 +3719,7 @@ section {
     .contact-us-style .faq_content .faq-item .faq-header {
       padding-top: 18px;
       padding-bottom: 18px;
-      color: #3944c5;
+      color: #0272c6;
       line-height: 1.4em;
       padding-right: 48px;
       font-weight: bold;
@@ -3785,7 +3785,7 @@ section {
     color: black; }
   /* line 1246, sass/style.scss */
   .digital-tools-style .breadcrumbs ul li.active {
-    color: #3944c5;
+    color: #0272c6;
     font-weight: bold; }
 /* line 1255, sass/style.scss */
 .digital-tools-style .page_title hgroup {
@@ -3977,3 +3977,34 @@ section {
   font-size: 14px;
   font-family: "Open Sans", "Ubuntu", "Helvetica", "Arial";
   line-height: 1.4em; }
+
+/* line 1482, sass/style.scss */
+.btnFaq {
+  width: auto;
+  font-family: "Ubuntu","Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: normal;
+  text-align: center;
+  background: #ffffff;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-style: solid;
+  color: #444444;
+  cursor: pointer;
+  font-weight: normal;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: none;
+  padding: 6px 11px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-shadow: 0 1px 1px #eeeeee;
+  -webkit-box-shadow: 0 1px 1px #eeeeee;
+  box-shadow: 0 1px 1px #eeeeee;
+  margin: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: middle; }
