@@ -42,5 +42,24 @@
             }
             searchForm.classList.add("header__search--disabled");
         });
-    });
+
+        var url = window.location.href;
+        var page = url.replace(/\/$/, '');
+        var pieces = page.split('/');
+        var link = pieces[pieces.length-1];
+
+        var qlinks = document.querySelectorAll('.q-link');
+        Array.prototype.forEach.call(qlinks, function(item) {
+            if (getLink(item.href) == link) {
+              item.style.display = 'none';
+            }
+        });
+
+    }); // on DOMContentLoaded
+
 })();
+
+var getLink = function(u) {
+  var components = u.replace(/\/$/, '').split('/');
+  return components[components.length-1];
+} // getLink
