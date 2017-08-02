@@ -27,19 +27,21 @@
         </div>
         <div class="wrapper cf container">
             <div class="one_quarter tree_wrap">
-                <h2>Additional Information</h2>
-                <p>Short term goals for this library.</p>
-                <p>Our long term vision.</p>
+                <?php include_once "additional-information.php"; ?>
             </div>
             <div class="three_quarters">
                 <div class="content_wrap">
-                    <h1>The Digital Tools Library Assessment Path</h1>
+                    <h2>The Digital Tools Library Assessment Path</h2>
 
-                    <p>The current NHS Digital Tools Library (<a href="https://apps.beta.nhs.uk">apps.beta.nhs.uk</a>) is a beta site, which means that it is in development.</p>
-                    <p>We have developed a collection of standards and guidance information to help you develop digital tools which meet the principles of quality applied to all digital products. This means your digital tool will meet what we consider to be good quality digital standards for safety, experience and effectiveness. </p>
-                    <p>All digital tools applying to go on the NHS Digital Tools Library must be assessed equally and thoroughly through the current process framework. </p>
+                    <p>The current NHS Digital Tools Library (<a href="https://apps.beta.nhs.uk">apps.beta.nhs.uk</a>) is a beta site, which
+                       means that it is in development.<br/>
+                       We have developed a collection of standards and guidance information to help you develop digital tools which meet the
+                      principles of quality applied to all digital products. This means your digital tool will meet what we consider to be
+                      good quality digital standards for safety, experience and effectiveness. </p>
+                    <p>All digital tools applying to go on the NHS Digital Tools Library must be assessed equally and thoroughly
+                      through the current process framework. </p>
 
-                    <h4>Assessment Process and Questions to Produce Trusted Content</h4>
+                    <h2 class="large_space">Assessment Process and Questions to Produce Trusted Content</h2>
 
                     <p>To get an idea of the standards, rules and regulations against which digital health tools are assessed you can view the <a href="/digital-tools/daq">Digital Assessment Questionnaire – Beta</a>. For now, this is only a guide to the assessment question criteria we are using. If you feel that you would be able to comply with the assessment, or would be near to complying, please register your interest as a developer. Once the next steps have been defined we will contact you with further information.</p>
 
