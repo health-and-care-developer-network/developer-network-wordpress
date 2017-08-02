@@ -72,6 +72,5 @@
 
 </div>
 
-<script src="<?php echo get_template_directory_uri() . '/js/contact-us.js' ?>" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>" type="text/javascript"></script>
 <?php get_footer();
