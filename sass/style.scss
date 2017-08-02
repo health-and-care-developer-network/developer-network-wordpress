@@ -1279,6 +1279,7 @@ div.apicontent {
     padding: 1em;
     margin-top: 0;
     h1 {
+      font-size: 1.8em;
       color: #ae2573;
       border-bottom: 1px solid #d6d6d6;
       margin-bottom: 12px;
@@ -1420,6 +1421,7 @@ div.apicontent {
       }
       .faq-answer {
         padding-top: 12px;
+        padding-bottom: 2em;
       }
 
       &[data-status='open'] {
