@@ -62,7 +62,7 @@
                                     <span>Register Your Interest</span>
                                 </div>
                             </a>
-                            <a href="#">Register Your Interest &gt;</a>
+                            <a href="/digital-tools/register-your-interest">Register Your Interest &gt;</a>
                         </div>
                     </div>
 

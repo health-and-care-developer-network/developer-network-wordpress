@@ -22,7 +22,7 @@
                         <li>You are here:</li>
                         <li><a href="/">Home</a></li>
                         <li class="separator">&gt;</li>
-                        <li><a href="/digital-tools">Digital Tools</a></li>
+                        <li><a href="/apps">Digital Tools</a></li>
                         <li class="separator">&gt;</li>
                         <li class="active"><?php the_title(); ?></li>
                     </ul>
@@ -30,11 +30,6 @@
             </div>
             <div class="wrapper cf container">
                 <div class="one_quarter tree_wrap">
-                  <!--
-                    <h2>Quick Links</h2>
-                    <p>How can I get my app on the library?</p>
-                    <p>Other FAQs</p>
-                  -->
                   <?php include_once "quick-links.php" ?>
                 </div>
                 <div class="three_quarters">

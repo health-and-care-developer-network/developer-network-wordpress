@@ -82,7 +82,7 @@
 				
 					<div class="hp_sidebar">
 						<section class="community_latest aquagreen cf">
-                            <a href="/digital-tools" class="box health-apps-link">
+                            <a href="/apps" class="box health-apps-link">
                                 <div class="line nhsPink_line"></div>
                                 <section class="nav_box nhspink">
                                     <h2><span class="lg_icon" aria-hidden="true" data-icon="h"></span><br />Digital Tools</h2>
@@ -119,4 +119,5 @@
 			</div><!--end main_content-->
 		</div><!-- end main -->
 
-<?php get_footer(); ?>				
+<?php get_footer(); ?>
+
