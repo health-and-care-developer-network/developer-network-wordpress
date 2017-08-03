@@ -10,18 +10,10 @@
         var searchForm = document.querySelector(".header__search-form");
         var searchBox = document.querySelector(".header__search-box");
 
-        var url = window.location.href;
-        var page = url.replace(/\/$/, '');
-        var pieces = page.split('/');
-        var link = pieces[pieces.length-1];
+        var selectorTypes = ['.q-link'];
+        dispelLinks(getLink(window.location.href), selectorTypes);
 
-        var qlinks = document.querySelectorAll('.q-link');
-        Array.prototype.forEach.call(qlinks, function(item) {
-            if (getLink(item.href) == link) {
-              item.style.display = 'none';
-            }
-        });
-        
+
         mobileMenuIcon.addEventListener("click", function() {
             if (mobileMenuIcon.classList.contains("menu__icon--clicked")) {
                 mobileMenuIcon.classList.remove("menu__icon--clicked");
@@ -63,3 +55,12 @@ var getLink = function(u) {
   var components = u.replace(/\/$/, '').split('/');
   return components[components.length-1];
 } // getLink
+
+var dispelLinks = function(link, types) {
+  var links = document.querySelectorAll(types.join(' '));
+  Array.prototype.forEach.call(links, function(item) {
+      if (getLink(item.href) == link) {
+        item.style.display = 'none';
+      }
+  });
+}
