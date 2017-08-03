@@ -35,8 +35,11 @@
                         <h1>Contact Us</h1>
                         <div class="large_space grey_text">
                           <p>Before you contact us for further information, please read the frequently asked questions (FAQs) below.
-                              Use the link to "All FAQs" if you do not find what you need in the three FAQs on this page.</p>
-                            <p>Alternatively, if you have an existing digital tool that is being used by the public and you feel that it is ready to pass through the <a href="/digital-tools/daq">Digital Assessment Questions</a> then please <a href="/digital-tools/submit-your-digital-tool">Submit your digital tool</a> to begin the process.</p>
+                              If you do not find the answer on this page go to <a href="/digital-tools/frequently-asked-questions/">Frequently Asked Questions</a>
+                              to see all FAQs.</p>
+                            <p>Alternatively, if you have an existing digital tool that is being used by the public and you feel that it is ready to pass through the
+                              <a href="/digital-tools/daq">Digital Assessment Questions</a> then please
+                              <a href="/digital-tools/submit-your-digital-tool">Submit your digital tool</a> to begin the process.</p>
                         </div>
                         <h2>Frequently Asked Questions</h2>
                         <div class="content_wrap_content">
