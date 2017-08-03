@@ -2983,6 +2983,7 @@ section {
     margin-bottom: 12px; }
 .contact-us-style .content_wrap {
   padding: 1em;
+  padding-bottom: 2em;
   margin-top: 0; }
   .contact-us-style .content_wrap h1 {
     color: #222222;
@@ -3078,7 +3079,8 @@ section {
         right: 8px;
         margin-top: -12px; }
     .contact-us-style .faq_content .faq-item .faq-answer {
-      padding-top: 12px; }
+      padding-top: 12px;
+      padding-bottom: 2em; }
     .contact-us-style .faq_content .faq-item[data-status='open'] .faq-header {
       background-color: #f6f6f6; }
       .contact-us-style .faq_content .faq-item[data-status='open'] .faq-header:before {
@@ -3105,12 +3107,14 @@ section {
       margin-top: 24px; } }
 
 /** contact-us-style **/
+.digital-tools-style .one_quarter.tree_wrap .q-link {
+  color: #ae2573; }
 .digital-tools-style .breadcrumbs ul li {
   margin-right: 0.5em; }
   .digital-tools-style .breadcrumbs ul li.separator {
     color: black; }
   .digital-tools-style .breadcrumbs ul li.active {
-    color: #0272c6;
+    color: #ae2573;
     font-weight: bold; }
 .digital-tools-style .page_title hgroup {
   background: url(img/css/mobile_health_icon.png) no-repeat;
@@ -3129,6 +3133,7 @@ section {
     margin-bottom: 12px; }
 .digital-tools-style .content_wrap {
   padding: 1em;
+  padding-bottom: 2em;
   margin-top: 0; }
   .digital-tools-style .content_wrap h1 {
     font-size: 1.8em;
@@ -3298,5 +3303,8 @@ section {
 
 .quick-links {
   color: #333333; }
+
+.wrapper.cf.container .three_quarters .content_wrap {
+  min-height: calc(100vh - 210px - 157px); }
 
 /*# sourceMappingURL=style.css.map */
