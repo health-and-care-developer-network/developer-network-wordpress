@@ -3,7 +3,7 @@
 <p>
   <?php
     global $post;
-    echo $post->post_name .'<br/>';
+    // echo $post->post_name .'<br/>';
     if ($post->post_name == 'landing-page') { ?>
       <p><a class="q-link" href="/digital-tools/daq">Review the Assessment Questions</a></p>
     <?php } ?>
