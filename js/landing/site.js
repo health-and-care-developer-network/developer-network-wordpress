@@ -10,9 +10,9 @@
         var searchForm = document.querySelector(".header__search-form");
         var searchBox = document.querySelector(".header__search-box");
 
-        var mask = new Mask(window.location.href, ['.q-link']);
-        // var selectorTypes = ['.q-link'];
-        // dispelLinks(getLink(window.location.href), selectorTypes);
+        // var mask = new Mask(window.location.href, ['.q-link']);
+        var selectorTypes = ['.q-link'];
+        dispelLinks(getLink(window.location.href), selectorTypes);
 
 
         mobileMenuIcon.addEventListener("click", function() {
@@ -52,43 +52,7 @@
 
 })();
 
-/**
- * class: Mask
- *  Mask out the present page if found in a link against a passed class/id
- * date: 04.08.2017
- *
- **/
-class Mask {
 
-  constructor(u, t) {
-    this.mask(Mask.getLink(u), t.join(' '));
-  }
-
-  static getLink(u) {
-    try {
-      var components = u.replace(/\/$/, '').split('/');
-      return components[components.length-1];
-    }
-    catch(e)
-    {
-      console.log(e);
-    }
-  }
-
-  mask(l, t) {
-    try {
-      var links = document.querySelectorAll(t);
-      Array.prototype.forEach.call(links, function(item) {
-        item.style.display = (Mask.getLink(item.href) == l) && 'none' || 'display';
-        });
-      }
-      catch(e) {
-        console.log(e);
-      }
-  }
-
-};
-/*************************************************/
 
 var getLink = function(u) {
   var components = u.replace(/\/$/, '').split('/');
@@ -102,4 +66,4 @@ var dispelLinks = function(link, types) {
         item.style.display = 'none';
       }
   });
-}
+} // dispelLinks
