@@ -23,7 +23,8 @@
                          class="section__icon-contents"/>
                 </div>
             </a>
-            <p>Find testing tools, data and guidance - <a href="/testcentre/itk-testbench/">Sandpit</a> / <a href="https://digital.nhs.uk/spine/opentest" target="_blank">Open test</a></p>
+            <p>Find testing tools, data and guidance - <a href="/testcentre/itk-testbench/">Sandpit</a> /
+              <a href="https://digital.nhs.uk/spine/opentest" target="_blank">Open test</a></p>
         </div>
         <div class="section__column-4 section__column--align-center">
             <a href="/apis/">
@@ -50,7 +51,9 @@
                          class="section__icon-contents"/>
                 </div>
             </a>
-            <p>Access tools to develop for the digital apps library. <a href="/digital-tools/submit-your-digital-tool">Submit your Digital Tool</a>, <a href="/digital-tools/register-your-interest">Register your interest</a>, view the <a href="/digital-tools/daq">Digital Assessment Questions</a>, or view the <a href="/license-agreement">License Agreement</a></p>
+            <p>Access tools to develop for the digital apps library. <a href="/digital-tools/submit-your-app">Submit your App</a>,
+              <a href="/digital-tools/register-your-interest">Register your interest</a>, view the <a href="/digital-tools/daq">Digital Assessment Questions</a>,
+              or view the <a href="/license-agreement">License Agreement</a></p>
         </div>
     </div>
 </section>
