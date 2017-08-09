@@ -9,8 +9,8 @@
     <div class="page_title">
         <div class="wrapper">
             <hgroup>
-                <h1>Digital Tools</h1>
-                <h2>Information for Developers about the Digital Tools Library (Beta)</h2>
+                <h1>Apps</h1>
+                <h2>Information for Developers about the Apps Library (Beta)</h2>
             </hgroup>
         </div>
     </div><!--end page title-->
@@ -21,7 +21,7 @@
                     <li>You are here:</li>
                     <li><a href="/">Home</a></li>
                     <li class="separator">&gt;</li>
-                    <li class="active">Digital Tools</li>
+                    <li class="active">Apps</li>
                 </ul>
             </div>
         </div>
@@ -31,19 +31,24 @@
             </div>
             <div class="three_quarters">
                 <div class="content_wrap">
-                    <h2>The Digital Tools Library Assessment Path</h2>
+                    <h2>The Apps Library Assessment Path</h2>
 
-                    <p>The current NHS Digital Tools Library (<a href="https://apps.beta.nhs.uk">apps.beta.nhs.uk</a>) is a beta site, which
+                    <p>The current NHS Apps Library (<a href="https://apps.beta.nhs.uk">apps.beta.nhs.uk</a>) is a beta site, which
                        means that it is in development.<br/>
-                       We have developed a collection of standards and guidance information to help you develop digital tools which meet the
-                      principles of quality applied to all digital products. This means your digital tool will meet what we consider to be
+                       We have developed a collection of standards and guidance information to help you develop apps which meet the
+                      principles of quality applied to all digital products. This means your app will meet what we consider to be
                       good quality digital standards for safety, experience and effectiveness. </p>
-                    <p>All digital tools applying to go on the NHS Digital Tools Library must be assessed equally and thoroughly
+                    <p>All apps applying to go on the NHS Apps Library must be assessed equally and thoroughly
                       through the current process framework. </p>
 
                     <h2 class="large_space">Assessment Process and Questions to Produce Trusted Content</h2>
 
-                    <p>To get an idea of the standards, rules and regulations against which digital health tools are assessed you can view the <a href="/digital-tools/daq">Digital Assessment Questionnaire – Beta</a>. For now, this is only a guide to the assessment question criteria we are using. If you feel that you would be able to comply with the assessment, or would be near to complying, please register your interest as a developer. Once the next steps have been defined we will contact you with further information.</p>
+                    <p>To get an idea of the standards, rules and regulations against which health apps are assessed
+                      you can view the <a href="/digital-tools/daq">Digital Assessment Questionnaire – Beta</a>.
+                      For now, this is only a guide to the assessment question criteria we are using.
+                      If you feel that you would be able to  comply with the assessment, or would be near to complying,
+                      please register your interest as a developer.
+                      Once the next steps have been defined we will contact you with further information.</p>
 
                     <div class="assessment_path">
                         <div class="link_section">

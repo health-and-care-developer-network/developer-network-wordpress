@@ -10,7 +10,7 @@
         <div class="wrapper">
             <hgroup>
                 <h1>Contact Us</h1>
-                <h2>Information for Developers about the Digital Tools Library (beta)</h2>
+                <h2>Information for Developers about the Apps Library (beta)</h2>
             </hgroup>
         </div>
     </div><!--end page title-->
@@ -34,12 +34,14 @@
                     <div class="content_wrap">
                         <h1>Contact Us</h1>
                         <div class="large_space grey_text">
-                          <p>Before you contact us for further information, please read the frequently asked questions (FAQs) below.
-                              If you do not find the answer on this page go to <a href="/digital-tools/frequently-asked-questions/">Frequently Asked Questions</a>
-                              to see all FAQs.</p>
-                            <p>Alternatively, if you have an existing digital tool that is being used by the public and you feel that it is ready to pass through the
-                              <a href="/digital-tools/daq">Digital Assessment Questions</a> then please
-                              <a href="/digital-tools/submit-your-digital-tool">Submit your digital tool</a> to begin the process.</p>
+                              Before you contact us for further information, please read the frequently asked questions
+                              (FAQs) below. 
+                              If you do not find the answer on this page go to Frequently Asked Questions to see all FAQs.
+                              </p>
+                              <p>Alternatively, if you have an existing app currently in public use and you feel that it is ready to pass through the
+                                <a href="/digital-tools/daq">Digital Assessment Questions</a>, please
+                                <a href="/digital-tools/submit-your-app">Submit your app</a> to begin the process.
+                              </p>
                         </div>
                         <h2>Frequently Asked Questions</h2>
                         <div class="content_wrap_content">
@@ -57,7 +59,7 @@
                     <div class="content_wrap">
                       <h2 class="large_space">Contact Form</h2>
                         <div class="grey_text">
-                          Please note that we can only handle queries relating to digital tools developed for inclusion on the Digital Tools Library.
+                          Please note that we can only handle queries relating to apps developed for inclusion on the Apps Library.
                           If your query relates to anything else please refer to our main NHS Digital website at
                           <a href="https://digital.nhs.uk/Contact-us">https://digital.nhs.uk/Contact-us</a>.
                         </div>
