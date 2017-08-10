@@ -9,8 +9,8 @@
     <div class="page_title">
         <div class="wrapper">
             <hgroup>
-                <h1>Digital Tools</h1>
-                <h2>Information for Developers about the Digital Tools Library (Beta)</h2>
+                <h1>Apps</h1>
+                <h2>Information for Developers about the Apps Library (Beta)</h2>
             </hgroup>
         </div>
     </div><!--end page title-->
@@ -22,7 +22,7 @@
                         <li>You are here:</li>
                         <li><a href="/">Home</a></li>
                         <li class="separator">&gt;</li>
-                        <li><a href="/apps">Digital Tools</a></li>
+                        <li><a href="/apps">Apps</a></li>
                         <li class="separator">&gt;</li>
                         <li class="active"><?php the_title(); ?></li>
                     </ul>

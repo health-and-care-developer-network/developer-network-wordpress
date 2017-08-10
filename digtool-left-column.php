@@ -9,8 +9,8 @@
     <div class="page_title">
         <div class="wrapper">
             <hgroup>
-                <h1>Digital Tools</h1>
-                <h2>Information for Developers about the Digital Tools Library (Beta)</h2>
+                <h1>Apps</h1>
+                <h2>Information for Developers about the Apps Library (Beta)</h2>
             </hgroup>
         </div>
     </div><!--end page title-->
