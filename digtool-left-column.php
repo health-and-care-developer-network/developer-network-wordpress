@@ -22,7 +22,7 @@
                         <li>You are here:</li>
                         <li><a href="/">Home</a></li>
                         <li class="separator">&gt;</li>
-                        <li><a href="/apps">Digital Tools</a></li>
+                        <li><a href="/apps">Apps</a></li>
                         <li class="separator">&gt;</li>
                         <li class="active"><?php the_title(); ?></li>
                     </ul>
