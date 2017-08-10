@@ -36,7 +36,9 @@
                         <div class="large_space grey_text">
                               Before you contact us for further information, please read the frequently asked questions
                               (FAQs) below.
-                              If you do not find the answer on this page go to Frequently Asked Questions to see all FAQs.
+                              If you do not find the answer on this page go to
+                              <a href="/digital-tools/frequently-asked-questions/">Frequently Asked Questions</a> to
+                              see all FAQs.
                               </p>
                               <p>Alternatively, if you have an existing app currently in public use and you feel that it is ready to pass through the
                                 <a href="/digital-tools/daq">Digital Assessment Questions</a>, please

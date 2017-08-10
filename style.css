@@ -3983,13 +3983,13 @@ section {
 .grey_text {
   color: #7f7f7f;
   font-size: 14px;
-  font-family: "Ubuntu", "Lucida Grande", "Lucida Sans Unicode", "Helvetica", "Arial";
+  font-family: "Open Sans", "Helvetica", "Arial", sans;
   line-height: 1.4em; }
 
 /* line 1492, sass/style.scss */
 .btnFaq {
   width: auto;
-  font-family: "Ubuntu", "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+  font-family: "Open Sans", "Helvetica", "Arial", sans;
   font-size: 14px;
   height: auto;
   line-height: normal;
