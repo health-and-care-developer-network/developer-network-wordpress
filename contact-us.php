@@ -35,7 +35,7 @@
                         <h1>Contact Us</h1>
                         <div class="large_space grey_text">
                               Before you contact us for further information, please read the frequently asked questions
-                              (FAQs) below. 
+                              (FAQs) below.
                               If you do not find the answer on this page go to Frequently Asked Questions to see all FAQs.
                               </p>
                               <p>Alternatively, if you have an existing app currently in public use and you feel that it is ready to pass through the
@@ -52,8 +52,10 @@
                         </div>
                     </div>
 
-                    <div class="content_wrap">
-                      <form action="/digital-tools/frequently-asked-questions" ><button type="submit" class="btnFaq">More FAQs</button></form>
+                    <div class="content_wrap_content" style="margin-left: 15px; max-height: 150px;">
+                      <form action="/digital-tools/frequently-asked-questions">
+                        <button type="submit" class="btnFaq">More FAQs</button>
+                      </form>
                     </div>
 
                     <div class="content_wrap">
