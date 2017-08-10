@@ -1,0 +1,2 @@
+// Compass watch
+compass watch --sass-dir sass --css-dir .
