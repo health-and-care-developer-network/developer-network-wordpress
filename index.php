@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-		
+
 		<div role="main" class="main">
 			<div class="hp_page_title">
 				<div class="wrapper">
@@ -12,7 +12,7 @@
 					or select one of the sections below.</p>
 				</div>
 			</div><!--end page title-->
-			
+
 			<div class="main_content cf">
 				<div class="wrapper cf">
 					<div class="nav_boxes">
@@ -26,7 +26,7 @@
 								</section>
 							</a>
 						</div>
-						
+
 						<div class="one_third">
 							<a href="/downloads-data" class="box">
 								<div class="line red_line"></div>
@@ -36,7 +36,7 @@
 								</section>
 							</a>
 						</div>
-						
+
 						<div class="one_third">
 							<a href="apis/" class="box">
 								<div class="line aquaBlue_line"></div>
@@ -46,9 +46,9 @@
 								</section>
 							</a>
 						</div>
-						
+
 						<div class="clear"></div>
-						
+
 						<div class="one_third">
 							<a href="/testcentre" class="box">
 								<div class="line purple_line"></div>
@@ -58,7 +58,7 @@
 								</section>
 							</a>
 						</div>
-						
+
 						<div class="one_third">
 							<a href="/learn" class="box">
 								<div class="line orange_line"></div>
@@ -68,7 +68,7 @@
 								</section>
 							</a>
 						</div>
-						
+
 						<div class="one_third">
 							<a href="/community" class="box">
 								<div class="line aquaGreen_line"></div>
@@ -79,14 +79,14 @@
 							</a>
 						</div>
 					</div><!--end nav boxes-->
-				
+
 					<div class="hp_sidebar">
 						<section class="community_latest aquagreen cf">
                             <a href="/apps" class="box health-apps-link">
                                 <div class="line nhsPink_line"></div>
                                 <section class="nav_box nhspink">
-                                    <h2><span class="lg_icon" aria-hidden="true" data-icon="h"></span><br />Digital Tools</h2>
-                                    <p>Access developer information on Digital Tools here</p>
+                                    <h2><span class="lg_icon" aria-hidden="true" data-icon="h"></span><br />Apps</h2>
+                                    <p>Access developer information on Apps here</p>
                                 </section>
                             </a>
 
@@ -112,12 +112,11 @@
                             <?php }); // end generateTemplateTransient ?>
 							<div class="clear"></div>
 						</section>
-						
+
 					</div><!--end hp_sidebar-->
-					
+
 				</div><!--end wrapper-->
 			</div><!--end main_content-->
 		</div><!-- end main -->
 
 <?php get_footer(); ?>
-
