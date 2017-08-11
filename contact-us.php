@@ -63,7 +63,8 @@
                     <div class="content_wrap">
                       <h2 class="large_space">Contact Form</h2>
                         <div class="grey_text">
-                          Please note that we can only handle queries relating to apps developed for inclusion on the Apps Library.
+                          Every email is read; however, we are unable to respond to every query.
+                          Our focus is on queries relating to apps developed for inclusion on the Apps Library.
                           If your query relates to anything else please refer to our main NHS Digital website at
                           <a href="https://digital.nhs.uk/Contact-us">https://digital.nhs.uk/Contact-us</a>.
                         </div>
