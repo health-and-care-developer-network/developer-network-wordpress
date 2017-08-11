@@ -18,7 +18,7 @@
         });
       });
 
-      Array.prototype.map.call(document.getElementsByName("item_meta[9394]"), function(el) {
+      Array.prototype.map.call(document.getElementsByName("item_meta[9434]"), function(el) {
         el.addEventListener('click', function(e) {
           // console.log(e.target.value === 'Yes' && 'block' || 'none');
           btnStyle.display = e.target.value === 'Yes' && 'block' || 'none';
