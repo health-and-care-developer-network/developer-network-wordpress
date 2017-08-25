@@ -48,6 +48,19 @@
             searchForm.classList.add("header__search--disabled");
         });
 
+        // Manage the CTA's
+        //
+        btnSubmitApp = document.getElementById('btnSubmitApp');
+        btnSubmitApp.addEventListener('click', function(){
+          window.location.href = '/apps/submit-your-app';
+        });
+
+        btnRegisterInterest = document.getElementById('btnRegisterInterest');
+        btnRegisterInterest.addEventListener('click', function(){
+          window.location.href = '/apps/register-your-interest';
+        });
+
+
     }); // on DOMContentLoaded
 
 })();

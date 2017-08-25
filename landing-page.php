@@ -121,11 +121,9 @@
                   please submit your app below.<br/>
                 </p>
                 <p>
-                  <form method="post" action="/digital-tools/submit-your-app">
-                    <button type="button" class="btn btn-lg btn-default apps-landing-page">
-                      Submit <span id="submit" class="glyphicon glyphicon-list"></span>
-                    </button>
-                  </form>
+                  <button id="btnSubmitApp" type="button" class="btn btn-lg btn-default apps-landing-page">
+                    Submit <span class="glyphicon glyphicon-list"></span>
+                  </button>
                 </p>
 
                 <h3>Register your Interest</h3>
@@ -134,11 +132,9 @@
                     If you would like to be involved and receive information on future updates please register your interest below.
                 </p>
                 <p>
-                  <form method="post" action="/digital-tools/register-your-interest">
-                    <button type="button" class="btn btn-lg btn-default apps-landing-page">
-                      Register Interest <span id="submit" class="glyphicon glyphicon-envelope"></span>
+                    <button type="button" id="btnRegisterInterest" class="btn btn-lg btn-default apps-landing-page">
+                      Register Interest <span class="glyphicon glyphicon-envelope"></span>
                     </button>
-                  </form>
                 </p>
 
                 <h2 class="large_space">Frequently Asked Questions</h2>
@@ -150,54 +146,6 @@
               </div> <!-- inner - content wrap -->
             </div> <!-- three_quarters - main wrap -->
 
-            <!-- <div class="three_quarters">
-                <div class="content_wrap">
-                    <h2>The path to publication on the NHS Apps Library</h2>
-
-                    <p>The current NHS Apps Library (<a href="https://apps.beta.nhs.uk">apps.beta.nhs.uk</a>) is a beta site, which
-                       means that it is in development.<br/>
-                       We have developed a collection of standards and guidance information to help you develop apps which meet the
-                      principles of quality applied to all digital products. This means your app will meet what we consider to be
-                      good quality digital standards for safety, experience and effectiveness. </p>
-                    <p>All apps applying to go on the NHS Apps Library must be assessed equally and thoroughly
-                      through the current process framework. </p>
-
-                    <h2 class="large_space">Assessment Process and Questions to Produce Trusted Content</h2>
-
-                    <p>To get an idea of the standards, rules and regulations against which health apps are assessed
-                      you can view the <a href="/digital-tools/daq">Digital Assessment Questionnaire – Beta</a>.
-                      For now, this is only a guide to the assessment question criteria we are using.
-                      If you feel that you would be able to  comply with the assessment, or would be near to complying,
-                      please register your interest as a developer.
-                      Once the next steps have been defined we will contact you with further information.</p>
-
-                    <div class="assessment_path">
-                        <div class="link_section">
-                            <a href="#">
-                                <div class="link_container">
-                                    <div class="review_icon"></div>
-                                    <span>Review Assessment Questions</span>
-                                </div>
-                            </a>
-                            <a href="#">Review Assessment Questions &gt;</a>
-                        </div>
-                        <div class="arrow_section">
-                        </div>
-                        <div class="link_section">
-                            <a href="#">
-                                <div class="link_container">
-                                    <div class="register_icon"></div>
-                                    <span>Register Your Interest</span>
-                                </div>
-                            </a>
-                            <a href="/digital-tools/register-your-interest">Register Your Interest &gt;</a>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div> --> <!-- three_quarters -->
         </div>
     </div>
 </div>
