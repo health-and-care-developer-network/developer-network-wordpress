@@ -33,10 +33,10 @@
             <div class="three_quarters">
               <div class="content_wrap apps-landing-page">
 
-                <h2>The path to publication on the NHS Apps Library</h2>
-                <h4>What is the NHS Apps Library and how do you get your app on there?</h4>
+                <h2>What is the NHS Apps Library and how do you get your app on there?</h2>
                 <p>
-                  The new NHS Apps Library (apps.beta.nhs.uk) has been launched as a beta site.
+                  The new <a href="https://apps.beta.nhs.uk/">NHS Apps Library</a> (apps.beta.nhs.uk) has
+                  been launched as a beta site.
                   It provides citizens, patients and clinicians with a trusted selection of digital health and
                   well-being applications.
                   This enables patients and citizens to access health care related tools that have been designed and tested to
@@ -59,33 +59,32 @@
                   feedback from developers. <br/>
                 </p>
 
-                <h4>Assessment Process</h4>
+                <h3>Assessment Process</h3>
                 <p>
                   In order to drive and maintain a high quality offering of products on the NHS Apps Library we have
                   devised a Digital Assessment Questionnaire and review process that enables developers to self-assess
                   against relevant national standards and best practices.<br/>
                 </p>
                 <p>
-                  The digital assessment questionnaire and assessment review process is being tested live to
-                  enable a collaboration environment for developers, health care professionals and patients.
+                  The digital assessment questionnaire and assessment review process is being tested live
+                  to enable a collaboration environment for developers, health care professionals and patients.
                   This supports us in the development of a fit-for-purpose process that is efficient and effective.<br/>
                 </p>
                 <p>
-                  As the process flow below shows, once you have submitted your app for assessment it will go through
-                  a pre-assessment process at NHS Digital to determine if your app is the type of app we are
-                  currently assessing. If it qualifies, you will be invited to take part in the app assessment by
-                  answering the digital assessment questions.<br/>
+                  As the process flow below shows, once you have submitted your app for assessment it
+                  will go through a pre-assessment process at NHS Digital to determine if your app is suitable.
+                  If it qualifies, you will be invited to take part in the self-assessment by answering the digital
+                  assessment questions.<br/>
                 </p>
                 <p>
-                  Once you submit your self-assessment answers, they will be reviewed by our subject
-                  matter experts; these are specialists in various fields (regulatory, clinical safety etc.).
-                  At the moment, this is a largely manual process as we are currently developing the DAQs
-                  and the overall assessment process. Response times and assessment times vary from app to
-                  app depending on the complexity of the assessment.<br/>
+                  Once we have received your submission, they will be reviewed by our subject matter experts;
+                  these are specialists in various fields (regulatory, clinical safety, data security etc.).
+                  Timescales for assessment may vary.<br/>
                 </p>
                 <p>
-                  When an app has successfully completed an assessment it will go through an on boarding
-                  process and is ultimately published on the NHS Apps Library.<br/>
+                  When an app has successfully satisfied the assessment criteria it will go through a process
+                  that will lead to publication on the NHS Apps Library. To get an indication of the criteria
+                  used, you can view the Digital Assessment Questionnaire – Beta.<br/>
                 </p>
 
                 <p>
@@ -116,17 +115,10 @@
                   </svg>
                 </p>
 
+                <h3>Submit an App for assessment</h3>
                 <p>
-                    To get an idea of the criteria against which health apps are assessed you can view the Digital
-                    Assessment Questionnaire – Beta. For now, this is only a guide to the evolving
-                    assessment question criteria.<br/>
-                </p>
-
-                <h4>Submit an App for assessment</h4>
-                <p>
-                  If you have an existing app in public use and you feel that it is ready to pass through the
-                  Digital Assessment Questions, please submit your app to begin the process; otherwise you may
-                  register your interest.<br/>
+                  If your app is in public use and is ready to be assessed using the Digital Assessment Questions,
+                  please submit your app below.<br/>
                 </p>
                 <p>
                   <form method="post" action="/digital-tools/submit-your-app">
@@ -136,13 +128,10 @@
                   </form>
                 </p>
 
-                <h4>Register your Interest</h4>
+                <h3>Register your Interest</h3>
                 <p>
-                    Are you thinking of developing a health app and need to know more?
-                    Perhaps you are interested in being involved in testing or have an overall interest in the
-                    apps library and assessments.
-                    Select the button below to register your interest and, once the next steps have been defined, we
-                    will contact you with further information.
+                    The NHS are keen to work with developers and interested parties.
+                    If you would like to be involved and receive information on future updates please register your interest below.
                 </p>
                 <p>
                   <form method="post" action="/digital-tools/register-your-interest">
