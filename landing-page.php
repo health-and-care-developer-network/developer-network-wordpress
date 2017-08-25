@@ -122,8 +122,8 @@
                 </p>
                 <p>
                   <form method="post" action="/digital-tools/submit-your-app">
-                    <button type="button" class="btn btn-default apps-landing-page">
-                      Submit <span id="submit" class="glyphicon glyphicon-list">
+                    <button type="button" class="btn btn-lg btn-default apps-landing-page">
+                      Submit <span id="submit" class="glyphicon glyphicon-list"></span>
                     </button>
                   </form>
                 </p>
@@ -135,7 +135,7 @@
                 </p>
                 <p>
                   <form method="post" action="/digital-tools/register-your-interest">
-                    <button type="button" class="btn btn-default apps-landing-page">
+                    <button type="button" class="btn btn-lg btn-default apps-landing-page">
                       Register Interest <span id="submit" class="glyphicon glyphicon-envelope"></span>
                     </button>
                   </form>
