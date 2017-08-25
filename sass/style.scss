@@ -1532,3 +1532,235 @@ div.apicontent {
     }
   }
 }
+
+.apps-landing-page > h2 {
+  color: #ae2573;
+}
+
+.btn-default.apps-landing-page {
+  background-color: #ae2573;
+  font-weight: 300;
+  color: white;
+  padding: 7px;
+  border-radius: 0px;
+  border-color: #999999;
+}
+
+.btn-default.apps-landing-page:hover {
+  background-color: #ae2573;
+  font-weight: 300;
+  color: white;
+  padding: 10px;
+  border-radius: 0px;
+  border-color: #999999;
+}
+
+.btn-default.apps-landing-page:focus {
+  background-color: #ae2573;
+  font-weight: 300;
+  color: white;
+  padding: 7px;
+  border-radius: 0px;
+  border-color: #999999;
+}
+
+.btn-default.apps-landing-page:active {
+  background-color: #ae2573;
+  font-weight: 300;
+  color: white;
+  padding: 7px;
+  border-radius: 0px;
+  border-color: #999999;
+}
+
+.btn-default.apps-landing-page:link {
+  background-color: #ae2573;
+  font-weight: 300;
+  color: white;
+  padding: 7px;
+  border-radius: 0px;
+  border-color: #999999;
+}
+
+// #form_7i5d1 {
+//   border-radius: 2px;
+// }
+
+.frm_section_heading  {
+  border-radius: 6px;
+  background-color: #eeeeee;
+  border: 15px;
+  padding: 15px 15px 15px 15px;
+  border-color: #aaaaaa;
+}
+
+.apps-landing-page p {
+  margin-bottom: 15px;
+}
+
+.submit-icon {
+  // width: 44px;
+  width: 16px;
+  // height: 41px;
+  height: 16px;
+  display: inline-block;
+  background-position: 0 0;
+  background: url("/wp-content/themes/HDN/img/landing/submit-icon-2.png") no-repeat;
+  // background-attachment: fixed;
+}
+
+/**
+ * CSS arrow
+ **/
+
+ .arrow:before {
+   position: absolute;
+   width: 0px;
+   height: 0px;
+   left: 0px;
+   top: 0px;
+   border-left: 28px solid #eeeeee;
+   border-top: 24px solid transparent;
+   border-bottom: 24px solid transparent;
+   text-align: center;
+   content: "";
+ }
+
+.arrow {
+  position: relative;
+  background-color: #cccccc;
+  height: 48px;
+  line-height: 24px;
+  padding-left: 32px;
+  padding-right: 12px;
+  display: inline-block;
+}
+
+.arrow.alt:before {
+  border-left-color: #cccccc;
+}
+
+.arrow.alt {
+  background-color: #eeeeee;
+}
+
+.arrow.alt-2 {
+  background-color: #eeeeee;
+}
+
+
+.arrow.alt-2:before {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 0px;
+  top: 0px;
+  border-left: 18px solid #eeeeee;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  text-align: center;
+  content: "";
+}
+
+.arrow.alt-2:after {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 0px;
+  top: 0px;
+  border-left: 18px solid #eeeeee;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  text-align: center;
+  content: "";
+}
+
+/**
+ * CSS arrow - end
+ **/
+
+
+.app-process-container {
+  background-color: #eeeeee;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: "Ubuntu";
+  line-height: 24px;
+  color: #363636;
+  border-color: #fffff;
+  border-radius: 4px;
+  margin: 0 0 0 0;
+}
+
+.app-process-key {
+  font-family: "Ubuntu";
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  width: 50%;
+  background-color: #ffffff;
+  vertical-align: middle;
+  margin: 25px 25px 20px 25px;
+
+  .you-box {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #cccccc;
+    border-radius: 2px;
+  }
+
+  .nhs-digital-box {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #dddddd;
+    border-radius: 2px;
+  }
+}
+
+
+.box-with-border {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  background-color: #eeeeee;
+}
+
+.app-process-box-text {
+  position: absolute;
+  width: 180px;
+  left: 26px;
+  top: 6px;
+  right: 0px;
+  bottom: 0px;
+  line-height: 24px;
+  z-index: 128;
+}
+
+.div-bg {
+  position: relative;
+  width: 180px;
+  left: 0px;
+  top: 7px;
+  z-index: 64;
+}
+
+.box-pointer-1 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  background-color: #ffffff;
+  top: 0px;
+  left: 75px;
+}
+
+.box-pointer-2 {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  background-color: #ffffff;
+  top: 0px;
+  left: 125px;
+}
