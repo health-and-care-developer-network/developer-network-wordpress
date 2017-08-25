@@ -1,0 +1,10 @@
+.submit-icon{
+	background: url(sprites.png) no-repeat;
+}
+
+.submit-icon{
+	background-position: -3px -2px ;
+	width: 44px;
+	height: 49px;
+}
+

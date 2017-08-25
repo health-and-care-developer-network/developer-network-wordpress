@@ -131,7 +131,7 @@
                 <p>
                   <form method="post" action="/digital-tools/submit-your-app">
                     <button type="button" class="btn btn-default apps-landing-page">
-                      Submit <span id="submit" class="submit-icon"></span>
+                      Submit <span id="submit" class="glyphicon glyphicon-list">
                     </button>
                   </form>
                 </p>
