@@ -34,6 +34,7 @@
               <div class="content_wrap apps-landing-page">
 
                 <h2>What is the NHS Apps Library and how do you get your app on there?</h2>
+                <hr style="border-top: 1px solid #d8d8d8;"/>
                 <p>
                   The new <a href="https://apps.beta.nhs.uk/">NHS Apps Library</a> (apps.beta.nhs.uk) has
                   been launched as a beta site.
