@@ -5,151 +5,187 @@
 ?>
 <?php get_header(); ?>
 
-<div role="main" class="main digital-tools-style">
-    <div class="page_title">
-        <div class="wrapper">
-            <hgroup>
-                <h1>Apps</h1>
-                <h2>Information for Developers about the Apps Library (Beta)</h2>
-            </hgroup>
-        </div>
-    </div><!--end page title-->
-    <div class="main_content cf">
-        <div class="breadcrumbs">
+    <div role="main" class="main digital-tools-style">
+        <div class="page_title">
             <div class="wrapper">
-                <ul>
-                    <li>You are here:</li>
-                    <li><a href="/">Home</a></li>
-                    <li class="separator">&gt;</li>
-                    <li class="active">Apps</li>
-                </ul>
+                <hgroup>
+                    <h1>Apps</h1>
+                    <h2>Information for Developers about the Apps Library (Beta)</h2>
+                </hgroup>
             </div>
-        </div>
-        <div class="wrapper cf container">
-          <div class="one_quarter tree_wrap">
-              <?php include_once "quick-links.php" ?>
-          </div>
-
-            <div class="three_quarters">
-              <div class="content_wrap apps-landing-page">
-
-                <h2>What is the NHS Apps Library and how do you get your app on there?</h2>
-                <hr style="border-top: 1px solid #d8d8d8;"/>
-                <p>
-                  The new <a href="https://apps.beta.nhs.uk/">NHS Apps Library</a> (apps.beta.nhs.uk) has
-                  been launched as a beta site.
-                  It provides citizens, patients and clinicians with a trusted selection of digital health and
-                  well-being applications.
-                  This enables patients and citizens to access health care related tools that have been designed and tested to
-                  support the self-management and prevention of health related conditions.<br/>
-                </p>
-                <p>
-                  These pages provide options to developers who have existing health apps they would like to
-                  see on the library. It also provides options for those of you who are interested in the
-                  library or have an idea for a health app that they'd like to develop.<br/>
-                </p>
-                <p>
-                  All apps must be pass through an assessment to ensure that only trusted, high quality apps
-                  are available on the Apps Library. We are currently focusing on UK produced apps that are
-                  in public use. They must also be available in known app stores, such as Google Play and
-                  The App Store. The library does not host apps, it provides links to the stores.<br/>
-                </p>
-                <p>
-                  The NHS is working to update and enhance these pages and the experience for app developers.
-                  To do this we are testing concepts, designs and user experience and we are actively seek
-                  feedback from developers. <br/>
-                </p>
-
-                <h3>Assessment Process</h3>
-                <p>
-                  In order to drive and maintain a high quality offering of products on the NHS Apps Library we have
-                  devised a Digital Assessment Questionnaire and review process that enables developers to self-assess
-                  against relevant national standards and best practices.<br/>
-                </p>
-                <p>
-                  The digital assessment questionnaire and assessment review process is being tested live
-                  to enable a collaboration environment for developers, health care professionals and patients.
-                  This supports us in the development of a fit-for-purpose process that is efficient and effective.<br/>
-                </p>
-                <p>
-                  As the process flow below shows, once you have submitted your app for assessment it
-                  will go through a pre-assessment process at NHS Digital to determine if your app is suitable.
-                  If it qualifies, you will be invited to take part in the self-assessment by answering the digital
-                  assessment questions.<br/>
-                </p>
-                <p>
-                  Once we have received your submission, they will be reviewed by our subject matter experts;
-                  these are specialists in various fields (regulatory, clinical safety, data security etc.).
-                  Timescales for assessment may vary.<br/>
-                </p>
-                <p>
-                  When an app has successfully satisfied the assessment criteria it will go through a process
-                  that will lead to publication on the NHS Apps Library. To get an indication of the criteria
-                  used, you can view the Digital Assessment Questionnaire – Beta.<br/>
-                </p>
-
-                <p>
-                  <div class="app-process-key">
-                    <div class="you-box"></div> You&nbsp;&nbsp;&nbsp;<div class="nhs-digital-box"></div> NHS Digital
-                  </div>
-
-                  <div class="app-process-container">
-                    <div class="centre-text arrow">
-                      Step 1<br/>Submit App</div><div class="centre-text arrow alt">
-                        Step 2<br/>Pre-Assess</div><div class="centre-text arrow">
-                          Step 3<br/>Complete DAQ's</div><div class="centre-text arrow alt">
-                            Step 4<br/>Assess</div><div class="box-with-border"><svg height="48" width="180" class="div-bg">
-                                <polygon points="1,1 120,1 140,24 120,46 1,46 24,23" style="fill: #eeeeee; stroke: #cccccc; stroke-width: 1" />
-                              </svg><div class="app-process-box-text">Step 5<br/>App Published</div></div>
-                  </div> <!-- app-process-container -->
-                  <svg height="30" width="160" class="box-pointer-1">
-                    <line x1="1" y1="1" x2="1" y2="25" style="fill: #ffffff; stroke: #cccccc; stroke-width:1" />
-                    <line x1="1" y1="25" x2="120" y2="25" style="fill: #ffffff; stroke: #cccccc; stroke-width:1" />
-                    <line x1="120" y1="25" x2="120" y2="1" style="fill: #ffffff; stroke: #cccccc; stroke-width:1" />
-                    <polygon points="55,25 65,20 65,30" style="fill: #cccccc; stroke: #cccccc; stroke-width:1" />
-                  </svg>
-                  <svg height="30" width="160" class="box-pointer-2">
-                    <line x1="1" y1="1" x2="1" y2="25" style="fill: #ffffff; stroke: #cccccc; stroke-width:1" />
-                    <line x1="1" y1="25" x2="120" y2="25" style="fill: #ffffff; stroke: #cccccc; stroke-width:1" />
-                    <line x1="120" y1="25" x2="120" y2="1" style="fill: #ffffff; stroke: #cccccc; stroke-width:1" />
-                    <polygon points="55,25 65,20 65,30" style="fill: #cccccc; stroke: #cccccc; stroke-width:1" />
-                  </svg>
-                </p>
-
-                <h3>Submit an App for assessment</h3>
-                <p>
-                  If your app is in public use and is ready to be assessed using the Digital Assessment Questions,
-                  please submit your app below.<br/>
-                </p>
-                <p>
-                  <button id="btnSubmitApp" type="button" class="btn btn-lg btn-default apps-landing-page">
-                    Submit <span class="glyphicon glyphicon-list"></span>
-                  </button>
-                </p>
-
-                <h3>Register your Interest</h3>
-                <p>
-                    The NHS are keen to work with developers and interested parties.
-                    If you would like to be involved and receive information on future updates please register your interest below.
-                </p>
-                <p>
-                    <button type="button" id="btnRegisterInterest" class="btn btn-lg btn-default apps-landing-page">
-                      Register Interest <span class="glyphicon glyphicon-envelope"></span>
-                    </button>
-                </p>
-
-                <h2 class="large_space">Frequently Asked Questions</h2>
-
-                <div class="faq_content">
-                    <?php hdnPosts::the_faqs('landing'); ?>
+        </div><!--end page title-->
+        <div class="main_content cf">
+            <div class="breadcrumbs">
+                <div class="wrapper">
+                    <ul>
+                        <li>You are here:</li>
+                        <li><a href="/">Home</a></li>
+                        <li class="separator">&gt;</li>
+                        <li class="active">Apps</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrapper cf container">
+                <div class="one_quarter tree_wrap">
+                    <?php include_once "quick-links.php" ?>
                 </div>
 
-              </div> <!-- inner - content wrap -->
-            </div> <!-- three_quarters - main wrap -->
+                <div class="three_quarters">
+                    <div class="content_wrap apps-landing-page">
 
+                        <h2>What is the NHS Apps Library and how do you get your app on there?</h2>
+                        <hr style="border-top: 1px solid #d8d8d8;"/>
+                        <p>
+                            The new <a href="https://apps.beta.nhs.uk/">NHS Apps Library</a> (apps.beta.nhs.uk) has
+                            been launched as a beta site.
+                            It provides citizens, patients and clinicians with a trusted selection of digital health and
+                            well-being applications.
+                            This enables patients and citizens to access health care related tools that have been
+                            designed and tested to
+                            support the self-management and prevention of health related conditions.<br/>
+                        </p>
+                        <p>
+                            These pages provide options to developers who have existing health apps they would like to
+                            see on the library. It also provides options for those of you who are interested in the
+                            library or have an idea for a health app that they'd like to develop.<br/>
+                        </p>
+                        <p>
+                            All apps must be pass through an assessment to ensure that only trusted, high quality apps
+                            are available on the Apps Library. We are currently focusing on UK produced apps that are
+                            in public use. They must also be available in known app stores, such as Google Play and
+                            The App Store. The library does not host apps, it provides links to the stores.<br/>
+                        </p>
+                        <p>
+                            The NHS is working to update and enhance these pages and the experience for app developers.
+                            To do this we are testing concepts, designs and user experience and we are actively seek
+                            feedback from developers. <br/>
+                        </p>
+
+                        <h3>Assessment Process</h3>
+                        <p>
+                            In order to drive and maintain a high quality offering of products on the NHS Apps Library
+                            we have
+                            devised a Digital Assessment Questionnaire and review process that enables developers to
+                            self-assess
+                            against relevant national standards and best practices.<br/>
+                        </p>
+                        <p>
+                            The digital assessment questionnaire and assessment review process is being tested live
+                            to enable a collaboration environment for developers, health care professionals and
+                            patients.
+                            This supports us in the development of a fit-for-purpose process that is efficient and
+                            effective.<br/>
+                        </p>
+                        <p>
+                            As the process flow below shows, once you have submitted your app for assessment it
+                            will go through a pre-assessment process at NHS Digital to determine if your app is
+                            suitable.
+                            If it qualifies, you will be invited to take part in the self-assessment by answering the
+                            digital
+                            assessment questions.<br/>
+                        </p>
+                        <p>
+                            Once we have received your submission, they will be reviewed by our subject matter experts;
+                            these are specialists in various fields (regulatory, clinical safety, data security etc.).
+                            Timescales for assessment may vary.<br/>
+                        </p>
+                        <p>
+                            When an app has successfully satisfied the assessment criteria it will go through a process
+                            that will lead to publication on the NHS Apps Library. To get an indication of the criteria
+                            used, you can view the Digital Assessment Questionnaire – Beta.<br/>
+                        </p>
+
+                        <p>
+                        <div class="app-process-key">
+                            <div class="you-box"></div>
+                            You&nbsp;&nbsp;&nbsp;<div class="nhs-digital-box"></div>
+                            NHS Digital
+                        </div>
+
+                        <div class="app-process-container">
+                            <div class="centre-text arrow">
+                                <div class="step">Step 1</div>
+                                Submit App
+                            </div>
+                            <div class="centre-text arrow alt">
+                                <div class="step">Step 2</div>
+                                Pre-Assess
+                            </div>
+                            <div class="centre-text arrow">
+                                <div class="step">Step 3</div>
+                                Complete DAQ's
+                            </div>
+                            <div class="centre-text arrow alt">
+                                <div class="step">Step 4</div>
+                                Assess
+                            </div>
+                            <div class="box-with-border">
+                                <svg height="61" width="180" class="div-bg">
+                                    <polygon points="1,1 140,1 160,30 140,60 1,60 24,30"
+                                             style="fill: #eeeeee; stroke: #cccccc; stroke-width: 1"/>
+                                </svg>
+                                <div class="app-process-box-text">
+                                    <div class="step">Step 5</div>
+                                    App Published
+                                </div>
+                            </div>
+                        </div> <!-- app-process-container -->
+                        <svg height="30" width="160" class="box-pointer-1">
+                            <line x1="1" y1="1" x2="1" y2="25" style="fill: #ffffff; stroke: #e1e1e1; stroke-width:1"/>
+                            <line x1="1" y1="25" x2="160" y2="25"
+                                  style="fill: #ffffff; stroke: #e1e1e1; stroke-width:1"/>
+                            <line x1="160" y1="25" x2="160" y2="1"
+                                  style="fill: #ffffff; stroke: #e1e1e1; stroke-width:1"/>
+                            <polygon points="75,25 85,20 85,30" style="fill: #cccccc; stroke: #cccccc; stroke-width:1"/>
+                        </svg>
+                        <svg height="30" width="160" class="box-pointer-2">
+                            <line x1="1" y1="1" x2="1" y2="25" style="fill: #ffffff; stroke: #cccccc; stroke-width:1"/>
+                            <line x1="1" y1="25" x2="160" y2="25"
+                                  style="fill: #ffffff; stroke: #e1e1e1; stroke-width:1"/>
+                            <line x1="160" y1="25" x2="160" y2="1"
+                                  style="fill: #ffffff; stroke: #e1e1e1; stroke-width:1"/>
+                            <polygon points="75,25 85,20 85,30" style="fill: #e1e1e1; stroke: #e1e1e1; stroke-width:1"/>
+                        </svg>
+                        </p>
+
+                        <h3>Submit an App for assessment</h3>
+                        <p>
+                            If your app is in public use and is ready to be assessed using the Digital Assessment
+                            Questions,
+                            please submit your app below.<br/>
+                        </p>
+                        <p>
+                            <button id="btnSubmitApp" type="button" class="btn btn-lg btn-default apps-landing-page">
+                                Submit <span class="checklist-icon"></span>
+                            </button>
+                        </p>
+
+                        <h3>Register your Interest</h3>
+                        <p>
+                            The NHS are keen to work with developers and interested parties.
+                            If you would like to be involved and receive information on future updates please register
+                            your interest below.
+                        </p>
+                        <p>
+                            <button type="button" id="btnRegisterInterest"
+                                    class="btn btn-lg btn-default apps-landing-page">
+                                Register Interest <span class="mail-icon"></span>
+                            </button>
+                        </p>
+
+                        <h2 class="large_space">Frequently Asked Questions</h2>
+
+                        <div class="faq_content">
+                            <?php hdnPosts::the_faqs('landing'); ?>
+                        </div>
+
+                    </div> <!-- inner - content wrap -->
+                </div> <!-- three_quarters - main wrap -->
+
+            </div>
         </div>
     </div>
-</div>
 
-<script src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>" type="text/javascript"></script>
+    <script src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>"
+            type="text/javascript"></script>
 <?php get_footer();
