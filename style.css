@@ -3391,10 +3391,11 @@ section {
   padding-right: 6px;
   display: block;
   float: left;
-  width: 125px;
+  width: 150px;
   text-align: center;
   font-weight: normal;
-  font-size: 16px; }
+  font-size: 16px;
+  box-sizing: border-box; }
 
 .app-process-box-text .step, .arrow .step {
   font-size: 20px;
@@ -3555,7 +3556,8 @@ section {
     width: 170px;
     padding-left: 0px;
     margin-top: 20px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    box-sizing: border-box; }
   .apps-landing-page .div-bg {
     margin-left: -5px;
     transform: rotate(90deg) scale(0.6, 2.32); }

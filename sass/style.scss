@@ -1638,10 +1638,11 @@ div.apicontent {
   padding-right: 6px;
   display: block;
   float: left;
-  width: 125px;
+  width: 150px;
   text-align: center;
   font-weight: normal;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .app-process-box-text, .arrow {
@@ -1838,6 +1839,7 @@ div.apicontent {
       padding-left: 0px;
       margin-top: 20px;
       padding-bottom: 20px;
+      box-sizing: border-box;
     }
     .div-bg {
       margin-left: -5px;
