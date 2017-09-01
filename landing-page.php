@@ -50,7 +50,7 @@
                             library or have an idea for a health app that they'd like to develop.<br/>
                         </p>
                         <p>
-                          All apps must be pass the Digital Assessment Questionnaire (DAQ's) to ensure that only
+                          All apps must pass the Digital Assessment Questionnaire (DAQ's) to ensure that only
                           trusted, high quality apps are available on the Apps Library. They must also be available
                           in either Apple, Google or Microsoft App Stores. The library does not host apps, it
                           provides links to the stores.<br/>
