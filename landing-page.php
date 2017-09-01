@@ -36,13 +36,13 @@
                         <h2>What is the NHS Apps Library and how do you get your app on there?</h2>
                         <hr style="border-top: 1px solid #d8d8d8;"/>
                         <p>
-                            The new <a href="https://apps.beta.nhs.uk/">NHS Apps Library</a> (apps.beta.nhs.uk) has
+                            The <a href="https://apps.beta.nhs.uk/">NHS Apps Library</a> (apps.beta.nhs.uk) has
                             been launched as a beta site.
-                            It provides citizens, patients and clinicians with a trusted selection of digital health and
-                            well-being applications.
+                            It provides citizens, patients and clinicians with a trusted selection of digital health,
+                            care and well-being applications.
                             This enables patients and citizens to access health care related tools that have been
-                            designed and tested to
-                            support the self-management and prevention of health related conditions.<br/>
+                            designed and tested to support the self-management and prevention
+                            of health related conditions.<br/>
                         </p>
                         <p>
                             These pages provide options to developers who have existing health apps they would like to
@@ -52,7 +52,7 @@
                         <p>
                             All apps must be pass through an assessment to ensure that only trusted, high quality apps
                             are available on the Apps Library. We are currently focusing on UK produced apps that are
-                            in public use. They must also be available in known app stores, such as Google Play and
+                            for public use. They must also be available in known app stores, such as Google Play and
                             The App Store. The library does not host apps, it provides links to the stores.<br/>
                         </p>
                         <p>
