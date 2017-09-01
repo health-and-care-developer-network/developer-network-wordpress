@@ -50,49 +50,46 @@
                             library or have an idea for a health app that they'd like to develop.<br/>
                         </p>
                         <p>
-                            All apps must be pass through an assessment to ensure that only trusted, high quality apps
-                            are available on the Apps Library. We are currently focusing on UK produced apps that are
-                            for public use. They must also be available in known app stores, such as Google Play and
-                            The App Store. The library does not host apps, it provides links to the stores.<br/>
+                          All apps must be pass the Digital Assessment Questionnaire (DAQ's) to ensure that only
+                          trusted, high quality apps are available on the Apps Library. They must also be available
+                          in either Apple, Google or Microsoft App Stores. The library does not host apps, it
+                          provides links to the stores.<br/>
                         </p>
                         <p>
-                            The NHS is working to update and enhance these pages and the experience for app developers.
-                            To do this we are testing concepts, designs and user experience and we are actively seek
-                            feedback from developers. <br/>
+                          The NHS is working to update and enhance these pages and the experience for app developers.
+                          To do this we are testing concepts, designs and user experience and we are actively seeking
+                          feedback from developers.<br/>
                         </p>
 
                         <h3>Assessment Process</h3>
                         <p>
-                            In order to drive and maintain a high quality offering of products on the NHS Apps Library
-                            we have
-                            devised a Digital Assessment Questionnaire and review process that enables developers to
-                            self-assess
-                            against relevant national standards and best practices.<br/>
+                          In order to drive and maintain a high-quality offering of products on the NHS Apps Library
+                           we have a Digital Assessment Questionnaire and review process that enables developers to
+                           provide information and evidence against relevant national standards and best practices.<br/>
                         </p>
                         <p>
-                            The digital assessment questionnaire and assessment review process is being tested live
-                            to enable a collaboration environment for developers, health care professionals and
-                            patients.
-                            This supports us in the development of a fit-for-purpose process that is efficient and
-                            effective.<br/>
+                          The digital assessment questionnaire and assessment review process is being tested via
+                          this beta site to enable a collaboration environment for developers, health care
+                          professionals and patients. This supports us in the development of a fit-for-purpose
+                          process that is efficient and effective.<br/>
                         </p>
                         <p>
-                            As the process flow below shows, once you have submitted your app for assessment it
-                            will go through a pre-assessment process at NHS Digital to determine if your app is
-                            suitable.
-                            If it qualifies, you will be invited to take part in the self-assessment by answering the
-                            digital
-                            assessment questions.<br/>
+                          As the process flow below shows, once you have submitted your app for assessment
+                          it will go through a pre-assessment process at NHS Digital to determine if your
+                          app is suitable. If it qualifies, you will be invited to take part in the self-assessment
+                          by answering the digital assessment questions.<br/>
                         </p>
                         <p>
-                            Once we have received your submission, they will be reviewed by our subject matter experts;
-                            these are specialists in various fields (regulatory, clinical safety, data security etc.).
-                            Timescales for assessment may vary.<br/>
+                          Once we have received your submission, they will be reviewed by our subject matter
+                          experts; these are specialists in various fields (regulatory, clinical safety,
+                          data security etc.). Timescales for assessment may vary but can typically take
+                          around 2 to 4 weeks and is dependent on how the app performs against the assessment
+                          standards.<br/>
                         </p>
                         <p>
-                            When an app has successfully satisfied the assessment criteria it will go through a process
-                            that will lead to publication on the NHS Apps Library. To get an indication of the criteria
-                            used, you can view the Digital Assessment Questionnaire – Beta.<br/>
+                          When an app has successfully satisfied the assessment criteria it will go through a
+                           process that will lead to publication on the NHS Apps Library. To get an indication
+                           of the criteria used, you can view the Digital Assessment Questionnaire – Beta.<br/>
                         </p>
 
                         <p>
@@ -150,9 +147,8 @@
 
                         <h3>Submit an App for assessment</h3>
                         <p>
-                            If your app is in public use and is ready to be assessed using the Digital Assessment
-                            Questions,
-                            please submit your app below.<br/>
+                          If your app is in public use and is ready to be assessed using the Digital Assessment
+                          Questions, please submit your app below.<br/>
                         </p>
                         <p>
                             <button id="btnSubmitApp" type="button" class="btn btn-lg btn-default apps-landing-page">
@@ -162,9 +158,9 @@
 
                         <h3>Register your Interest</h3>
                         <p>
-                            The NHS are keen to work with developers and interested parties.
-                            If you would like to be involved and receive information on future updates please register
-                            your interest below.
+                          The NHS are keen to work with developers and interested parties.
+                          If you would like to be
+                          involved and receive information on future updates please register your interest below.
                         </p>
                         <p>
                             <button type="button" id="btnRegisterInterest"
