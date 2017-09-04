@@ -1588,16 +1588,17 @@ div.apicontent {
 //   border-radius: 2px;
 // }
 
-:not(#digital-assessment-questions) {
-  .frm_section_heading  {
-    border-radius: 6px;
-    background-color: #eeeeee;
-    border: 15px;
-    padding: 15px 15px 15px 15px;
-    border-color: #aaaaaa;
-  }
+.frm_section_heading  {
+  border-radius: 6px;
+  background-color: #eeeeee;
+  border: 15px;
+  padding: 15px 15px 15px 15px;
+  border-color: #aaaaaa;
 }
 
+#digital-assessment-questions .frm_section_heading {
+  background-color: #fff;
+}
 
 
 .apps-landing-page p {
