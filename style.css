@@ -3349,7 +3349,7 @@ section {
 .btn-default.apps-landing-page:hover {
   background-color: #841c57; }
 
-.frm_section_heading {
+:not(#digital-assessment-questions) .frm_section_heading {
   border-radius: 6px;
   background-color: #eeeeee;
   border: 15px;
@@ -3364,7 +3364,7 @@ section {
   height: 16px;
   display: inline-block;
   background-position: 0 0;
-  background: url("/wp-content/themes/HDN/img/landing/submit-icon-2.png") no-repeat; }
+  background: url("img/landing/submit-icon-2.png") no-repeat; }
 
 /**
  * CSS arrow
