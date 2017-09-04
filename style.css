@@ -3349,12 +3349,15 @@ section {
 .btn-default.apps-landing-page:hover {
   background-color: #841c57; }
 
-:not(#digital-assessment-questions) .frm_section_heading {
+.frm_section_heading {
   border-radius: 6px;
   background-color: #eeeeee;
   border: 15px;
   padding: 15px 15px 15px 15px;
   border-color: #aaaaaa; }
+
+#digital-assessment-questions .frm_section_heading {
+  background-color: #fff; }
 
 .apps-landing-page p {
   margin-bottom: 15px; }
