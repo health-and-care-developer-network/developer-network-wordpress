@@ -50,7 +50,7 @@
                             library or have an idea for a health app that they'd like to develop.<br/>
                         </p>
                         <p>
-                            All apps must pass the <a href="/digital-tools/daq/">Digital Assessment Questionnaire (DAQ's)</a> to ensure that only
+                            All apps must pass the <a href="/digital-tools/daq/">Digital Assessment Questionnaire (DAQs)</a> to ensure that only
                           trusted, high quality apps are available on the Apps Library. They must also be available
                           in either Apple, Google or Microsoft App Stores. The library does not host apps, it
                           provides links to the stores.<br/>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="centre-text arrow">
                                 <div class="step">Step 3</div>
-                                Complete DAQ's
+                                Complete DAQs
                             </div>
                             <div class="centre-text arrow alt">
                                 <div class="step">Step 4</div>
