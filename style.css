@@ -3356,6 +3356,9 @@ section {
   padding: 15px 15px 15px 15px;
   border-color: #aaaaaa; }
 
+#digital-assessment-questions .frm_section_heading {
+  background-color: #fff; }
+
 .apps-landing-page p {
   margin-bottom: 15px; }
 
@@ -3364,7 +3367,7 @@ section {
   height: 16px;
   display: inline-block;
   background-position: 0 0;
-  background: url("/wp-content/themes/HDN/img/landing/submit-icon-2.png") no-repeat; }
+  background: url("img/landing/submit-icon-2.png") no-repeat; }
 
 /**
  * CSS arrow
