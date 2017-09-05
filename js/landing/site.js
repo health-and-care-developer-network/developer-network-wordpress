@@ -4,6 +4,28 @@
  */
 (function() {
     document.addEventListener('DOMContentLoaded', function() {
+
+      // handle the submit your app and register interest pages
+      //
+      var btnStyle = document.querySelector('#btnSubmitYourApp').style;
+      btnStyle.display = 'none';
+
+      var chkTerms = document.querySelector("#field_ge6ll-0").checked;
+      var radioYesNo = document.getElementById('field_qi633-0');
+      // console.log(radioYesNo);
+
+      Array.prototype.map.call(document.getElementsByName("item_meta[5922]"), function(el) {
+        el.addEventListener('click', function(e) {
+          handleTAndC(btnStyle);
+        });
+      });
+
+      Array.prototype.map.call(document.getElementsByName("item_meta[9434]"), function(el) {
+        el.addEventListener('click', function(e) {
+          handleTAndC(btnStyle);
+        });
+      });
+
         var mobileMenuIcon = document.querySelector(".menu__icon");
         var headerMenu = document.querySelector(".header__menu");
 
@@ -50,22 +72,44 @@
 
         // Manage the CTA's
         //
-        btnSubmitApp = document.getElementById('btnSubmitApp');
-        btnSubmitApp.addEventListener('click', function(){
-          window.location.href = '/apps/submit-your-app';
-        });
+        if (document.getElementById('btnSubmitApp')) {
+          btnSubmitApp = document.getElementById('btnSubmitApp');
+          btnSubmitApp.addEventListener('click', function(){
+            window.location.href = '/apps/submit-your-app';
+          });
+        }
 
-        btnRegisterInterest = document.getElementById('btnRegisterInterest');
-        btnRegisterInterest.addEventListener('click', function(){
-          window.location.href = '/apps/register-your-interest';
-        });
-
+        if (document.getElementById('btnRegisterInterest')) {
+          btnRegisterInterest = document.getElementById('btnRegisterInterest');
+          btnRegisterInterest.addEventListener('click', function(){
+            window.location.href = '/apps/register-your-interest';
+          });
+        }
 
     }); // on DOMContentLoaded
 
 })();
 
 
+var handleTAndC = function(btnStyle) {
+  var chkTAndC = new Array();
+  chkTAndC.push(document.getElementById("field_ge6ll-0"));
+
+  if (chkTAndC.length > 0) {
+    Array.prototype.map.call(chkTAndC, function(el) {
+      el.addEventListener('click', function(e) {
+        var chkTerms = el.checked;
+        if (chkTerms) {
+          btnStyle.display = 'block';
+        }
+        else {
+          btnStyle.display = 'none';
+        }
+      });
+    });
+
+  }
+} // handleTAndC
 
 var getLink = function(u) {
   var components = u.replace(/\/$/, '').split('/');
