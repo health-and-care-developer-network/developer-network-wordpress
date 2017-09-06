@@ -25,11 +25,10 @@
           btnStyle.display = 'none';
         });
       }
-      
+
       if (document.getElementById("btnRegisterYourInterest")) {
         var btnRyiStyle = document.getElementById("btnRegisterYourInterest").style;
         btnRyiStyle.display = 'none';
-        console.log(btnRyiStyle);
 
         var chkTerms = document.getElementById("field_tandcs-0");
         chkTerms.addEventListener('click', function(e) {
