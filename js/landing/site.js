@@ -7,23 +7,21 @@
 
       // handle the submit your app and register interest pages
       //
-      var btnStyle = document.querySelector('#btnSubmitYourApp').style;
+      var btnStyle = document.querySelector("#btnSubmitYourApp").style;
       btnStyle.display = 'none';
 
-      var chkTerms = document.querySelector("#field_ge6ll-0").checked;
-      var radioYesNo = document.getElementById('field_qi633-0');
-      // console.log(radioYesNo);
+      var chkTerms = document.getElementById("field_ge6ll-0").checked;
+      var radioYes = document.getElementById("field_qi633-0");
+      var radioNo = document.getElementById("field_qi633-1");
 
-      Array.prototype.map.call(document.getElementsByName("item_meta[5922]"), function(el) {
-        el.addEventListener('click', function(e) {
-          handleTAndC(btnStyle);
-        });
+      // add listener for radioYes click
+      radioYes.addEventListener('click', function(el){
+        handleTAndC(btnStyle);
       });
 
-      Array.prototype.map.call(document.getElementsByName("item_meta[9434]"), function(el) {
-        el.addEventListener('click', function(e) {
-          handleTAndC(btnStyle);
-        });
+      // add listener for radioNo click
+      radioNo.addEventListener('click', function(el){
+        btnStyle.display = 'none';
       });
 
         var mobileMenuIcon = document.querySelector(".menu__icon");
@@ -90,25 +88,17 @@
 
 })();
 
-
 var handleTAndC = function(btnStyle) {
-  var chkTAndC = new Array();
-  chkTAndC.push(document.getElementById("field_ge6ll-0"));
+  var chkTAndC = document.getElementById("field_ge6ll-0");
+  chkTAndC.addEventListener('click', function(e){
+    if (chkTAndC.checked) {
+      btnStyle.display = 'block';
+    }
+    else {
+      btnStyle.display = 'none';
+    }
+  });
 
-  if (chkTAndC.length > 0) {
-    Array.prototype.map.call(chkTAndC, function(el) {
-      el.addEventListener('click', function(e) {
-        var chkTerms = el.checked;
-        if (chkTerms) {
-          btnStyle.display = 'block';
-        }
-        else {
-          btnStyle.display = 'none';
-        }
-      });
-    });
-
-  }
 } // handleTAndC
 
 var getLink = function(u) {
