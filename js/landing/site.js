@@ -11,35 +11,54 @@
         var btnStyle = document.querySelector("#btnSubmitYourApp").style;
         btnStyle.display = 'none';
 
-        var chkTerms = document.getElementById("field_ge6ll-0").checked;
-        var radioYes = document.getElementById("field_qi633-0");
-        var radioNo = document.getElementById("field_qi633-1");
+
+        if (document.getElementById("field_qi633-0")) {
+          var radioYes = document.getElementById("field_qi633-0");
+        }
+        if (document.getElementById("field_qi633-1")) {
+          var radioNo = document.getElementById("field_qi633-1");
+        }
+
+        if (document.getElementById("field_ge6ll-0")) {
+          var chkTerms = document.getElementById("field_ge6ll-0");
+        }
 
         // add listener for radioYes click
-        radioYes.addEventListener('click', function(el){
-          handleTAndC(btnStyle);
-        });
+        if (radioYes) {
+          radioYes.addEventListener('click', function(el){
+            handleTAndC(btnStyle);
+          });
+        }
 
         // add listener for radioNo click
-        radioNo.addEventListener('click', function(el){
-          btnStyle.display = 'none';
-        });
-      }
+        if (radioNo) {
+          radioNo.addEventListener('click', function(el){
+            btnStyle.display = 'none';
+          });
+        }
+
+      } // does btnSubmitYourApp button exist?
 
       if (document.getElementById("btnRegisterYourInterest")) {
         var btnRyiStyle = document.getElementById("btnRegisterYourInterest").style;
         btnRyiStyle.display = 'none';
 
+        if (document.getElementById("field_tandcs-0")) {
         var chkTerms = document.getElementById("field_tandcs-0");
-        chkTerms.addEventListener('click', function(e) {
-          if (chkTerms.checked) {
-            btnRyiStyle.display = 'block';
-          }
-          else {
-            btnRyiStyle.display = 'none';
-          }
-        });
-      }
+          chkTerms.addEventListener('click', function(e) {
+            if (chkTerms.checked) {
+              btnRyiStyle.display = 'block';
+            }
+            else {
+              btnRyiStyle.display = 'none';
+            }
+          });
+        }
+        else {
+          // just display register your interest button
+          btnRyiStyle.display = 'block';
+        }
+      } // got a btnRegisterYourInterest button?
 
       /******/
 
@@ -109,14 +128,19 @@
 
 var handleTAndC = function(btnStyle) {
   var chkTAndC = document.getElementById("field_ge6ll-0");
-  chkTAndC.addEventListener('click', function(e){
-    if (chkTAndC.checked) {
-      btnStyle.display = 'block';
-    }
-    else {
-      btnStyle.display = 'none';
-    }
-  });
+  if (!chkTAndC) {
+    btnStyle.display = 'block';
+  }
+  else {
+    chkTAndC.addEventListener('click', function(e){
+      if (chkTAndC.checked) {
+        btnStyle.display = 'block';
+      }
+      else {
+        btnStyle.display = 'none';
+      }
+    });
+  }
 
 } // handleTAndC
 
