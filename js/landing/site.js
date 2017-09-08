@@ -11,9 +11,17 @@
         var btnStyle = document.querySelector("#btnSubmitYourApp").style;
         btnStyle.display = 'none';
 
-        var chkTerms = document.getElementById("field_ge6ll-0").checked;
-        var radioYes = document.getElementById("field_qi633-0");
-        var radioNo = document.getElementById("field_qi633-1");
+        if (document.getElementById("field_ge6ll-0")) {
+          var chkTerms = document.getElementById("field_ge6ll-0").checked;
+        }
+        
+        if (document.getElementById("field_qi633-0")) {
+          var radioYes = document.getElementById("field_qi633-0");
+        }
+
+        if (document.getElementById("field_qi633-1")) {
+          var radioNo = document.getElementById("field_qi633-1");
+        }
 
         // add listener for radioYes click
         radioYes.addEventListener('click', function(el){
