@@ -4,6 +4,28 @@
  */
 (function() {
     document.addEventListener('DOMContentLoaded', function() {
+
+      // handle the submit your app and register interest pages
+      //
+      if (document.querySelector("#btnSubmitYourApp")) {
+        var btnStyle = document.querySelector("#btnSubmitYourApp").style;
+        btnStyle.display = 'none';
+
+        var chkTerms = document.getElementById("field_ge6ll-0").checked;
+        var radioYes = document.getElementById("field_qi633-0");
+        var radioNo = document.getElementById("field_qi633-1");
+
+        // add listener for radioYes click
+        radioYes.addEventListener('click', function(el){
+          handleTAndC(btnStyle);
+        });
+
+        // add listener for radioNo click
+        radioNo.addEventListener('click', function(el){
+          btnStyle.display = 'none';
+        });
+      }
+
         var mobileMenuIcon = document.querySelector(".menu__icon");
         var headerMenu = document.querySelector(".header__menu");
 
