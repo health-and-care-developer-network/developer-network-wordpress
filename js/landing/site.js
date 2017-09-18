@@ -1,9 +1,16 @@
 /**
  * site.js
+ *
  * Handles all site related javascript functionality
  */
 (function() {
     document.addEventListener('DOMContentLoaded', function() {
+
+      // handle the word counter for the submit your app
+      //
+      if (document.getElementById("field_qi633-0")) {
+        console.log('Ici!');
+      } // btnSubmitYourApp
 
       // handle the submit your app and register interest pages
       //
@@ -157,3 +164,19 @@ var dispelLinks = function(link, types) {
       }
   });
 } // dispelLinks
+
+// count the words in the given string
+//
+var countWords = function(s) {
+
+  if (undefined(s)) {
+    return false;
+  }
+
+  s.replace(/(^\s*)|(\s*$)/gi,"") // remove start and end white-space
+   .replace(/[ ]{2,}/gi," ") // compress multiple spaces
+   .replace(/\n /,"\n") // exclude newline with a start spacing
+
+  return s.split(' ').length;
+
+} // countWords

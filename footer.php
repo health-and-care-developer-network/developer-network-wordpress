@@ -18,12 +18,13 @@
                 window.$ = window.jQuery;
             }
         </script>
-        <script src="<?php bloginfo('template_directory'); ?>/js/landing/promise.min.js"></script>
+
+				<script src="<?php bloginfo('template_directory'); ?>/js/landing/promise.min.js"></script>
         <script src="<?php bloginfo('template_directory'); ?>/js/landing/fetch.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/plugins-ck.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/script-ck.js"></script>
-        <script src="<?php bloginfo('template_directory'); ?>/js/landing/site.js"></script>
-		<?php wp_footer(); ?>
+				<script src="<?php bloginfo('template_directory'); ?>/js/plugins-ck.js"></script>
+				<script src="<?php bloginfo('template_directory'); ?>/js/script-ck.js"></script>
+				<script src="<?php bloginfo('template_directory'); ?>/js/landing/site.js"></script>
+				<?php wp_footer(); ?>
 
         <!-- Google Analytics code-->
         <script type="text/javascript">
