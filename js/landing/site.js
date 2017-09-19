@@ -8,8 +8,76 @@
 
       // handle the word counter for the submit your app
       //
-      if (document.getElementById("field_qi633-0")) {
-        console.log('Ici!');
+      if (document.getElementById("btnSubmitYourApp")) {
+        var openFields = [
+          {
+            id: 'field_c53r1',
+            value: 'value',
+            max_words: '50'
+            },
+          {
+            id: 'field_tm75d',
+            value: 'value',
+            max_words: '100'
+          },
+          {
+            id: 'field_xl8j2',
+            value: 'value',
+            max_words: '100'
+          },
+          {
+            id: 'field_gfoif',
+            value: 'value',
+            max_words: '100'
+          },
+          {
+            id: 'field_6bllz',
+            value: 'value',
+            max_words: '100'
+          }
+        ];
+
+        openFields.map(function(o){
+          var max_words = o.max_words;
+          var boxMaxWords = document.getElementById('boxMaxWords');
+          var boxMaxWordsCounter = document.getElementById('boxMaxWordsCounter');
+
+          var el = document.getElementById(o.id);
+
+          // create an element to display the number of words against the maximum
+          // this can be reintroduced when I can figure it out...
+          
+          // var myCtr = document.createElement('div');
+          // myCtr.className = 'boxMaxWords';
+          // el.appendChild(myCtr);
+
+          el.addEventListener('keyup', function(e){
+            var num_words = countWords(el[o.value]);
+            var inner_text = num_words +'/'+ max_words;
+
+            if (num_words > o.max_words) {
+              el[o.value] = stripChars(el[o.value], o.max_words);
+            }
+
+            boxMaxWordsCounter.innerHTML = inner_text;
+            boxMaxWords.style.display = 'block';
+          });
+
+          el.addEventListener('focus', function(e){
+            var num_words = countWords(el[o.value]);
+            var inner_text = num_words +'/'+ max_words;
+            boxMaxWordsCounter.innerHTML = inner_text;
+            boxMaxWords.style.display = 'block';
+          });
+
+          el.addEventListener('blur', function(e){
+            // count the words and then decide what to do with the element
+            var num_words = countWords(el[o.value]);
+
+            boxMaxWords.style.display = 'none';
+          });
+        });
+
       } // btnSubmitYourApp
 
       // handle the submit your app and register interest pages
@@ -17,7 +85,6 @@
       if (document.querySelector("#btnSubmitYourApp")) {
         var btnStyle = document.querySelector("#btnSubmitYourApp").style;
         btnStyle.display = 'none';
-
 
         if (document.getElementById("field_qi633-0")) {
           var radioYes = document.getElementById("field_qi633-0");
@@ -169,14 +236,24 @@ var dispelLinks = function(link, types) {
 //
 var countWords = function(s) {
 
-  if (undefined(s)) {
-    return false;
+  if (!s) {
+    return 0;
   }
 
-  s.replace(/(^\s*)|(\s*$)/gi,"") // remove start and end white-space
-   .replace(/[ ]{2,}/gi," ") // compress multiple spaces
-   .replace(/\n /,"\n") // exclude newline with a start spacing
+  s = s.replace(/(^\s*)|(\s*$)/gi,""); // remove start and end white-space
+  s = s.replace(/[ ]{2,}/gi," "); // compress multiple spaces
+  s = s.replace(/\n /,"\n"); // exclude newline with a start spacing
 
   return s.split(' ').length;
 
 } // countWords
+
+var stripChars = function(str, max) {
+
+  while (countWords(str) > max) {
+    str = str.substring(0, str.length-1);
+    // console.log('Length: '+ str.length +' / Words: '+ countWords(str));
+  } // while
+
+  return str;
+} // stripChars
