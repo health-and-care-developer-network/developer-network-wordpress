@@ -9,8 +9,8 @@
         // handle the word counter for the submit your app
         //
         if (document.getElementById("btnSubmitYourApp")) {
-// count the words in the given string
-//
+          // count the words in the given string
+          //
 
             function trimWords(s) {
                 return s.replace(/(^\s*)|(\s*$)/gi, "");
@@ -52,6 +52,7 @@
             function maxWordsDisplay(show) {
                 document.getElementById('boxMaxWords').style.display = show && 'block' || 'none';
             }
+            
             function setCounter(txt) {
                 document.getElementById('boxMaxWordsCounter').innerHTML = txt;
             }
