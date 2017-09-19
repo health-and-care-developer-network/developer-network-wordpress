@@ -16,10 +16,16 @@
 <style>
   .boxMaxWordsPosition {
     display: none;
+
+    position: fixed;
+    top: 40px;
+    right: 15px;
+
     background-color: #eeeeee;
     border-radius: 4px;
     border: 1px solid #aaaaaa;
-    height: 75px;
+    box-shadow: 1px solid #888888;
+    height: 70px;
     margin: 10px;
 
   }
