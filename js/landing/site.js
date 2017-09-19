@@ -1,9 +1,98 @@
 /**
  * site.js
+ *
  * Handles all site related javascript functionality
  */
 (function () {
     document.addEventListener('DOMContentLoaded', function () {
+      // handle the word counter for the submit your app
+      //
+      if (document.getElementById("btnSubmitYourApp")) {
+        // count the words in the given string
+        //
+
+          function trimWords(s) {
+              return s.replace(/(^\s*)|(\s*$)/gi, "");
+          }
+
+          function compressSpaces(s) {
+              return s.replace(/[ ]{2,}/gi, " ");
+          }
+
+          function suppressNewline(s) {
+              return s.replace(/\n /, "\n");
+          }
+
+          function cleanWords(s) {
+              return !s && "" || suppressNewline(compressSpaces(trimWords(s)));
+          }
+
+          function getWords(s) {
+              return cleanWords(s).split(' ');
+          }
+
+          function countWords(s) {
+              return getWords(s).length;
+          }
+
+          function stripChars(str, max) {
+              var words;
+              if (max < 1) {
+                  return "";
+              }
+
+              while (words = getWords(str), words.length > max) {
+                  str = str.substring(0, str.length - (words[words.length - 1].length + 1));
+              }
+
+              return str;
+          }
+
+          function maxWordsDisplay(show) {
+              document.getElementById('boxMaxWords').style.display = show && 'block' || 'none';
+          }
+
+          function setCounter(txt) {
+              document.getElementById('boxMaxWordsCounter').innerHTML = txt;
+          }
+
+          // loop through the fields we want to check wordcount for
+          [
+              ['field_c53r1', 50],
+              ['field_tm75d', 100],
+              ['field_xl8j2', 100],
+              ['field_gfoif', 100],
+              ['field_6bllz', 100]
+          ].forEach(function (o) {
+              var el = document.getElementById(o[0]);
+              var max_words = o[1];
+
+              el.addEventListener('keyup', function () {
+                  var num_words = countWords(el.value);
+
+                  if (num_words > max_words) {
+                      el.value = stripChars(el.value, max_words);
+                      // update word count after stripping
+                      num_words = countWords(el.value);
+                  }
+
+                  setCounter(num_words + '/' + max_words);
+                  maxWordsDisplay(true);
+              });
+
+              el.addEventListener('focus', function () {
+                  setCounter(countWords(el.value) + '/' + max_words);
+                  maxWordsDisplay(true);
+              });
+
+              el.addEventListener('blur', function () {
+                  maxWordsDisplay(false);
+              });
+          });
+
+      } // btnSubmitYourApp
+
+
         var radioYes = document.getElementById("field_qi633-0"),
             radioNo = document.getElementById("field_qi633-1"),
             chkTerms = document.getElementById("field_ge6ll-0"),
