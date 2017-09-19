@@ -115,9 +115,9 @@
             if (chkTCs) {
                 chkTCs.addEventListener('click', function (e) {
                     if (chkTCs.checked) {
-                        btnRyiStyle.display = 'block';
+                        btnRegisterYourInterest.style.display = 'block';
                     } else {
-                        btnRyiStyle.display = 'none';
+                        btnRegisterYourInterest.style.display = 'none';
                     }
                 })
             } else {
