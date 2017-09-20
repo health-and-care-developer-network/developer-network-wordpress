@@ -17,6 +17,7 @@
     margin: 10px;
 
   }
+
   div#boxMaxWordsCounter {
     text-align: center;
     text-shadow: #bbbbbb;
@@ -25,6 +26,23 @@
     vertical-align: middle;
     margin: 15px;
   }
+
+  .greyText {
+    color: #666666;
+  }
+
+  .redText {
+    color: red;
+  }
+
+  .amberText {
+    color: yellow;
+  }
+
+  .greenText {
+    color: green;
+  }
+
 </style>
 
 <p>

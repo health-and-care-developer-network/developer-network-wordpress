@@ -3,7 +3,13 @@
  *
  * Handles all site related javascript functionality
  */
+
+ /**
+  * Handle classes using vanilla javascript
+  **/
+
 (function () {
+
     document.addEventListener('DOMContentLoaded', function () {
       // handle the word counter for the submit your app
       //
@@ -56,6 +62,10 @@
               document.getElementById('boxMaxWordsCounter').innerHTML = txt;
           }
 
+          function calcPc(n, m) {
+            return ((n/m)*100);
+          }
+
           // loop through the fields we want to check wordcount for
           [
               ['field_c53r1', 50],
@@ -78,6 +88,22 @@
 
                   setCounter(num_words + '/' + max_words);
                   maxWordsDisplay(true);
+
+                  var pc = calcPc(num_words, max_words);
+                  var boxCtr = document.getElementById("boxMaxWordsCounter");
+
+                  if (pc < 50) {
+                    boxCtr.style.color = "#666666";
+                  }
+
+                  if ( (pc >= 50) && (pc <= 75) ) {
+                    boxCtr.style.color = "#ecdd31";
+                  }
+
+                  if (pc > 90) {
+                    boxCtr.style.color = "#f1126b";
+                  }
+
               });
 
               el.addEventListener('focus', function () {
