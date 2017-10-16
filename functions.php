@@ -1,10 +1,21 @@
 <?php
 include_once dirname(__FILE__) . '/includes/hdn-posts.php';
 
-if (SITE == 'developer-test.nhs.uk') {
-    define('DATASITE','https://data.developer-test.nhs.uk');
-} else {
-    define('DATASITE','https://data.developer.nhs.uk');
+switch($_SERVER['HTTP_HOST']) {
+    case 'developer-test.nhs.uk': {
+        define('DATASITE','https://data.developer-test.nhs.uk');
+        define('PORTAL_URL','https://developer-test.nhs.uk/apps/assessment/');
+        break;
+    }
+    case '127.0.0.1': {
+        define('DATASITE','');
+        define('PORTAL_URL','http://10.0.75.1:3100/dap/api/');
+        break;
+    }
+    default: {
+        define('DATASITE','https://data.developer.nhs.uk');
+        define('PORTAL_URL', 'https://developer.nhs.uk/apps/assessment/');
+    }
 }
 
 add_filter('solr_scheme', function () {
@@ -136,6 +147,52 @@ add_action('save_post_library', ['hdnPosts', 'saveLibrary'], 10, 3);
 add_action('save_post_downloads-data', ['hdnPosts', 'saveDownloadsData'], 10, 3);
 add_action('save_post_testcentre', ['hdnPosts', 'saveTestCentre'], 10, 3);
 add_action('save_post_testcentre', ['hdnPosts', 'saveLearn'], 10, 3);
+
+add_action('template_redirect', function () {
+    global $wp_query, $post, $_PATH;
+
+    $uri = $_SERVER["REQUEST_URI"];
+    $uri = substr(preg_replace("/\?.*/", "", $uri), 1);
+    $_PATH = explode("/", $uri);
+
+    if (is_user_logged_in()) {
+        switch ($_PATH[0]) {
+            case 'test-submit-app': {
+                status_header(200);
+                $wp_query->is_404 = false;
+                break;
+            }
+        }
+    }
+});
+add_filter('wp_title', function ($title, $sep) {
+    global $_PATH;
+
+    if (is_user_logged_in()) {
+        switch ($_PATH[0]) {
+            case 'test-submit-app': {
+                return 'Test Submit App';
+            }
+        }
+    }
+});
+
+add_action('parse_request', function () {
+    global $wp_query, $_PATH;
+
+    $uri = $_SERVER["REQUEST_URI"];
+    $uri = substr(preg_replace("/\?.*/", "", $uri), 1);
+    $_PATH = explode("/", $uri);
+
+    if (is_user_logged_in()) {
+        switch ($_PATH[0]) {
+            case 'test-submit-app': {
+                include_once dirname(__FILE__) . "/pages/submit-app.php";
+                exit();
+            }
+        }
+    }
+});
 
 include_once dirname(__FILE__) . '/includes/hdn-rest.php';
 
