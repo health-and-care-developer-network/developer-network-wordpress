@@ -21,7 +21,7 @@
                         <li>You are here:</li>
                         <li><a href="/">Home</a></li>
                         <li class="separator">&gt;</li>
-                        <li class="">Apps</li>
+                        <li class=""><a href="/apps">Apps</a></li>
                         <li class="separator">&gt;</li>
                         <li class="active">Open Health Data Challenge</li>
                     </ul>
