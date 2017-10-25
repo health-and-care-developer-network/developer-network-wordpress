@@ -96,11 +96,15 @@ add_filter('tiny_mce_before_init', function ($settings) {
 });
 
 add_action('admin_init', function() {
+    register_setting('general','import_client_secret', 'esc_attr');
+    register_setting('general','portal_url', 'esc_attr');
+
     add_settings_field(
         'import_client_secret',
         'Import Client Secret',
         'import_client_secret_callback',
         'general',
+        'default',
         array(
             'import_client_secret' // $args for callback
         )
@@ -111,13 +115,11 @@ add_action('admin_init', function() {
         'Portal URL',
         'import_client_secret_callback',
         'general',
+        'default',
         array(
             'portal_url' // $args for callback
         )
     );
-
-    register_setting('general','import_client_secret', 'esc_attr');
-    register_setting('general','portal_url', 'esc_attr');
 
     add_editor_style();
 });
