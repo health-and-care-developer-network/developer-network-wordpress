@@ -18,6 +18,11 @@ switch($_SERVER['HTTP_HOST']) {
     }
 }
 
+if (isset($_GET['foo']) && $_GET['foo'] = 'bar') {
+    echo PORTAL_URL;
+    exit();
+}
+
 add_filter('solr_scheme', function () {
     return 'http';
 });
