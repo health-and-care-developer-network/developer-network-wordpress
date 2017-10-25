@@ -1,7 +1,8 @@
 <h1>Hello, World</h1>
 <pre>
 <?php
-
+echo PORTAL_URL;
+exit();
 $entries = FrmEntry::getAll(['form_key' => '7i5d1'], '', '', true, true);
 
 $token = getToken();
