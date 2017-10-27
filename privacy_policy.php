@@ -1,6 +1,6 @@
 <?php
 /*
-    Template Name: Open Health Data Challenge
+    Template Name: Privacy Policy
 */
 ?>
 <?php get_header(); ?>
@@ -10,7 +10,7 @@
             <div class="wrapper">
                 <hgroup>
                     <h1>Apps</h1>
-                    <h2>Open Health Data Challenge</h2>
+                    <h2>Privacy Policy</h2>
                 </hgroup>
             </div>
         </div><!--end page title-->
@@ -23,7 +23,7 @@
                         <li class="separator">&gt;</li>
                         <li class=""><a href="/apps">Apps</a></li>
                         <li class="separator">&gt;</li>
-                        <li class="active">Open Health Data Challenge</li>
+                        <li class="active">Privacy Policy</li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 <div class="three_quarters">
                     <div class="content_wrap apps-landing-page">
 
-                        <h2>What is the Open Health Data Challenge?</h2>
+                        <h2>Privacy Policy</h2>
                         <hr style="border-top: 1px solid #d8d8d8;"/>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -54,9 +54,6 @@
                           non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/>
                         </p>
 
-                        <p>
-                          <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 244, 'title' => false, 'description' => false ) ); ?>
-                        </p>
                     </div> <!-- inner - content wrap -->
                 </div> <!-- three_quarters - main wrap -->
 
@@ -64,6 +61,4 @@
         </div>
     </div>
 
-    <script src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>"
-            type="text/javascript"></script>
 <?php get_footer();
