@@ -4,17 +4,14 @@ include_once dirname(__FILE__) . '/includes/hdn-posts.php';
 switch($_SERVER['HTTP_HOST']) {
     case 'developer-test.nhs.uk': {
         define('DATASITE','https://data.developer-test.nhs.uk');
-        define('PORTAL_URL','https://developer-test.nhs.uk/apps/assessment/');
         break;
     }
     case '127.0.0.1': {
         define('DATASITE','');
-        define('PORTAL_URL','http://10.0.75.1:3100/dap/api/');
         break;
     }
     default: {
         define('DATASITE','https://data.developer.nhs.uk');
-        define('PORTAL_URL', 'https://developer.nhs.uk/apps/assessment/');
     }
 }
 
@@ -99,8 +96,43 @@ add_filter('tiny_mce_before_init', function ($settings) {
 });
 
 add_action('admin_init', function() {
+    register_setting('general','import_client_secret', 'esc_attr');
+    register_setting('general','portal_url', 'esc_attr');
+
+    add_settings_field(
+        'import_client_secret',
+        'Import Client Secret',
+        'import_client_secret_callback',
+        'general',
+        'default',
+        array(
+            'import_client_secret' // $args for callback
+        )
+    );
+
+    add_settings_field(
+        'portal_url',
+        'Portal URL',
+        'import_client_secret_callback',
+        'general',
+        'default',
+        array(
+            'portal_url' // $args for callback
+        )
+    );
+
     add_editor_style();
 });
+
+function import_client_secret_callback($args) {
+    $value = htmlspecialchars(get_option($args[0]));
+    $id = $name = htmlspecialchars($args[0]);
+
+    echo <<<EOF
+<input type="text" id="{$id}" name="{$name}" value="{$value}" />
+EOF;
+
+}
 
 add_action('right_now_content_table_end', function () {
     $args = array(

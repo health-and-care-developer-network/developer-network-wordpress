@@ -1,6 +1,7 @@
 <h1>Hello, World</h1>
 <pre>
 <?php
+$portalUrl = get_option('portal_url');
 
 $entries = FrmEntry::getAll(['form_key' => '7i5d1'], '', '', true, true);
 
@@ -50,7 +51,7 @@ $headers = [
     'Authorization: Bearer ' . $token
 ];
 
-curl_setopt($ch, CURLOPT_URL, PORTAL_URL . 'import-submit-app');
+curl_setopt($ch, CURLOPT_URL, $portalUrl . 'import-submit-app');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
@@ -66,13 +67,15 @@ echo $output;
 
 function getToken() {
     // $token = get_transient('import_submit_your_app:token');
+    $portalUrl = get_option('portal_url');
+    $clientSecret = get_option('import_client_secret');
 
     $token = false;
     if (!$token) {
         $form = [
             'grant_type' => 'client_credentials',
             'client_id' => 4,
-            'client_secret' => 'McBUAk55Z5Z1oyYBZx8qdWRD04IWXyCCa6bWefef',
+            'client_secret' => $clientSecret,
         ];
 
         $headers = [
@@ -81,7 +84,7 @@ function getToken() {
         ];
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, PORTAL_URL . 'get-token');
+        curl_setopt($ch, CURLOPT_URL, $portalUrl . 'get-token');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
