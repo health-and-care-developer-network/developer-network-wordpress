@@ -1,4 +1,4 @@
-<h1>Hello, World</h1>
+<h1>Importing Apps... Please Wait</h1>
 <pre>
 <?php
 $portalUrl = get_option('portal_url');
