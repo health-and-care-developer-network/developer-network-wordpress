@@ -7,8 +7,6 @@ $entries = FrmEntry::getAll(['form_key' => '7i5d1'], '', '', true, true);
 
 $token = getToken();
 
-$jsonData = [
-];
 
 $formCache = [];
 
@@ -27,7 +25,32 @@ foreach ($entries as $entry) {
         $app[$field['key']] = $value;
     }
 
-    $jsonData[] = $app;
+    $jsonData = [
+            $app
+    ];
+
+    $ch = curl_init();
+
+    $headers = [
+        'Accept: application/json',
+        'Content-Type: application/json',
+        'Authorization: Bearer ' . $token
+    ];
+
+    curl_setopt($ch, CURLOPT_URL, $portalUrl . 'import-submit-app');
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($jsonData));
+
+    $output = curl_exec($ch);
+
+    curl_close($ch);
+
+    echo $output;
+    echo "\n";
 }
 
 function getFields($formFields)
@@ -42,28 +65,6 @@ function getFields($formFields)
 
     return $output;
 }
-
-$ch = curl_init();
-
-$headers = [
-    'Accept: application/json',
-    'Content-Type: application/json',
-    'Authorization: Bearer ' . $token
-];
-
-curl_setopt($ch, CURLOPT_URL, $portalUrl . 'import-submit-app');
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($jsonData));
-
-$output = curl_exec($ch);
-
-curl_close($ch);
-
-echo $output;
 
 function getToken() {
     // $token = get_transient('import_submit_your_app:token');
