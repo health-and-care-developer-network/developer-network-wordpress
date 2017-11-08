@@ -285,3 +285,41 @@ function faq_post_type() {
 
 }
 add_action( 'init', 'faq_post_type', 0 );
+
+require __DIR__ . '/patchwork.phar';
+use function Patchwork\{redefine};
+
+
+redefine('get_unsafe_client_ip', function() {
+  $client_ip = false;
+
+  // In order of preference, with the best ones for this purpose first.
+  $address_headers = array(
+    'HTTP_CLIENT_IP',
+    'HTTP_X_FORWARDED_FOR',
+    'HTTP_X_FORWARDED',
+    'HTTP_X_CLUSTER_CLIENT_IP',
+    'HTTP_FORWARDED_FOR',
+    'HTTP_FORWARDED',
+    'REMOTE_ADDR',
+  );
+
+  foreach ( $address_headers as $header ) {
+    if ( array_key_exists( $header, $_SERVER ) ) {
+      /*
+       * HTTP_X_FORWARDED_FOR can contain a chain of comma-separated
+       * addresses. The first one is the original client. It can't be
+       * trusted for authenticity, but we don't need to for this purpose.
+       */
+      $address_chain = explode( ',', $_SERVER[ $header ] );
+      // $client_ip     = trim( $address_chain[0] );
+      $client_ip     = trim( $address_chain[0] ) . ':';
+
+      // Strip port from IP so it can be used with inet_ functions.
+      $client_ip     = substr($client_ip, 0, strpos($client_ip, ":"));
+
+      break;
+    }
+  }
+}
+);
