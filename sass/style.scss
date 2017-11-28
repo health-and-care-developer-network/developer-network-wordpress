@@ -1239,6 +1239,10 @@ div.apicontent {
   .one_quarter.tree_wrap {
     .q-link {
       color: #ae2573;
+      font-family: "Open Sans", "Ubuntu";
+      font-size: 1.1em;
+      font-weight: 600;
+      line-height: 1.4em;
     }
   }
   .breadcrumbs {
@@ -1719,7 +1723,7 @@ div.apicontent {
   padding-top: 24px;
   font-weight: 600;
   font-size: 13px;
-  font-family: "Ubuntu";
+  font-family: "Open Sans", "Ubuntu";
   line-height: 24px;
   color: #363636;
   margin: 0 0 0 0;
@@ -1736,7 +1740,7 @@ div.apicontent {
 }
 
 .app-process-key {
-  font-family: "Ubuntu";
+  font-family: "Open Sans", "Ubuntu";
   font-size: 15px;
   font-weight: normal;
   display: inline-block;

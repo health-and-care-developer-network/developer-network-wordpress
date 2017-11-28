@@ -50,7 +50,7 @@
                             library or have an idea for a health app that they'd like to develop.<br/>
                         </p>
                         <p>
-                            All apps must pass the <a href="/digital-tools/daq/">Digital Assessment Questionnaire (DAQs)</a> to ensure that only
+                          All apps must pass the <a href="/digital-tools/daq/">Digital Assessment Questionnaire (DAQs)</a> to ensure that only
                           trusted, high quality apps are available on the Apps Library. They must also be available
                           in either Apple, Google or Microsoft App Stores. The library does not host apps, it
                           provides links to the stores.<br/>
@@ -59,6 +59,17 @@
                           The NHS is working to update and enhance these pages and the experience for app developers.
                           To do this we are testing concepts, designs and user experience and we are actively seeking
                           feedback from developers.<br/>
+                        </p>
+
+                        <h3>Submit an App for assessment</h3>
+                        <p>
+                          If your app is in public use and is ready to be assessed using the Digital Assessment
+                          Questions, please submit your app below.<br/>
+                        </p>
+                        <p>
+                            <button id="btnSubmitApp" type="button" class="btn btn-lg btn-default apps-landing-page">
+                                Submit <span class="checklist-icon"></span>
+                            </button>
                         </p>
 
                         <h3>Assessment Process</h3>
@@ -145,17 +156,6 @@
                         </svg>
                         </p>
 
-                        <h3>Submit an App for assessment</h3>
-                        <p>
-                          If your app is in public use and is ready to be assessed using the Digital Assessment
-                          Questions, please submit your app below.<br/>
-                        </p>
-                        <p>
-                            <button id="btnSubmitApp" type="button" class="btn btn-lg btn-default apps-landing-page">
-                                Submit <span class="checklist-icon"></span>
-                            </button>
-                        </p>
-
                         <h3>Register your Interest</h3>
                         <p>
                           The NHS are keen to work with developers and interested parties.
@@ -169,11 +169,11 @@
                             </button>
                         </p>
 
-                        <h2 class="large_space">Frequently Asked Questions</h2>
+                        <!-- <h2 class="large_space">Frequently Asked Questions</h2>
 
                         <div class="faq_content">
-                            <?php hdnPosts::the_faqs('landing'); ?>
-                        </div>
+                            <?php // hdnPosts::the_faqs('landing'); ?>
+                        </div> -->
 
                     </div> <!-- inner - content wrap -->
                 </div> <!-- three_quarters - main wrap -->
@@ -182,6 +182,5 @@
         </div>
     </div>
 
-    <script src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>"
-            type="text/javascript"></script>
+    <!-- <script src="<?php // echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>" type="text/javascript"></script> -->
 <?php get_footer();
