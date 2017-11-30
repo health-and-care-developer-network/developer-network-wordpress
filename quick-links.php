@@ -8,9 +8,18 @@
       <p><a class="q-link" href="/digital-tools/daq">Review the Assessment Questions</a></p>
     <?php } ?>
 </p>
-<p><a class="q-link" href="/digital-tools/frequently-asked-questions">Frequently Asked Questions</a></p>
+
+<?php if (get_option('q-link-faq')) { ?>
+  <p><a class="q-link" href="/digital-tools/frequently-asked-questions">Frequently Asked Questions</a></p>
+<?php } ?>
+
+<?php if (get_option('q-link-ryi')) { ?>
 <p><a class="q-link" href="/digital-tools/register-your-interest">Register Your Interest</a></p>
+<?php } ?>
+<?php if (get_option('q-link-sya')) { ?>
 <p><a class="q-link" href="/digital-tools/submit-your-app">Submit Your App</a></p>
+<?php } ?>
+
 
 <?php if (get_option('ohdc_state') == 1) { ?>
 <p><br/></p>
@@ -19,4 +28,29 @@
 <?php } ?>
 <p><a class="q-link" href="/digital-tools/open-health-data-challenge">Open Health Data Challenge</a></p>
 
+<?php } ?>
+
+<?php if (get_option('q-link-btns') == 1) { ?>
+<p><br/></p>
+
+<p class="q-link-big-buttons">
+  Released your application already?<br/>
+  You can have it assessed.
+</p>
+<p>
+    <button id="btnSubmitApp" type="button" class="btn btn-md btn-default apps-landing-page">
+        Assess Your App <span class="checklist-icon"></span>
+    </button>
+</p>
+
+<br/>
+<p class="q-link-big-buttons">
+  Thinking about building your app?<br/>
+</p>
+<p>
+    <button type="button" id="btnRegisterInterest"
+            class="btn btn-lg btn-default apps-landing-page">
+        Register Interest <span class="mail-icon"></span>
+    </button>
+</p>
 <?php } ?>

@@ -3785,29 +3785,34 @@ section {
   font-family: "Open Sans", "Ubuntu";
   font-size: 1.1em;
   font-weight: 600;
-  line-height: 1.4em; }
-/* line 1250, sass/style.scss */
+  line-height: 1.4em;
+  text-align: justify; }
+/* line 1249, sass/style.scss */
+.digital-tools-style .q-link-big-buttons {
+  font-weight: 700;
+  padding-bottom: 5px; }
+/* line 1255, sass/style.scss */
 .digital-tools-style .breadcrumbs ul li {
   margin-right: 0.5em; }
-  /* line 1253, sass/style.scss */
+  /* line 1258, sass/style.scss */
   .digital-tools-style .breadcrumbs ul li.separator {
     color: black; }
-  /* line 1257, sass/style.scss */
+  /* line 1262, sass/style.scss */
   .digital-tools-style .breadcrumbs ul li.active {
     color: #ae2573;
     font-weight: bold; }
-/* line 1266, sass/style.scss */
+/* line 1271, sass/style.scss */
 .digital-tools-style .page_title hgroup {
   background: url(img/css/mobile_health_icon.png) no-repeat;
   background-position: left center; }
-  /* line 1270, sass/style.scss */
+  /* line 1275, sass/style.scss */
   .digital-tools-style .page_title hgroup h1 {
     font-weight: bold; }
-/* line 1276, sass/style.scss */
+/* line 1281, sass/style.scss */
 .digital-tools-style .tree_wrap {
   padding: 0;
   padding-top: 12px; }
-  /* line 1279, sass/style.scss */
+  /* line 1284, sass/style.scss */
   .digital-tools-style .tree_wrap h2 {
     color: #ae2573;
     font-size: 24px;
@@ -3815,65 +3820,66 @@ section {
     padding-bottom: 0.5em;
     border-bottom: 1px solid #d6d6d6;
     margin-bottom: 12px; }
-/* line 1289, sass/style.scss */
+/* line 1294, sass/style.scss */
 .digital-tools-style .content_wrap {
+  text-align: justify;
   padding: 1em;
   padding-bottom: 2em;
   margin-top: 0; }
-  /* line 1293, sass/style.scss */
+  /* line 1299, sass/style.scss */
   .digital-tools-style .content_wrap h1 {
     font-size: 1.8em;
     color: #ae2573;
     border-bottom: 1px solid #d6d6d6;
     margin-bottom: 12px; }
-  /* line 1300, sass/style.scss */
+  /* line 1306, sass/style.scss */
   .digital-tools-style .content_wrap a {
     color: #ae2573; }
-  /* line 1304, sass/style.scss */
+  /* line 1310, sass/style.scss */
   .digital-tools-style .content_wrap h2 {
     margin-bottom: 12px;
     font-size: 24px;
     font-weight: 600; }
-  /* line 1311, sass/style.scss */
+  /* line 1317, sass/style.scss */
   .digital-tools-style .content_wrap h3 {
     margin-bottom: 12px;
     font-size: 18px;
     font-weight: 500; }
-  /* line 1317, sass/style.scss */
+  /* line 1323, sass/style.scss */
   .digital-tools-style .content_wrap h4 {
     font-size: 18px; }
-  /* line 1321, sass/style.scss */
+  /* line 1327, sass/style.scss */
   .digital-tools-style .content_wrap h5 {
     font-size: 16px; }
-  /* line 1325, sass/style.scss */
+  /* line 1331, sass/style.scss */
   .digital-tools-style .content_wrap h4, .digital-tools-style .content_wrap h5, .digital-tools-style .content_wrap p {
     margin: 0;
     margin-bottom: 12px; }
-/* line 1331, sass/style.scss */
+/* line 1337, sass/style.scss */
 .digital-tools-style .large_space {
   margin-top: 32px;
   padding-bottom: 32px; }
-/* line 1336, sass/style.scss */
+/* line 1342, sass/style.scss */
 .digital-tools-style .assessment_path {
   margin-top: 50px;
   text-align: center;
   padding-bottom: 24px; }
-  /* line 1341, sass/style.scss */
+  /* line 1347, sass/style.scss */
   .digital-tools-style .assessment_path .link_section {
     display: inline-block;
     width: 235px;
     text-align: center; }
-    /* line 1346, sass/style.scss */
+    /* line 1352, sass/style.scss */
     .digital-tools-style .assessment_path .link_section a {
       font-size: 15px;
       text-decoration: underline; }
-      /* line 1347, sass/style.scss */
+      /* line 1353, sass/style.scss */
       .digital-tools-style .assessment_path .link_section a .link_container {
         text-decoration: none; }
-        /* line 1349, sass/style.scss */
+        /* line 1355, sass/style.scss */
         .digital-tools-style .assessment_path .link_section a .link_container span {
           color: #444444; }
-    /* line 1358, sass/style.scss */
+    /* line 1364, sass/style.scss */
     .digital-tools-style .assessment_path .link_section .link_container {
       text-align: left;
       height: 105px;
@@ -3882,13 +3888,13 @@ section {
       background: linear-gradient(to bottom, #fdfdfd, #f2f2f2);
       font-size: 22px;
       line-height: 1em; }
-      /* line 1367, sass/style.scss */
+      /* line 1373, sass/style.scss */
       .digital-tools-style .assessment_path .link_section .link_container span {
         padding-top: 14px;
         width: 100px;
         display: inline-block;
         float: left; }
-      /* line 1374, sass/style.scss */
+      /* line 1380, sass/style.scss */
       .digital-tools-style .assessment_path .link_section .link_container .review_icon, .digital-tools-style .assessment_path .link_section .link_container .register_icon {
         width: 70px;
         margin-left: 10px;
@@ -3898,13 +3904,13 @@ section {
         background-size: contain;
         background-position: 50% 50%;
         float: left; }
-      /* line 1385, sass/style.scss */
+      /* line 1391, sass/style.scss */
       .digital-tools-style .assessment_path .link_section .link_container .review_icon {
         background-image: url(img/css/daw_review_icon.png); }
-      /* line 1389, sass/style.scss */
+      /* line 1395, sass/style.scss */
       .digital-tools-style .assessment_path .link_section .link_container .register_icon {
         background-image: url(img/css/register_interest_icon.png); }
-  /* line 1395, sass/style.scss */
+  /* line 1401, sass/style.scss */
   .digital-tools-style .assessment_path .arrow_section {
     display: inline-block;
     width: 120px;
@@ -3916,17 +3922,17 @@ section {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: -4px 30px; }
-/* line 1409, sass/style.scss */
+/* line 1415, sass/style.scss */
 .digital-tools-style .faq_content {
   margin-bottom: 1em;
   border-top: 1px solid #cfcfcf; }
-  /* line 1413, sass/style.scss */
+  /* line 1419, sass/style.scss */
   .digital-tools-style .faq_content.no_border {
     border-top: 0; }
-  /* line 1416, sass/style.scss */
+  /* line 1422, sass/style.scss */
   .digital-tools-style .faq_content .faq-item {
     border-bottom: 1px solid #cfcfcf; }
-    /* line 1418, sass/style.scss */
+    /* line 1424, sass/style.scss */
     .digital-tools-style .faq_content .faq-item .faq-header {
       padding-top: 18px;
       padding-bottom: 18px;
@@ -3938,7 +3944,7 @@ section {
       position: relative;
       cursor: pointer;
       user-select: none; }
-      /* line 1430, sass/style.scss */
+      /* line 1436, sass/style.scss */
       .digital-tools-style .faq_content .faq-item .faq-header:before {
         content: "";
         display: block;
@@ -3950,44 +3956,44 @@ section {
         color: black;
         right: 8px;
         margin-top: -12px; }
-    /* line 1443, sass/style.scss */
+    /* line 1449, sass/style.scss */
     .digital-tools-style .faq_content .faq-item .faq-answer {
       padding-top: 12px;
       padding-bottom: 2em; }
-    /* line 1449, sass/style.scss */
+    /* line 1455, sass/style.scss */
     .digital-tools-style .faq_content .faq-item[data-status='open'] .faq-header {
       background-color: #f6f6f6; }
-      /* line 1451, sass/style.scss */
+      /* line 1457, sass/style.scss */
       .digital-tools-style .faq_content .faq-item[data-status='open'] .faq-header:before {
         content: "-"; }
-    /* line 1459, sass/style.scss */
+    /* line 1465, sass/style.scss */
     .digital-tools-style .faq_content .faq-item[data-status='closed'] .faq-header:before {
       content: "+"; }
-    /* line 1463, sass/style.scss */
+    /* line 1469, sass/style.scss */
     .digital-tools-style .faq_content .faq-item[data-status='closed'] .faq-answer {
       display: none; }
 @media screen and (max-width: 993px) {
-  /* line 1471, sass/style.scss */
+  /* line 1477, sass/style.scss */
   .digital-tools-style .one_quarter {
     display: none; }
-  /* line 1475, sass/style.scss */
+  /* line 1481, sass/style.scss */
   .digital-tools-style .three_quarters {
     width: 100%;
     float: none;
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px; }
-  /* line 1483, sass/style.scss */
+  /* line 1489, sass/style.scss */
   .digital-tools-style h1 {
     line-height: 1.2em; }
-  /* line 1487, sass/style.scss */
+  /* line 1493, sass/style.scss */
   .digital-tools-style .content_wrap {
     padding-left: 0;
     padding-right: 0; }
-  /* line 1492, sass/style.scss */
+  /* line 1498, sass/style.scss */
   .digital-tools-style .assessment_path {
     padding-bottom: 24px; }
-    /* line 1494, sass/style.scss */
+    /* line 1500, sass/style.scss */
     .digital-tools-style .assessment_path .arrow_section {
       transform: rotate(90deg);
       background-position: -30px 44px;
@@ -3996,14 +4002,14 @@ section {
       margin-top: 24px; } }
 
 /** digital-tools-style **/
-/* line 1506, sass/style.scss */
+/* line 1512, sass/style.scss */
 .grey_text {
   color: #7f7f7f;
   font-size: 14px;
   font-family: "Open Sans", "Helvetica", "Arial", sans;
   line-height: 1.4em; }
 
-/* line 1513, sass/style.scss */
+/* line 1519, sass/style.scss */
 .btnFaq {
   width: auto;
   font-family: "Open Sans", "Helvetica", "Arial", sans;
@@ -4034,19 +4040,19 @@ section {
   margin-right: 0;
   vertical-align: middle; }
 
-/* line 1544, sass/style.scss */
+/* line 1550, sass/style.scss */
 .quick-links {
   color: #333333; }
 
-/* line 1551, sass/style.scss */
+/* line 1557, sass/style.scss */
 .wrapper.cf.container .three_quarters .content_wrap {
   min-height: calc(100vh - 210px - 157px); }
 
-/* line 1557, sass/style.scss */
+/* line 1563, sass/style.scss */
 .apps-landing-page > h2 {
   color: #ae2573; }
 
-/* line 1561, sass/style.scss */
+/* line 1567, sass/style.scss */
 .checklist-icon {
   width: 24px;
   height: 24px;
@@ -4057,7 +4063,7 @@ section {
   vertical-align: middle;
   background-size: contain; }
 
-/* line 1572, sass/style.scss */
+/* line 1578, sass/style.scss */
 .mail-icon {
   width: 28px;
   height: 28px;
@@ -4068,7 +4074,7 @@ section {
   vertical-align: middle;
   background-size: contain; }
 
-/* line 1583, sass/style.scss */
+/* line 1589, sass/style.scss */
 .btn-default.apps-landing-page {
   background-color: #ae2573;
   font-weight: 500;
@@ -4080,11 +4086,11 @@ section {
   border: 0;
   transition: 0.5s all; }
 
-/* line 1595, sass/style.scss */
+/* line 1601, sass/style.scss */
 .btn-default.apps-landing-page:hover {
   background-color: #841c57; }
 
-/* line 1603, sass/style.scss */
+/* line 1609, sass/style.scss */
 .frm_section_heading {
   border-radius: 6px;
   background-color: #eeeeee;
@@ -4092,15 +4098,15 @@ section {
   padding: 15px 15px 15px 15px;
   border-color: #aaaaaa; }
 
-/* line 1611, sass/style.scss */
+/* line 1617, sass/style.scss */
 #digital-assessment-questions .frm_section_heading {
   background-color: #fff; }
 
-/* line 1616, sass/style.scss */
+/* line 1622, sass/style.scss */
 .apps-landing-page p {
   margin-bottom: 15px; }
 
-/* line 1620, sass/style.scss */
+/* line 1626, sass/style.scss */
 .submit-icon {
   width: 16px;
   height: 16px;
@@ -4111,7 +4117,7 @@ section {
 /**
  * CSS arrow
  **/
-/* line 1635, sass/style.scss */
+/* line 1641, sass/style.scss */
 .arrow:before {
   position: absolute;
   width: 0px;
@@ -4124,7 +4130,7 @@ section {
   text-align: center;
   content: ""; }
 
-/* line 1648, sass/style.scss */
+/* line 1654, sass/style.scss */
 .arrow {
   position: relative;
   background-color: #e1e1e1;
@@ -4141,29 +4147,29 @@ section {
   font-size: 16px;
   box-sizing: border-box; }
 
-/* line 1666, sass/style.scss */
+/* line 1672, sass/style.scss */
 .app-process-box-text .step, .arrow .step {
   font-size: 20px;
   text-align: center;
   font-weight: normal; }
 
-/* line 1673, sass/style.scss */
+/* line 1679, sass/style.scss */
 .app-process-box-text .step {
   text-align: center; }
 
-/* line 1677, sass/style.scss */
+/* line 1683, sass/style.scss */
 .arrow.alt:before {
   border-left-color: #e1e1e1; }
 
-/* line 1681, sass/style.scss */
+/* line 1687, sass/style.scss */
 .arrow.alt {
   background-color: #f3f3f3; }
 
-/* line 1685, sass/style.scss */
+/* line 1691, sass/style.scss */
 .arrow.alt-2 {
   background-color: #f3f3f3; }
 
-/* line 1690, sass/style.scss */
+/* line 1696, sass/style.scss */
 .arrow.alt-2:before {
   position: absolute;
   width: 0px;
@@ -4176,7 +4182,7 @@ section {
   text-align: center;
   content: ""; }
 
-/* line 1703, sass/style.scss */
+/* line 1709, sass/style.scss */
 .arrow.alt-2:after {
   position: absolute;
   width: 0px;
@@ -4192,7 +4198,7 @@ section {
 /**
  * CSS arrow - end
  **/
-/* line 1721, sass/style.scss */
+/* line 1727, sass/style.scss */
 .app-process-container {
   background-color: #f3f3f3;
   padding-top: 24px;
@@ -4206,13 +4212,13 @@ section {
   position: relative;
   padding-left: 25px;
   padding-bottom: 14px; }
-  /* line 1735, sass/style.scss */
+  /* line 1741, sass/style.scss */
   .app-process-container:after {
     content: "";
     display: block;
     clear: both; }
 
-/* line 1742, sass/style.scss */
+/* line 1748, sass/style.scss */
 .app-process-key {
   font-family: "Open Sans", "Ubuntu";
   font-size: 15px;
@@ -4222,7 +4228,7 @@ section {
   background-color: #ffffff;
   vertical-align: middle;
   margin: 25px 25px 20px 25px; }
-  /* line 1752, sass/style.scss */
+  /* line 1758, sass/style.scss */
   .app-process-key .you-box {
     display: inline-block;
     vertical-align: middle;
@@ -4231,7 +4237,7 @@ section {
     background-color: #e1e1e1;
     margin-top: -4px;
     margin-right: 4px; }
-  /* line 1762, sass/style.scss */
+  /* line 1768, sass/style.scss */
   .app-process-key .nhs-digital-box {
     display: inline-block;
     vertical-align: middle;
@@ -4241,7 +4247,7 @@ section {
     margin-top: -4px;
     margin-right: 4px; }
 
-/* line 1774, sass/style.scss */
+/* line 1780, sass/style.scss */
 .box-with-border {
   position: relative;
   display: block;
@@ -4249,7 +4255,7 @@ section {
   width: 180px;
   background-color: #f3f3f3; }
 
-/* line 1782, sass/style.scss */
+/* line 1788, sass/style.scss */
 .app-process-box-text {
   position: absolute;
   width: 160px;
@@ -4264,7 +4270,7 @@ section {
   font-size: 16px;
   font-weight: normal; }
 
-/* line 1797, sass/style.scss */
+/* line 1803, sass/style.scss */
 .div-bg {
   position: relative;
   width: 180px;
@@ -4272,7 +4278,7 @@ section {
   top: 0px;
   z-index: 64; }
 
-/* line 1805, sass/style.scss */
+/* line 1811, sass/style.scss */
 .box-pointer-1 {
   position: relative;
   display: inline-block;
@@ -4281,7 +4287,7 @@ section {
   top: 0px;
   left: 120px; }
 
-/* line 1814, sass/style.scss */
+/* line 1820, sass/style.scss */
 .box-pointer-2 {
   position: relative;
   display: inline-block;
@@ -4291,22 +4297,22 @@ section {
   left: 240px; }
 
 @media screen and (max-width: 1180px) and (min-width: 993px) {
-  /* line 1825, sass/style.scss */
+  /* line 1831, sass/style.scss */
   .apps-landing-page .app-process-container {
     padding-left: 6px;
     padding-right: 0;
     width: 670px;
     margin-left: auto;
     margin-right: auto; }
-  /* line 1833, sass/style.scss */
+  /* line 1839, sass/style.scss */
   .apps-landing-page .arrow {
     width: 120px;
     font-size: 12px; }
-  /* line 1838, sass/style.scss */
+  /* line 1844, sass/style.scss */
   .apps-landing-page .app-process-box-text {
     font-size: 12px; } }
 @media screen and (max-width: 993px) {
-  /* line 1846, sass/style.scss */
+  /* line 1852, sass/style.scss */
   .apps-landing-page .arrow {
     float: none;
     clear: both;
@@ -4316,7 +4322,7 @@ section {
     padding-left: 0px;
     padding-top: 16px;
     height: 80px; }
-    /* line 1855, sass/style.scss */
+    /* line 1861, sass/style.scss */
     .apps-landing-page .arrow:before {
       border-top: 14px solid #f3f3f3;
       border-left: 24px solid transparent;
@@ -4324,10 +4330,10 @@ section {
       border-bottom: 0;
       transform: scale(3.1, 1);
       transform-origin: 0px 0px; }
-  /* line 1866, sass/style.scss */
+  /* line 1872, sass/style.scss */
   .apps-landing-page .arrow.alt:before {
     border-top-color: #e1e1e1; }
-  /* line 1871, sass/style.scss */
+  /* line 1877, sass/style.scss */
   .apps-landing-page .box-with-border {
     float: none;
     clear: both;
@@ -4339,10 +4345,10 @@ section {
     margin-top: 20px;
     padding-bottom: 20px;
     box-sizing: border-box; }
-  /* line 1883, sass/style.scss */
+  /* line 1889, sass/style.scss */
   .apps-landing-page .div-bg {
     margin-left: -5px;
     transform: rotate(90deg) scale(0.6, 2.32); }
-  /* line 1888, sass/style.scss */
+  /* line 1894, sass/style.scss */
   .apps-landing-page .box-pointer-1, .apps-landing-page .box-pointer-2 {
     display: none; } }

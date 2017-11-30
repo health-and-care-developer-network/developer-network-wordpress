@@ -1243,7 +1243,12 @@ div.apicontent {
       font-size: 1.1em;
       font-weight: 600;
       line-height: 1.4em;
+      text-align: justify;
     }
+  }
+  .q-link-big-buttons {
+    font-weight: 700;
+    padding-bottom: 5px;
   }
   .breadcrumbs {
     ul {
@@ -1287,6 +1292,7 @@ div.apicontent {
   }
 
   .content_wrap {
+    text-align: justify;
     padding: 1em;
     padding-bottom: 2em;
     margin-top: 0;
