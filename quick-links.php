@@ -33,6 +33,7 @@
 <?php if (get_option('q-link-btns') == 1) { ?>
 <p><br/></p>
 
+<?php if (! preg_match('/Submit Your App/i', get_the_title()) ) { ?>
 <p class="q-link-big-buttons">
   Released your application already?<br/>
   You can have it assessed.
@@ -42,8 +43,10 @@
         Assess Your App <span class="checklist-icon"></span>
     </button>
 </p>
+<?php } ?>
 
 <br/>
+<?php if (! preg_match('/Register Your Interest/i', get_the_title()) ) { ?>
 <p class="q-link-big-buttons">
   Thinking about building your app?<br/>
 </p>
@@ -53,4 +56,5 @@
         Register Interest <span class="mail-icon"></span>
     </button>
 </p>
-<?php } ?>
+
+<?php } } ?>

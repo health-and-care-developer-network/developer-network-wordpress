@@ -182,11 +182,14 @@
                             </button>
                         </p> -->
 
-                        <!-- <h2 class="large_space">Frequently Asked Questions</h2>
+                        <?php if (get_option('apps-faq')) { ?>
+
+                        <h2 class="large_space">Frequently Asked Questions</h2>
 
                         <div class="faq_content">
-                            <?php // hdnPosts::the_faqs('landing'); ?>
-                        </div> -->
+                            <?php hdnPosts::the_faqs('landing'); ?>
+                        </div>
+                      <?php } ?>
 
                     </div> <!-- inner - content wrap -->
                 </div> <!-- three_quarters - main wrap -->
@@ -200,5 +203,7 @@
       // });
     </script>
 
-    <!-- <script src="<?php // echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>" type="text/javascript"></script> -->
+    <?php if (get_option('apps-faq')) { ?>
+      <script src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>" type="text/javascript"></script>
+    <?php } ?>
 <?php get_footer();
