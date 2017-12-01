@@ -66,6 +66,19 @@
                         </div> <!-- col -->
                       </div>
 
+                      <?php if (get_option('apps-sya')) { ?>
+                      <h3>Submit an App for assessment</h3>
+                      <p>
+                        If your app is in public use and is ready to be assessed using the Digital Assessment
+                        Questions, please submit your app below.<br/>
+                      </p>
+                      <p>
+                          <button id="btnSubmitApp" type="button" class="btn btn-lg btn-default apps-landing-page">
+                              Assess <span class="checklist-icon"></span>
+                          </button>
+                      </p>
+                      <?php } ?>
+
                       <div class="row">
                         <div class="col col-md-12 col-lg-12">
                           <p>
@@ -155,21 +168,13 @@
                              process that will lead to publication on the NHS Apps Library. To get an indication
                              of the criteria used, you can view the Digital Assessment Questionnaire – Beta.<br/>
                           </p>
-                          <!-- <h3>Submit an App for assessment</h3>
-                          <p>
-                            If your app is in public use and is ready to be assessed using the Digital Assessment
-                            Questions, please submit your app below.<br/>
-                          </p>
-                          <p>
-                              <button id="btnSubmitApp" type="button" class="btn btn-lg btn-default apps-landing-page">
-                                  Assess <span class="checklist-icon"></span>
-                              </button>
-                          </p> -->
+
 
                         </div> <!-- col -->
                       </div> <!-- row -->
 
-                        <!-- <h3>Register your Interest</h3>
+                      <?php if (get_option('apps-ryi')) { ?>
+                        <h3>Register your Interest</h3>
                         <p>
                           The NHS are keen to work with developers and interested parties.
                           If you would like to be
@@ -180,7 +185,8 @@
                                     class="btn btn-lg btn-default apps-landing-page">
                                 Register Interest <span class="mail-icon"></span>
                             </button>
-                        </p> -->
+                        </p>
+                      <?php } ?>
 
                         <?php if (get_option('apps-faq')) { ?>
 
