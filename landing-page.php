@@ -66,6 +66,40 @@
                         </div> <!-- col -->
                       </div>
 
+                      <?php if (get_option('apps-btn-bar')) { ?>
+                        <p><br/></p>
+                          <div class="row">
+                            <div class="col col-md-6">
+                              <h3>Submit an App for assessment</h3>
+                              <p>
+                                If your app is in public use and is ready to be assessed using the Digital Assessment
+                                Questions, please submit your app below.<br/>
+                              </p>
+                              <p>
+                                  <button id="btnSubmitApp" type="button" class="btn btn-md btn-default apps-landing-page">
+                                      Assess <span class="checklist-icon"></span>
+                                  </button>
+                              </p>
+                            </div>
+
+                            <div class="col col-md-6">
+                              <h3>Register your Interest</h3>
+                              <p>
+                                The NHS are keen to work with developers and interested parties.
+                                If you would like to be
+                                involved and receive information on future updates please register your interest below.
+                              </p>
+                              <p>
+                                  <button type="button" id="btnRegisterInterest"
+                                          class="btn btn-md btn-default apps-landing-page">
+                                      Register Interest <span class="mail-icon"></span>
+                                  </button>
+                              </p>
+                            </div>
+
+                          </div> <!-- row -->
+                      <?php } ?>
+
                       <?php if (get_option('apps-sya')) { ?>
                       <h3>Submit an App for assessment</h3>
                       <p>
@@ -79,6 +113,7 @@
                       </p>
                       <?php } ?>
 
+                      <?php if (get_option('apps-diagram')) { ?>
                       <div class="row">
                         <div class="col col-md-12 col-lg-12">
                           <p>
@@ -135,6 +170,8 @@
                             </p>
                         </div>
                       </div>
+
+                    <?php } ?>
 
                       <div class="row">
                         <div class="col col-md-12 col-lg-12">
@@ -203,11 +240,6 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-      // $(function () {
-      //   $('[data-toggle="tooltip"]').tooltip()
-      // });
-    </script>
 
     <?php if (get_option('apps-faq')) { ?>
       <script src="<?php echo get_template_directory_uri() . '/js/digital-tools/faq.js' ?>" type="text/javascript"></script>
