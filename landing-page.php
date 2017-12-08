@@ -35,8 +35,9 @@
 
                       <div class="row">
                         <div class="col col-md-12 col-lg-12">
-                          <h2>What is the NHS Apps Library and how do you get your app on there?</h2>
+                          <h2>How to get your app on the NHS Apps Library</h2>
                           <hr style="border-top: 1px solid #d8d8d8;"/>
+                          <!--
                           <p>
                               The <a href="https://apps.beta.nhs.uk/">NHS Apps Library</a> (apps.beta.nhs.uk) has
                               been launched as a beta site.
@@ -46,13 +47,14 @@
                               designed and tested to support the self-management and prevention
                               of health related conditions.<br/>
                           </p>
+                        -->
                           <p>
                               These pages provide options to developers who have existing health apps they would like to
-                              see on the library. It also provides options for those of you who are interested in the
-                              library or have an idea for a health app that they'd like to develop.<br/>
+                              see on the NHS Apps Library. It also provides options for those who are
+                              interested in the library or have an idea for a health app that they'd like to develop.<br/>
                           </p>
                           <p>
-                            All apps must pass the <a href="/digital-tools/daq/">Digital Assessment Questionnaire (DAQs)</a> to ensure that only
+                            All apps must pass the Digital Assessment Questionnaire (DAQs) to ensure that only
                             trusted, high quality apps are available on the Apps Library. They must also be available
                             in either Apple, Google or Microsoft App Stores. The library does not host apps, it
                             provides links to the stores.<br/>
@@ -72,35 +74,38 @@
                             <div class="col col-md-6">
                               <h3>Submit an App for assessment</h3>
                               <p>
+                                  <button id="btnSubmitApp" type="button" class="btn btn-md btn-default apps-landing-page">
+                                      Submit<span class="checklist-icon"></span>
+                                  </button>
+                              </p>
+                              <p>
                                 If your app is in public use and is ready to be assessed using the Digital Assessment
                                 Questions, please submit your app below.<br/>
                               </p>
-                              <p>
-                                  <button id="btnSubmitApp" type="button" class="btn btn-md btn-default apps-landing-page">
-                                      Assess <span class="checklist-icon"></span>
-                                  </button>
-                              </p>
+
                             </div>
 
                             <div class="col col-md-6">
                               <h3>Register your Interest</h3>
-                              <p>
-                                The NHS are keen to work with developers and interested parties.
-                                If you would like to be
-                                involved and receive information on future updates please register your interest below.
-                              </p>
                               <p>
                                   <button type="button" id="btnRegisterInterest"
                                           class="btn btn-md btn-default apps-landing-page">
                                       Register Interest <span class="mail-icon"></span>
                                   </button>
                               </p>
+                              <p>
+                                The NHS are keen to work with developers and interested parties.
+                                If you would like to be
+                                involved and receive information on future updates please register your interest below.
+                              </p>
+
                             </div>
 
                           </div> <!-- row -->
                       <?php } ?>
 
                       <?php if (get_option('apps-sya')) { ?>
+                      <br/>
                       <h3>Submit an App for assessment</h3>
                       <p>
                         If your app is in public use and is ready to be assessed using the Digital Assessment
@@ -108,7 +113,7 @@
                       </p>
                       <p>
                           <button id="btnSubmitApp" type="button" class="btn btn-lg btn-default apps-landing-page">
-                              Assess <span class="checklist-icon"></span>
+                              Submit <span class="checklist-icon"></span>
                           </button>
                       </p>
                       <?php } ?>
@@ -176,6 +181,7 @@
                       <div class="row">
                         <div class="col col-md-12 col-lg-12">
                           <h3>The Assessment Process Explained</h3>
+                          <!--
                           <p>
                             In order to drive and maintain a high-quality offering of products on the NHS Apps Library
                               we have a <a href="/digital-tools/daq/">Digital Assessment Questionnaire</a> and review process that enables developers to
@@ -187,23 +193,25 @@
                             professionals and patients. This supports us in the development of a fit-for-purpose
                             process that is efficient and effective.<br/>
                           </p>
+                          -->
                           <p>
-                            As the process flow below shows, once you have submitted your app for assessment
+                            After submitting your app for assessment
                             it will go through a pre-assessment process at NHS Digital to determine if your
-                            app is suitable. If it qualifies, you will be invited to take part in the self-assessment
+                            app is suitable. Upon qualification, you will be invited to take part in the self-assessment
                             by answering the digital assessment questions.<br/>
                           </p>
                           <p>
-                            Once we have received your submission, they will be reviewed by our subject matter
-                            experts; these are specialists in various fields (regulatory, clinical safety,
-                            data security etc.). Timescales for assessment may vary but can typically take
-                            around 2 to 4 weeks and is dependent on how the app performs against the assessment
+                            Your answers will be reviewed by our subject matter experts;
+                            these are specialists in various fields (regulatory, clinical safety,
+                            data security etc.). Assessment timescales may vary but can typically take
+                            around two to four weeks and are dependent on how the app performs against the assessment
                             standards.<br/>
                           </p>
                           <p>
                             When an app has successfully satisfied the assessment criteria it will go through a
                              process that will lead to publication on the NHS Apps Library. To get an indication
-                             of the criteria used, you can view the Digital Assessment Questionnaire – Beta.<br/>
+                             of the criteria used, you can view the
+                             <a href="/digital-tools/daq/">Digital Assessment Questionnaire - Beta</a>.<br/>
                           </p>
 
 
@@ -211,6 +219,7 @@
                       </div> <!-- row -->
 
                       <?php if (get_option('apps-ryi')) { ?>
+                        <br/>
                         <h3>Register your Interest</h3>
                         <p>
                           The NHS are keen to work with developers and interested parties.

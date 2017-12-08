@@ -21,7 +21,7 @@
 <?php } ?>
 
 
-<?php if (get_option('ohdc_state') == 1) { ?>
+<?php if (get_option('ohdc_state')) { ?>
 <p><br/></p>
 <?php if (! preg_match('/Open Health Data Challenge/i', get_the_title()) ) { ?>
   <h2><span class="quick-links" style="color: #333333;">Competition</span></h2>
@@ -30,7 +30,7 @@
 
 <?php } ?>
 
-<?php if (get_option('q-link-btns') == 1) { ?>
+<?php if (get_option('q-link-btns')) { ?>
 <p><br/></p>
 
 <?php if (! preg_match('/Submit Your App/i', get_the_title()) ) { ?>
@@ -52,7 +52,7 @@
 </p>
 <p>
     <button type="button" id="btnRegisterInterest"
-            class="btn btn-lg btn-default apps-landing-page">
+            class="btn btn-md btn-default apps-landing-page">
         Register Interest <span class="mail-icon"></span>
     </button>
 </p>

@@ -3785,7 +3785,7 @@ section {
   font-family: "Open Sans", "Ubuntu";
   font-size: 1.1em;
   font-weight: 600;
-  line-height: 1.4em;
+  line-height: 1.6em;
   text-align: justify; }
 /* line 1249, sass/style.scss */
 .digital-tools-style .q-link-big-buttons {
@@ -4042,17 +4042,18 @@ section {
 
 /* line 1550, sass/style.scss */
 .quick-links {
-  color: #333333; }
+  color: #333333;
+  line-height: 1.5em; }
 
-/* line 1557, sass/style.scss */
+/* line 1558, sass/style.scss */
 .wrapper.cf.container .three_quarters .content_wrap {
   min-height: calc(100vh - 210px - 157px); }
 
-/* line 1563, sass/style.scss */
+/* line 1564, sass/style.scss */
 .apps-landing-page > h2 {
   color: #ae2573; }
 
-/* line 1567, sass/style.scss */
+/* line 1568, sass/style.scss */
 .checklist-icon {
   width: 24px;
   height: 24px;
@@ -4063,7 +4064,7 @@ section {
   vertical-align: middle;
   background-size: contain; }
 
-/* line 1578, sass/style.scss */
+/* line 1579, sass/style.scss */
 .mail-icon {
   width: 28px;
   height: 28px;
@@ -4074,7 +4075,7 @@ section {
   vertical-align: middle;
   background-size: contain; }
 
-/* line 1589, sass/style.scss */
+/* line 1590, sass/style.scss */
 .btn-default.apps-landing-page {
   background-color: #ae2573;
   font-weight: 500;
@@ -4086,11 +4087,11 @@ section {
   border: 0;
   transition: 0.5s all; }
 
-/* line 1601, sass/style.scss */
+/* line 1602, sass/style.scss */
 .btn-default.apps-landing-page:hover {
   background-color: #841c57; }
 
-/* line 1609, sass/style.scss */
+/* line 1610, sass/style.scss */
 .frm_section_heading {
   border-radius: 6px;
   background-color: #eeeeee;
@@ -4098,15 +4099,15 @@ section {
   padding: 15px 15px 15px 15px;
   border-color: #aaaaaa; }
 
-/* line 1617, sass/style.scss */
+/* line 1618, sass/style.scss */
 #digital-assessment-questions .frm_section_heading {
   background-color: #fff; }
 
-/* line 1622, sass/style.scss */
+/* line 1623, sass/style.scss */
 .apps-landing-page p {
   margin-bottom: 15px; }
 
-/* line 1626, sass/style.scss */
+/* line 1627, sass/style.scss */
 .submit-icon {
   width: 16px;
   height: 16px;
@@ -4117,7 +4118,7 @@ section {
 /**
  * CSS arrow
  **/
-/* line 1641, sass/style.scss */
+/* line 1642, sass/style.scss */
 .arrow:before {
   position: absolute;
   width: 0px;
@@ -4130,7 +4131,7 @@ section {
   text-align: center;
   content: ""; }
 
-/* line 1654, sass/style.scss */
+/* line 1655, sass/style.scss */
 .arrow {
   position: relative;
   background-color: #e1e1e1;
@@ -4147,29 +4148,29 @@ section {
   font-size: 16px;
   box-sizing: border-box; }
 
-/* line 1672, sass/style.scss */
+/* line 1673, sass/style.scss */
 .app-process-box-text .step, .arrow .step {
   font-size: 20px;
   text-align: center;
   font-weight: normal; }
 
-/* line 1679, sass/style.scss */
+/* line 1680, sass/style.scss */
 .app-process-box-text .step {
   text-align: center; }
 
-/* line 1683, sass/style.scss */
+/* line 1684, sass/style.scss */
 .arrow.alt:before {
   border-left-color: #e1e1e1; }
 
-/* line 1687, sass/style.scss */
+/* line 1688, sass/style.scss */
 .arrow.alt {
   background-color: #f3f3f3; }
 
-/* line 1691, sass/style.scss */
+/* line 1692, sass/style.scss */
 .arrow.alt-2 {
   background-color: #f3f3f3; }
 
-/* line 1696, sass/style.scss */
+/* line 1697, sass/style.scss */
 .arrow.alt-2:before {
   position: absolute;
   width: 0px;
@@ -4182,7 +4183,7 @@ section {
   text-align: center;
   content: ""; }
 
-/* line 1709, sass/style.scss */
+/* line 1710, sass/style.scss */
 .arrow.alt-2:after {
   position: absolute;
   width: 0px;
@@ -4198,7 +4199,7 @@ section {
 /**
  * CSS arrow - end
  **/
-/* line 1727, sass/style.scss */
+/* line 1728, sass/style.scss */
 .app-process-container {
   background-color: #f3f3f3;
   padding-top: 24px;
@@ -4212,13 +4213,13 @@ section {
   position: relative;
   padding-left: 25px;
   padding-bottom: 14px; }
-  /* line 1741, sass/style.scss */
+  /* line 1742, sass/style.scss */
   .app-process-container:after {
     content: "";
     display: block;
     clear: both; }
 
-/* line 1748, sass/style.scss */
+/* line 1749, sass/style.scss */
 .app-process-key {
   font-family: "Open Sans", "Ubuntu";
   font-size: 15px;
@@ -4228,7 +4229,7 @@ section {
   background-color: #ffffff;
   vertical-align: middle;
   margin: 25px 25px 20px 25px; }
-  /* line 1758, sass/style.scss */
+  /* line 1759, sass/style.scss */
   .app-process-key .you-box {
     display: inline-block;
     vertical-align: middle;
@@ -4237,7 +4238,7 @@ section {
     background-color: #e1e1e1;
     margin-top: -4px;
     margin-right: 4px; }
-  /* line 1768, sass/style.scss */
+  /* line 1769, sass/style.scss */
   .app-process-key .nhs-digital-box {
     display: inline-block;
     vertical-align: middle;
@@ -4247,7 +4248,7 @@ section {
     margin-top: -4px;
     margin-right: 4px; }
 
-/* line 1780, sass/style.scss */
+/* line 1781, sass/style.scss */
 .box-with-border {
   position: relative;
   display: block;
@@ -4255,7 +4256,7 @@ section {
   width: 180px;
   background-color: #f3f3f3; }
 
-/* line 1788, sass/style.scss */
+/* line 1789, sass/style.scss */
 .app-process-box-text {
   position: absolute;
   width: 160px;
@@ -4270,7 +4271,7 @@ section {
   font-size: 16px;
   font-weight: normal; }
 
-/* line 1803, sass/style.scss */
+/* line 1804, sass/style.scss */
 .div-bg {
   position: relative;
   width: 180px;
@@ -4278,7 +4279,7 @@ section {
   top: 0px;
   z-index: 64; }
 
-/* line 1811, sass/style.scss */
+/* line 1812, sass/style.scss */
 .box-pointer-1 {
   position: relative;
   display: inline-block;
@@ -4287,7 +4288,7 @@ section {
   top: 0px;
   left: 120px; }
 
-/* line 1820, sass/style.scss */
+/* line 1821, sass/style.scss */
 .box-pointer-2 {
   position: relative;
   display: inline-block;
@@ -4297,22 +4298,22 @@ section {
   left: 240px; }
 
 @media screen and (max-width: 1180px) and (min-width: 993px) {
-  /* line 1831, sass/style.scss */
+  /* line 1832, sass/style.scss */
   .apps-landing-page .app-process-container {
     padding-left: 6px;
     padding-right: 0;
     width: 670px;
     margin-left: auto;
     margin-right: auto; }
-  /* line 1839, sass/style.scss */
+  /* line 1840, sass/style.scss */
   .apps-landing-page .arrow {
     width: 120px;
     font-size: 12px; }
-  /* line 1844, sass/style.scss */
+  /* line 1845, sass/style.scss */
   .apps-landing-page .app-process-box-text {
     font-size: 12px; } }
 @media screen and (max-width: 993px) {
-  /* line 1852, sass/style.scss */
+  /* line 1853, sass/style.scss */
   .apps-landing-page .arrow {
     float: none;
     clear: both;
@@ -4322,7 +4323,7 @@ section {
     padding-left: 0px;
     padding-top: 16px;
     height: 80px; }
-    /* line 1861, sass/style.scss */
+    /* line 1862, sass/style.scss */
     .apps-landing-page .arrow:before {
       border-top: 14px solid #f3f3f3;
       border-left: 24px solid transparent;
@@ -4330,10 +4331,10 @@ section {
       border-bottom: 0;
       transform: scale(3.1, 1);
       transform-origin: 0px 0px; }
-  /* line 1872, sass/style.scss */
+  /* line 1873, sass/style.scss */
   .apps-landing-page .arrow.alt:before {
     border-top-color: #e1e1e1; }
-  /* line 1877, sass/style.scss */
+  /* line 1878, sass/style.scss */
   .apps-landing-page .box-with-border {
     float: none;
     clear: both;
@@ -4345,10 +4346,10 @@ section {
     margin-top: 20px;
     padding-bottom: 20px;
     box-sizing: border-box; }
-  /* line 1889, sass/style.scss */
+  /* line 1890, sass/style.scss */
   .apps-landing-page .div-bg {
     margin-left: -5px;
     transform: rotate(90deg) scale(0.6, 2.32); }
-  /* line 1894, sass/style.scss */
+  /* line 1895, sass/style.scss */
   .apps-landing-page .box-pointer-1, .apps-landing-page .box-pointer-2 {
     display: none; } }
