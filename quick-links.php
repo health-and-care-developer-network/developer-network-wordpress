@@ -1,4 +1,4 @@
-<h2><span class="quick-links" style="color: #333333; font-family: Open Sans;">Quick Links</span></h2>
+<h2><span class="quick-links" style="color: #333333;">Quick Links</span></h2>
 <p><a class="q-link" href='/apps'>Apps</a></p>
 <p>
   <?php

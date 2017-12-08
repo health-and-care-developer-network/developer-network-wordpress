@@ -203,9 +203,8 @@
                           <p>
                             Your answers will be reviewed by our subject matter experts;
                             these are specialists in various fields (regulatory, clinical safety,
-                            data security etc.). Assessment timescales may vary but can typically take
-                            around two to four weeks and are dependent on how the app performs against the assessment
-                            standards.<br/>
+                            data security etc.). Assessment timescales may vary depending on
+                            how the app performs against the assessment standards.<br/>
                           </p>
                           <p>
                             When an app has successfully satisfied the assessment criteria it will go through a

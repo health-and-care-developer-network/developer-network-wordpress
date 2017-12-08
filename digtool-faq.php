@@ -38,7 +38,20 @@
                         <div class="content_wrap_content">
                             <?php the_content(); ?>
                             <div class="faq_content">
-                                <?php hdnPosts::the_faqs(); ?>
+                              <?php hdnPosts::the_faqs('one'); ?>
+                              <?php hdnPosts::the_faqs('two'); ?>
+                              <?php hdnPosts::the_faqs('three'); ?>
+                              <?php hdnPosts::the_faqs('four'); ?>
+                              <?php hdnPosts::the_faqs('five'); ?>
+                              <?php hdnPosts::the_faqs('six'); ?>
+                              <?php hdnPosts::the_faqs('seven'); ?>
+                              <?php hdnPosts::the_faqs('eight'); ?>
+                              <?php hdnPosts::the_faqs('nine'); ?>
+                              <?php hdnPosts::the_faqs('ten'); ?>
+                              <?php hdnPosts::the_faqs('eleven'); ?>
+                              <?php hdnPosts::the_faqs('twelve'); ?>
+                              <?php hdnPosts::the_faqs('thirteen'); ?>
+
                             </div>
                         </div>
                         <?php include_once "likes.php"; ?>
