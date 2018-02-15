@@ -98,11 +98,12 @@ class hdnPosts
     public static function processCatTree($cat, $postType) {
         
         $passedCat = $cat;
-        
+
         $args = array('category__in' => array($cat), 'numberposts' => -1, 'post_type' => $postType);
-        $cat_posts = get_posts($args);
         
-        // 
+	$cat_posts = get_posts($args);
+
+	// Leaf nodes
         if (count($cat_posts) > 0) :
             self::$displayTree[self::$category] = true;
             self::$sTree .= '<ul>';
@@ -112,8 +113,12 @@ class hdnPosts
             self::$sTree .= '</ul>';
         endif;
 
-        $next = get_categories('hide_empty=1&parent=' . $cat);
+	$next = get_categories( array(
+	    'hide_empty' => '1',
+	    'parent'  => $passedCat
+	) );
 
+	// Parent categories
         if (count($next)>0) :
             
             foreach ($next as $cat) {
