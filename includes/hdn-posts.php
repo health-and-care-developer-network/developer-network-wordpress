@@ -98,22 +98,17 @@ class hdnPosts
     public static function processCatTree($cat, $postType) {
         
         $passedCat = $cat;
-        
+
         $args = array('category__in' => array($cat), 'numberposts' => -1, 'post_type' => $postType);
-        $cat_posts = get_posts($args);
         
-        // 
-        if (count($cat_posts) > 0) :
-            self::$displayTree[self::$category] = true;
-            self::$sTree .= '<ul>';
-            foreach ($cat_posts as $post) :
-                self::$sTree .= '<li class="'. $post->term_id .'"><a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a></li>';
-            endforeach;
-            self::$sTree .= '</ul>';
-        endif;
+	$cat_posts = get_posts($args);
 
-        $next = get_categories('hide_empty=1&parent=' . $cat);
+	$next = get_categories( array(
+	    'hide_empty' => '1',
+	    'parent'  => $passedCat
+	) );
 
+	// Parent categories
         if (count($next)>0) :
             
             foreach ($next as $cat) {
@@ -131,6 +126,17 @@ class hdnPosts
             } // foreach
             
         endif;
+
+	// Leaf nodes
+        if (count($cat_posts) > 0) :
+            self::$displayTree[self::$category] = true;
+            self::$sTree .= '<ul class="sub_cat_list">';
+            foreach ($cat_posts as $post) :
+                self::$sTree .= '<li class="'. $post->term_id .'"><a href="' . get_permalink($post->ID) . '">' . $post->post_title . '</a></li>';
+            endforeach;
+            self::$sTree .= '</ul>';
+        endif;
+
     } // processCatTree
     
     public static function generateTemplateTransient($key, Closure $closure) {

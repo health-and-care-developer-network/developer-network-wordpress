@@ -25,6 +25,7 @@
 													hdnPosts::$displayTree[hdnPosts::$category] = false;
                           hdnPosts::processCatTree($cat->term_id, 'downloads-data');
 													$sOut .= hdnPosts::$sTree;
+			  hdnPosts::$sTree = '';
                           $sOut .= '</section></div></div>';
 
 													if (isset(hdnPosts::$category) && hdnPosts::$category > 0 ) {

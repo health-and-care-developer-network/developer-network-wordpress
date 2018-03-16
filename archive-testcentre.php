@@ -16,23 +16,23 @@
 					<?php
               echo hdnPosts::generateTemplateTransient('testcentre', function () {
 	              foreach( get_categories('hide_empty=1&exclude=0') as $cat ) :
-									if ( !$cat->parent ) {
-										$sOut = '<div class="one_third"><div class="box"><div class="line purple_line"></div>';
-										$sOut .= '<section class="nav_box purple"><h3>' . $cat->name . '</h3>';
-		                                hdnPosts::$category = $cat->term_id;
-										hdnPosts::$displayTree[hdnPosts::$category] = false;
-										hdnPosts::processCatTree($cat->term_id, 'testcentre');
-										$sOut .= hdnPosts::$sTree;
-		                                $sOut .= '</section></div></div>';
+				if ( !$cat->parent ) {
+					$sOut = '<div class="one_third"><div class="box"><div class="line purple_line"></div>';
+					$sOut .= '<section class="nav_box purple"><h3>' . $cat->name . '</h3>';
+		                        hdnPosts::$category = $cat->term_id;
+					hdnPosts::$displayTree[hdnPosts::$category] = false;
+					hdnPosts::processCatTree($cat->term_id, 'testcentre');
+					$sOut .= hdnPosts::$sTree;
+					hdnPosts::$sTree = '';
+					$sOut .= '</section></div></div>';
 
-										if (isset(hdnPosts::$category) && hdnPosts::$category > 0 ) {
-											if (hdnPosts::$displayTree[hdnPosts::$category]) {
-												echo $sOut;
-											}
-										} // if set
-	                } // no parent
+					if (isset(hdnPosts::$category) && hdnPosts::$category > 0 ) {
+						if (hdnPosts::$displayTree[hdnPosts::$category]) {
+							echo $sOut;
+						}
+					} // if set	                
+				} // no parent
 	              endforeach;
-
 	              wp_reset_query(); //to reset all trouble done to the original query
               });
 					?>

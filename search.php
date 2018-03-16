@@ -30,14 +30,7 @@
 										while ( have_posts() ) : the_post(); ?>
 								
 											<div class="result">
-											    <?php
-												if (get_post_type() == 'fhir' || get_post_type() == 'APISpec') : ?>
-													<h3><a href="<?php echo $post->permalink ?>"><?php the_title(); ?></a></h3>
-													<?php
-												else : ?>
-													<h3><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h3>
-													<?php
-												endif; ?>
+												<h3><a href="<?php echo $post->permalink ?>"><?php the_title(); ?></a></h3>
 												<?php
 													if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) : ?>
 														<div class="entry-meta">Categories: 
