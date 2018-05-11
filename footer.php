@@ -31,6 +31,7 @@
             var _gaq = _gaq || [];
             _gaq.push(
                 ['_setAccount', 'UA-13017909-3'],
+		['_gat._anonymizeIp'],
                 ['_trackPageview'],
                 ['b._setAccount', 'UA-38028819-4'],
                 ['b._trackPageview'],
