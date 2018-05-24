@@ -46,4 +46,6 @@ a.appendChild(r);
 EOF;
             }
         ?>
+
+		<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="30398f35-a144-4edd-a779-05481f9da7b3" type="text/javascript" async></script>
 	</head>
