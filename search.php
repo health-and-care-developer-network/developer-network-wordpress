@@ -34,7 +34,10 @@
 												<?php
 													if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) ) : ?>
 														<div class="entry-meta">Categories: 
-															<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'solr-for-wordpress-on-pantheon' ) ); ?></span>
+
+															<span class="cat-links"><?php echo get_the_category_list( ', ', '', $post->id );
+?></span>
+
 														</div>
 														<?php
 													elseif (get_post_type() == 'fhir') : ?>
