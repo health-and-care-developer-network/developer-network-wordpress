@@ -443,7 +443,7 @@
 								Are you a developer wanting to contribute to a more efficient NHS, focused on patient-led healthcare?
 								<br><br>
 								This is where you’ll find all the information you need if you have an existing health app you’d like to see included on our
-								<a href="https://apps-library.staging.beta.nhschoices.net">Apps Library</a>
+								<a href="https://apps.beta.nhs.uk/">Apps Library</a>
 							</p>
           					<p>
             					<a href="/digital-tools/submit-your-app/" class="button button-start">Submit your app</a>
