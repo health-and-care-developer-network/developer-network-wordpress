@@ -475,7 +475,7 @@
                                 <ul class="list-bullet">
                                     <li><a href="/digital-tools/submit-your-app/">Submit your app</a></li>
                                     <li><a href="/digital-tools/register-your-interest/">Register your interest</a></li>
-                                    <li><a href="digital-tools/daq/">Sample assessment questions</a></li>
+                                    <li><a href="/digital-tools/daq/">Sample assessment questions</a></li>
                                 </ul>
                             </p>
                         </div>
