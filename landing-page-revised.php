@@ -443,7 +443,7 @@
 								Are you a developer wanting to contribute to a more efficient NHS, focused on patient-led healthcare?
 								<br><br>
 								This is where you’ll find all the information you need if you have an existing health app you’d like to see included on our
-								<a href="https://apps.beta.nhs.uk/">Apps Library</a>
+								<a href="https://apps-library.staging.beta.nhschoices.net">Apps Library</a>
 							</p>
           					<p>
             					<a href="/digital-tools/submit-your-app/" class="button button-start">Submit your app</a>
@@ -475,7 +475,7 @@
                                 <ul class="list-bullet">
                                     <li><a href="/digital-tools/submit-your-app/">Submit your app</a></li>
                                     <li><a href="/digital-tools/register-your-interest/">Register your interest</a></li>
-                                    <li>Sample assessment questions (not currently available): <br><a href="#" target="_blank">Excel format (.xlsx)</a> &nbsp;|&nbsp; <a href="#" target="_blank">PDF format (.pdf)</a></li>
+                                    <li>Sample assessment questions: <br><a href="digital-tools/daq/" target="_blank"></a></li>
                                 </ul>
                             </p>
                         </div>
