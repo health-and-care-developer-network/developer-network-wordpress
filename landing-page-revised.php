@@ -564,17 +564,15 @@
 
         <!-- Slick slider -->
         <script>
-            $(document).ready(function() {
-                $(".carousel").slick({
-                    arrows: true,
-                    centerMode: true,
-                    responsive: true,
-                    centerPadding: false,
-                    dots: true,
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                });
+            jQuery(".carousel").slick({
+                arrows: true,
+                centerMode: true,
+                responsive: true,
+                centerPadding: false,
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
             });
         </script>
         <?php get_footer(); ?>
