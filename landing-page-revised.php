@@ -575,6 +575,6 @@
                     slidesToShow: 1,
                     slidesToScroll: 1
                 });
-            )};
+            });
         </script>
         <?php get_footer(); ?>
