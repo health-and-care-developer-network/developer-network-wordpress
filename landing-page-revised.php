@@ -5,12 +5,9 @@
 ?>
     <?php get_header(); ?>
 
-        <script   src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" media="screen" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" media="screen" rel="stylesheet" />
-        <link rel="stylesheet" href="https://developer.nhs.uk/wp-content/themes/HDN/style.css?v=3"/>
   
         <!-- Landing page styles: start -->
         <style>
@@ -248,7 +245,7 @@
 
             @media (min-width: 1040px) {
                 .panel-hero-inner {
-                    background-image: url("<?php echo get_template_directory_uri() ?>/panel-hero-bg.png");
+                    background-image: url("<?php echo get_template_directory_uri() . '/img/panel-hero-bg.png' ?>");
                     background-repeat: no-repeat;
                     background-position: 92% 100%;
                     background-size: 500px;
@@ -497,7 +494,7 @@
                             <p>&nbsp;</p>
                         </div>
                         <div class="column-one-third">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/developer-be-discovered.png" style="width:100%">
+                            <img src="<?php echo get_template_directory_uri() . '/img/developer-be-discovered.png' ?>" style="width:100%">
                         </div>
                     </div>
 
@@ -517,7 +514,7 @@
                             </p>
                         </div>
                         <div class="column-one-half">
-                            <h2 class="heading-small" style="margin-top:10px; margin-bottom:10px; color: #003087"><img src="<?php echo get_template_directory_uri() ?>/images/circle-dots_dark-blue-1.png" width="24" style="position: relative; top:4px;"> Being tested in the NHS</h2>
+                            <h2 class="heading-small" style="margin-top:10px; margin-bottom:10px; color: #003087"><img src="<?php echo get_template_directory_uri() ?>/img/circle-dots_dark-blue-1.png" width="24" style="position: relative; top:4px;"> Being tested in the NHS</h2>
                             <p>An app meets NHS quality standards for safety and usability and is being tested now with NHS patients to see if there is sufficient evidence to provide them with an NHS stamp of approval</p>
                         </div>
                     </div>
