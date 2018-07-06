@@ -5,7 +5,7 @@
 						<li><a href="/accessibility">Accessibility</a></li>
 						<li><a href="/privacy">Privacy</a></li>
 						<li><a href="/cookie-policy">Cookie Policy</a></li>
-                        <li><a class="last" href="/contact-us">Contact Us</a></li>
+                        <li><a class="last" href="mailto:enquiries@nhsdigital.nhs.uk">Contact Us</a></li>
 					</ul>
 				</nav>
 
