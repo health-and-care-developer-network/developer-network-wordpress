@@ -268,7 +268,7 @@
             <h3 class="footer__heading">Get in touch</h3>
             <nav class="footer__menu">
                 <ul>
-                    <li class="footer__menu-item"><a href="/contact-us">- Contact us</a></li>
+                    <li class="footer__menu-item"><a href="mailto:enquiries@nhsdigital.nhs.uk">- Contact us</a></li>
                     <li class="footer__menu-item"><a href="/digital-tools/register-your-interest">- Working with us</a></li>
                 </ul>
             </nav>

@@ -243,7 +243,7 @@
                       <?php } ?>
 
                     </div> <!-- inner - content wrap -->
-                </div> <!-- three_quarters - main wrap -->
+                </div> <!-- three_quarters - main wrap v2 -->
 
             </div>
         </div>

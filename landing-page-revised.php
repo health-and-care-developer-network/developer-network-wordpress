@@ -222,58 +222,65 @@
             /* PANEL HERO */
             /* ########################################### */
 
-            .panel-hero {
-                margin-bottom: 40px;
-                background: #ffffff;
-                background: -moz-linear-gradient(top, #ffffff 0%, #e8f3f7 100%);
-                background: -webkit-linear-gradient(top, #ffffff 0%, #e8f3f7 100%);
-                background: linear-gradient(to bottom, #ffffff 0%, #e8f3f7 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8f3f7',GradientType=0 );
+            .panel-dark-hero {
+                margin-bottom: 10px;
+                background-color: #005EB8;
+            }
+
+            @media (min-width: 1020px) {
+                .panel-dark-hero {
+                margin-bottom: 60px;
+                background-image: linear-gradient(-87deg, #005EB8 82%, #FFFFFF 82.3%);
+                background-image: -moz-linear-gradient(-87deg, #005EB8 82%, #FFFFFF 82.3%);
+                background-image: -webkit-linear-gradient(-87deg, #005EB8 82%, #FFFFFF 82.3%);
+                }
             }
 
             @media (min-width: 641px) {
-                .panel-hero {
-                    font-size: 19px;
+                .panel-dark-hero {
+                font-size: 19px;
                 }
             }
 
-            .panel-hero-inner {
-                max-width: 1168px;
+            .panel-dark-hero-inner {
+                max-width: 1200px;
                 margin: 0px auto;
-                padding: 48px 16px 61px;
+                padding: 46px 6px 46px;
             }
-
-            @media (min-width: 1040px) {
-                .panel-hero-inner {
-                    background-image: url("<?php echo get_template_directory_uri() . '/img/panel-hero-bg.png' ?>");
-                    background-repeat: no-repeat;
-                    background-position: 92% 100%;
-                    background-size: 500px;
+            @media (min-width: 1020px) {
+                .panel-dark-hero-inner {
+                padding: 46px 15px 0px;
                 }
             }
 
-            .panel-hero__title {
+            .panel-dark-hero__img {
+                width: 550px;
+                float: right;
+            }
+
+            .panel-dark-hero__title {
                 margin-top: 16px;
                 margin-bottom: 16px;
                 max-width: 550px;
+                color: #FFF;
             }
 
-            .panel-hero__para {
+            .panel-dark-hero__para {
                 max-width: 550px;
                 margin-bottom: 24px;
+                color: #FFF;
             }
 
-
-            .panel-hero-img {
+            .panel-dark-hero-img {
                 margin-bottom: 30px;
             }
 
-            .panel-hero-img__img {
+            .panel-dark-hero-img__img {
                 width: 100%;
                 display: block;
             }
 
-            .panel-hero-img__title {
+            .panel-dark-hero-img__title {
                 font-size: 24px;
                 background-color: #758692;
                 padding: 20px 22px;
@@ -281,9 +288,9 @@
             }
 
             @media (min-width: 1040px) {
-                .panel-hero-img__title {
-                    font-size: 30px;
-                    padding: 10px 30px;
+                .panel-dark-hero-img__title {
+                font-size: 30px;
+                padding: 10px 30px;
                 }
             }
 
@@ -431,138 +438,144 @@
         <div role="main" class="main">
 
             <!-- NHS body content: start -->
-            <div class="panel-hero">
-                <div class="panel-hero-inner">
-                    <h1 class="panel-hero__title">Join the NHS Apps Library</h1>
-                    <p class="panel-hero__para">
-                        Are you a developer wanting to contribute to a more efficient NHS, focused on patient-led healthcare?
-                        <br><br>
-                        This is where you’ll find all the information you need if you have an existing health app you’d like to see included on our
-                        <a href="https://apps.beta.nhs.uk/">Apps Library</a>
-                    </p>
-                    <p>
-                        <a href="/digital-tools/submit-your-app/" class="button button-start">Submit your app</a>
-                    </p>
+            <div class="panel-dark-hero">
+                <div class="panel-dark-hero-inner">
+                    <div class="grid-row">
+                        <div class="column-one-half">
+                            <h1 class="panel-dark-hero__title">Join the NHS Apps Library</h1>
+                            <p class="panel-dark-hero__para">
+                                Are you a developer wanting to contribute to a more efficient NHS, focused on patient-led healthcare? 
+                                <br><br>This is where you’ll find all the information you need if you have an existing health app you’d like to see included on our 
+                                <a href="https://apps.beta.nhs.uk">Apps Library</a>
+                            </p>
+                            <p>
+                                <a href="/digital-tools/submit-your-app" class="button button-start">Submit your app</a>
+                            </p>
+                        </div>
+                        <div class="column-one-half hide-mobile">
+                            <img class="panel-dark-hero__img" src="<?php echo get_template_directory_uri() . '/img/developer-be-discovered-opt3.png' ?>" style="width: 100%">
+                        </div>
+                     </div>
                 </div>
             </div>
-
 
             <div class="wrapper cf">
-            
-            <div class="grid-row">
-                <div class="column-one-half">
-                    <h2 class="heading-medium">What we're looking for</h2>
-                    <p>
-                        Our focus for this month is to assess health themes with the most significant need, but please submit your details and you will be contacted when the health priority matches the type of app you’re offering
-                    </p>
-                    <ul class="list-bullet">
-                        <li>Maternity</li>
-                        <li>Social care</li>
-                        <li>Long term conditions</li>
-                        <li>Cancer</li>
-                        <li>Mental health</li>
-                    </ul>
-                </div>
-                <div class="column-one-half">
-                    <h2 class="heading-medium">Getting started</h2>
-                    <p>
-                        This is the process you must undertake to get your app published
+                <div class="grid-row">
+                    <div class="column-one-half">
+                        <h2 class="heading-medium">What we're looking for</h2>
+                        <p>
+                            Our focus for this month is to assess health themes with the most significant need, but please submit your details and you will be contacted when the health priority matches the type of app you’re offering
+                        </p>
                         <ul class="list-bullet">
-                            <li><a href="/digital-tools/submit-your-app/">Submit your app</a></li>
-                            <li><a href="/digital-tools/register-your-interest/">Register your interest</a></li>
-                            <li><a href="/digital-tools/daq/">Sample assessment questions</a></li>
+                            <li>Maternity</li>
+                            <li>Social care</li>
+                            <li>Long term conditions</li>
+                            <li>Cancer</li>
+                            <li>Mental health</li>
                         </ul>
-                    </p>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="grid-row">
-                <div class="column-two-thirds">
-                    <h2 class="heading-medium">
-                        Why get published on our library?
-                    </h2>
-                    <p>
-                        Reassure users your app is safe, secure and effective and give your product a wider reach by undertaking our assessment process. 
-                    </p>
-                    <p>
-                        Publication on our Apps Library puts you at the forefront of the NHS drive to harness digital technology that improves health and well-being outcomes for all as part of our <a href="https://www.nhs.uk/transformation/" target="_blank">Empower the Person initiative</a> 
-                    </p>
-                    <p>&nbsp;</p>
-                </div>
-                <div class="column-one-third">
-                    <img src="<?php echo get_template_directory_uri() . '/img/developer-be-discovered.png' ?>" style="width:100%">
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="grid-row">
-                <div class="column-two-thirds">
-                    <h2 class="heading-medium">How will my app be appraised?</h2>
-                </div>
-            </div>
-
-            <div class="grid-row">
-                <div class="column-one-half">
-                    <h2 class="heading-small" style="margin-top:10px; margin-bottom:10px; color: #003087"><img src="<?php echo get_template_directory_uri() . '/img/tick_dark-blue.png' ?>" width="24" style="position: relative; top:4px;"> NHS Approved</h2>
-                    <p>
-                        An app meets NHS quality standards for clinical effectiveness, safety, usability and accessibility and has a supportive evidence base
-                    </p>
-                </div>
-                <div class="column-one-half">
-                    <h2 class="heading-small" style="margin-top:10px; margin-bottom:10px; color: #003087"><img src="<?php echo get_template_directory_uri() . '/img/circle-dots_dark-blue-1.png' ?>" width="24" style="position: relative; top:4px;"> Being tested in the NHS</h2>
-                    <p>An app meets NHS quality standards for safety and usability and is being tested now with NHS patients to see if there is sufficient evidence to provide them with an NHS stamp of approval</p>
-                </div>
-            </div>
-
-            <div class="callout callout--muted">
-                <div class="callout__inner">
-                    <h2 class="heading-medium">Testimonials</h2>
-                    <div class="carousel">
-                        <div class="carousel__pad">
-                            <p>
-                                <i class="lede">“Our mission is to develop digital health products that help clinicians deliver excellent patient care and we are delighted by the inclusion of the GDm-health App in the NHS Library, which will help accelerate its adoption across the NHS”</i>
-                            </p>
-                            <p class="heading-small">Lord Paul Drayson, Chairman and CEO, Drayson Technologies</p>
-                        </div>
-                        <div class="carousel__pad">
-                            <p><i class="lede">“It’s fantastic to have a quarter of a million users so quickly, following Evergreen Life’s integration with NHS Digital. Our app is built upon one clear idea: ‘people powered health’”</i></p>
-                            <p class="font-xsmall">Stephen Critchlow, founder and chairman of Evergreen Life</p>
-                        </div>
                     </div>
-                    <p>&nbsp;</p>
+                    <div class="column-one-half">
+                        <h2 class="heading-medium">Getting started</h2>
+                        <p>
+                            This is the process you must undertake to get your app published
+                            <ul class="list-bullet">
+                                <li><a href="/digital-tools/submit-your-app/">Submit your app</a></li>
+                                <li><a href="/digital-tools/register-your-interest/">Register your interest</a></li>
+                                <li><a href="/digital-tools/daq/">Sample assessment questions</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div class="grid-row">
+                    <div class="column-two-thirds">
+                        <h2 class="heading-medium">
+                            Why get published on our library?
+                        </h2>
+                        <p>
+                            Reassure users your app is safe, secure and effective and give your product a wider reach by undertaking our assessment process. 
+                        </p>
+                        <p>
+                            Publication on our Apps Library puts you at the forefront of the NHS drive to harness digital technology that improves health and well-being outcomes for all as part of our <a href="https://www.nhs.uk/transformation/" target="_blank">Empower the Person initiative</a> 
+                        </p>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="column-one-third">
+                        <img src="<?php echo get_template_directory_uri() . '/img/developer-be-discovered.png' ?>" style="width:100%">
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div class="grid-row">
+                    <div class="column-two-thirds">
+                        <h2 class="heading-medium">How will my app be appraised?</h2>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="column-one-half">
+                        <h2 class="heading-small" style="margin-top:10px; margin-bottom:10px; color: #003087"><img src="<?php echo get_template_directory_uri() . '/img/tick_dark-blue.png' ?>" width="24" style="position: relative; top:4px;"> NHS Approved</h2>
+                        <p>
+                            An app meets NHS quality standards for clinical effectiveness, safety, usability and accessibility and has a supportive evidence base
+                        </p>
+                    </div>
+                    <div class="column-one-half">
+                        <h2 class="heading-small" style="margin-top:10px; margin-bottom:10px; color: #003087"><img src="<?php echo get_template_directory_uri() . '/img/circle-dots_dark-blue-1.png' ?>" width="24" style="position: relative; top:4px;"> Being tested in the NHS</h2>
+                        <p>An app meets NHS quality standards for safety and usability and is being tested now with NHS patients to see if there is sufficient evidence to provide them with an NHS stamp of approval</p>
+                    </div>
+                </div>
+
+                <div class="callout callout--muted">
+                    <div class="callout__inner">
+                        <h2 class="heading-medium">Testimonials</h2>
+                        <div class="carousel">
+                            <div class="carousel__pad">
+                                <p>
+                                    <i class="lede">“Our mission is to develop digital health products that help clinicians deliver excellent patient care and we are delighted by the inclusion of the GDm-health App in the NHS Library, which will help accelerate its adoption across the NHS”</i>
+                                </p>
+                                <p class="heading-small">Lord Paul Drayson, Chairman and CEO, Drayson Technologies</p>
+                            </div>
+                            <div class="carousel__pad">
+                                <p><i class="lede">“It’s fantastic to have a quarter of a million users so quickly, following Evergreen Life’s integration with NHS Digital. Our app is built upon one clear idea: ‘people powered health’”</i></p>
+                                <p class="font-xsmall">Stephen Critchlow, founder and chairman of Evergreen Life</p>
+                            </div>
+                        </div>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="column-one-half">
+                        <h2 class="heading-medium">Help &amp; support</h2>
+
+                        <p>If you have a query relating to the assessment of app please consult our Frequently Asked Questions or contact us for further information</p>
+
+                        <ul class="list-bullet">
+                            <li><a href="/digital-tools/frequently-asked-questions/">Frequently Asked Questions</a></li>
+                            <li><a href="mailto:enquiries@nhsdigital.nhs.uk">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="column-one-half">
+                        <h2 class="heading-medium">Developer hub</h2>
+                        <p>
+                            Make use nationally defined messaging APIs to help develop your app
+                        </p>
+                        <ul class="list list-bullet">
+                            <li><a href="https://developer.nhs.uk">NHS Developer Hub</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="grid-row">
-                <div class="column-one-half">
-                    <h2 class="heading-medium">Help &amp; support</h2>
-
-                    <p>If you have a query relating to the assessment of app please consult our Frequently Asked Questions or contact us for further information</p>
-
-                    <ul class="list-bullet">
-                        <li><a href="/digital-tools/frequently-asked-questions/">Frequently Asked Questions</a></li>
-                        <li><a href="/contact-us/">Contact us</a></li>
-                    </ul>
-                </div>
-
-                <div class="column-one-half">
-                    <h2 class="heading-medium">Developer hub</h2>
-                    <p>
-                        Make use nationally defined messaging APIs to help develop your app
-                    </p>
-                    <ul class="list list-bullet">
-                        <li><a href="https://developer.nhs.uk">NHS Developer Hub</a></li>
-                    </ul>
-                </div>
-            </div>
-
             <!-- NHS body content: end -->
         </div>
+        
+        
 
-        <!-- Slick slider -->
+        <!-- Slick slider with jQuery -->
         <script>
             jQuery(".carousel").slick({
                 arrows: true,
