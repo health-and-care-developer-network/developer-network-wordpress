@@ -229,10 +229,11 @@
 
             @media (min-width: 1020px) {
                 .panel-dark-hero {
-                margin-bottom: 60px;
-                background-image: linear-gradient(-87deg, #005EB8 82%, #FFFFFF 82.3%);
-                background-image: -moz-linear-gradient(-87deg, #005EB8 82%, #FFFFFF 82.3%);
-                background-image: -webkit-linear-gradient(-87deg, #005EB8 82%, #FFFFFF 82.3%);
+                    margin-bottom: 60px;
+                    background-image: linear-gradient(-87deg, #005EB8 82%, #FFFFFF 83%);
+                    background-image: -moz-linear-gradient(-87deg, #005EB8 82%, #FFFFFF 83%);
+                    background-image: -webkit-linear-gradient(-87deg, #005EB8 82%, #FFFFFF 83%);
+                    background-image: -ms-linear-gradient(top,#005EB8, #005EB8);
                 }
             }
 
@@ -412,6 +413,7 @@
                 background-image: url("https://govuk-elements.herokuapp.com/public/images/icon-pointer-2x.png");
                 background-repeat: no-repeat;
                 background-position: 100% 50%;
+                background-size: 30px 19px;
                 padding: 0.36842em 2.15789em 0.21053em 0.84211em;
             }
 
