@@ -72,7 +72,7 @@
                         <p><br/></p>
                           <div class="row">
                             <div class="col col-md-6">
-                              <h3>Submit an App for assessment</h3>
+                              <h3>Submit Apps for assessment</h3>
                               <p>
                                   <button id="btnSubmitApp" type="button" class="btn btn-md btn-default apps-landing-page">
                                       Submit<span class="checklist-icon"></span>
