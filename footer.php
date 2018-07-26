@@ -10,7 +10,7 @@
 				</nav>
 
 				<p><a target="_blank" href="//www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm" class="copyright">&copy; Crown Copyright <?php echo date("Y") ?></a></p>
-			</div><!--end wrapper-->
+			</div><!-- end wrapper -->
 		</footer>
 
         <script>
