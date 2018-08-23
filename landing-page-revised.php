@@ -484,6 +484,7 @@
                                 <li><a href="/digital-tools/submit-your-app/">Submit your app</a></li>
                                 <li><a href="/digital-tools/register-your-interest/">Register your interest</a></li>
                                 <li><a href="/digital-tools/daq/">Sample assessment questions</a></li>
+								<!-- Placeholder for downloadable assessment questions pdf -->
                             </ul>
                         </p>
                     </div>
