@@ -197,7 +197,7 @@ add_action('template_redirect', function () {
         }
     }
 });
-add_filter('wp_title', function ($title, $sep) {
+add_filter('wp_title', function ($title, $sep, $loc) {
     global $_PATH;
 
     if (is_user_logged_in()) {
@@ -207,7 +207,7 @@ add_filter('wp_title', function ($title, $sep) {
             }
         }
     }
-});
+}, 10, 3);
 
 add_action('parse_request', function () {
     global $wp_query, $_PATH;
