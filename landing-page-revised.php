@@ -466,13 +466,22 @@
                     <div class="column-one-half">
                         <h2 class="heading-medium">What we're looking for</h2>
                         <p>
-                            Our focus for this month is to assess health themes with the most significant need, but please submit your details and you will be contacted when the health priority matches the type of app you’re offering
+                        To be put forward for assessment, your app must fit our eligibility criteria and address health themes with the most significant need.
+                        These are listed below. If your app does not address one of these themes, please submit your details and we will contact you when our health priorities change.
                         </p>
+                        <h4>Eligibility criteria:</h4>
                         <ul class="list-bullet">
-                            <li>Maternity</li>
+                            <li>Apps must be patient facing</li>
+                            <li>Apps must be available on the app stores (unless web-based)</li>
+                            <li>Apps must not use unauthorised NHS branding</li>
+                        </ul>
+                        <h4>Health themes:</h4>
+                        <ul class="list-bullet">
+                            <li>Long-term care</li>
+                            <li>Primary care</li>
                             <li>Social care</li>
-                            <li>Long term conditions</li>
                             <li>Cancer</li>
+                            <li>Maternity</li>
                             <li>Mental health</li>
                         </ul>
                     </div>
